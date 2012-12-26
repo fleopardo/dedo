@@ -16,31 +16,104 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 */
 
 @font-face {
-	font-family: "din-regular";
-	src: url("../fonts/din-regular.eot");
+	font-family: "peugeot-bold-italic";
+	src: url("../fonts/peugeot_bold_italic_v2-webfont.eot");
 	src: local("?"),
-	url("../fonts/din-regular.woff") format("woff"),
-	url("../fonts/din-regular.ttf") format("truetype"),
-	url("../fonts/din-regular.svg#blaimim_-webfont") format("svg");
+	url("../fonts/peugeot_bold_italic_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_bold_italic_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_bold_italic_v2-webfont.svg#blaimim_-webfont") format("svg");
 }
 
 @font-face {
-	font-family: "din-medium";
-	src: url("../fonts/din-medium.eot");
+	font-family: "peugeot-bold";
+	src: url("../fonts/peugeot_bold_v2-webfont.eot");
 	src: local("?"),
-	url("../fonts/din-medium.woff") format("woff"),
-	url("../fonts/din-medium.ttf") format("truetype"),
-	url("../fonts/din-medium.svg#blaimim_-webfont") format("svg");
+	url("../fonts/peugeot_bold_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_bold_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_bold_v2-webfont.svg#blaimim_-webfont") format("svg");
 }
 
 @font-face {
-	font-family: "din-black";
-	src: url("../fonts/din-black.eot");
+	font-family: "peugeot-expanded-bold";
+	src: url("../fonts/peugeot_expanded_bold_v2-webfont.eot");
 	src: local("?"),
-	url("../fonts/din-black.woff") format("woff"),
-	url("../fonts/din-black.ttf") format("truetype"),
-	url("../fonts/din-black.svg#blaimim_-webfont") format("svg");
+	url("../fonts/peugeot_expanded_bold_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_expanded_bold_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_expanded_bold_v2-webfont.svg#blaimim_-webfont") format("svg");
 }
+
+@font-face {
+	font-family: "peugeot-expanded-extralight";
+	src: url("../fonts/peugeot_expanded_extralight_v2-webfont.eot");
+	src: local("?"),
+	url("../fonts/peugeot_expanded_extralight_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_expanded_extralight_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_expanded_extralight_v2-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+	font-family: "peugeot-expanded-light";
+	src: url("../fonts/peugeot_expanded_light_v2-webfont.eot");
+	src: local("?"),
+	url("../fonts/peugeot_expanded_light_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_expanded_light_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_expanded_light_v2-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+	font-family: "peugeot-expanded-medium";
+	src: url("../fonts/peugeot_expanded_medium_v2-webfont.eot");
+	src: local("?"),
+	url("../fonts/peugeot_expanded_medium_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_expanded_medium_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_expanded_medium_v2-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+	font-family: "peugeot-expanded-normal";
+	src: url("../fonts/peugeot_expanded_normal_v2-webfont.eot");
+	src: local("?"),
+	url("../fonts/peugeot_expanded_normal_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_expanded_normal_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_expanded_normal_v2-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+	font-family: "peugeot-italic";
+	src: url("../fonts/peugeot_italic_v2-webfont.eot");
+	src: local("?"),
+	url("../fonts/peugeot_italic_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_italic_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_italic_v2-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+	font-family: "peugeot-light-italic";
+	src: url("../fonts/peugeot_light_italic_v2-webfont.eot");
+	src: local("?"),
+	url("../fonts/peugeot_light_italic_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_light_italic_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_light_italic_v2-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+	font-family: "peugeot-light";
+	src: url("../fonts/peugeot_light_v2-webfont.eot");
+	src: local("?"),
+	url("../fonts/peugeot_light_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_light_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_light_v2-webfont.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+	font-family: "peugeot-normal";
+	src: url("../fonts/peugeot_normal_v2-webfont.eot");
+	src: local("?"),
+	url("../fonts/peugeot_normal_v2-webfont.woff") format("woff"),
+	url("../fonts/peugeot_normal_v2-webfont.ttf") format("truetype"),
+	url("../fonts/peugeot_normal_v2-webfont.svg#blaimim_-webfont") format("svg");
+}
+
 
 /*
  * End Fonts
