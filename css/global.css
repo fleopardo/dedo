@@ -91,6 +91,7 @@ input.placeholder{ color: #373737; }
 .container{
 	width: 940px;
 	margin: 0 auto;
+	position: relative;
 }
 
 header{
@@ -128,6 +129,36 @@ section.home{
 	background: url("./assets/background-home.png") no-repeat bottom center;
 }
 
+.home a{
+	font-size: 29px;
+	font-family: "peugeot";
+	color: #8f8f8f;
+	background: url("./assets/arrow-links.png") no-repeat;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 70px;
+	display: inline-block;
+}
+
+.home a:hover{
+	color: #666;
+}
+
+.home a.por-ubicacion{
+	padding-right: 90px;
+	background-position: right;
+	position: absolute;
+	top: 470px;
+	left: 0;
+}
+
+.home a.por-modelos{
+	padding-left: 90px;
+	position: absolute;
+	top: 150px;
+	right: 0;
+}
+
 
 /*
  * Por Ubicacion -> Step 2
@@ -151,4 +182,6 @@ section.ubicacion.step3{
 section.confirmacion{
 	background: url("./assets/background-step4.png") no-repeat top center;
 	height: 860px;
+	position: relative;
+	top: -15px;
 }
