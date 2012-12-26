@@ -1,0 +1,140 @@
+/*
+ * autors:
+ * Santiago Leopardo @sleopardo
+ * Fernando Leopardo @fer_leopardo
+*/
+
+/*
+ * Reset
+*/
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}strong{font-weight: bold;}
+
+
+/*
+ * Fonts
+*/
+
+@font-face {
+	font-family: "din-regular";
+	src: url("../fonts/din-regular.eot");
+	src: local("?"),
+	url("../fonts/din-regular.woff") format("woff"),
+	url("../fonts/din-regular.ttf") format("truetype"),
+	url("../fonts/din-regular.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+	font-family: "din-medium";
+	src: url("../fonts/din-medium.eot");
+	src: local("?"),
+	url("../fonts/din-medium.woff") format("woff"),
+	url("../fonts/din-medium.ttf") format("truetype"),
+	url("../fonts/din-medium.svg#blaimim_-webfont") format("svg");
+}
+
+@font-face {
+	font-family: "din-black";
+	src: url("../fonts/din-black.eot");
+	src: local("?"),
+	url("../fonts/din-black.woff") format("woff"),
+	url("../fonts/din-black.ttf") format("truetype"),
+	url("../fonts/din-black.svg#blaimim_-webfont") format("svg");
+}
+
+/*
+ * End Fonts
+*/
+
+/*
+ * Clearfix
+*/
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*
+ * End Clearfix
+*/
+
+body{
+	font-family: "din-regular", arial, helvetica, sans-serif;
+	color: #636363;
+	background: #fff;
+}
+
+.hide{ display: none;}
+.show{ display: block;}
+
+::-webkit-input-placeholder  { color:#373737; }
+input:-moz-placeholder { color:#373737; }
+:-ms-input-placeholder { color: #373737; }
+input.placeholder{ color: #373737; }
+
+
+/*
+ * Header
+*/
+
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
+
+header{
+	height: 125px;
+	background: url("./assets/header.png") no-repeat top center;
+}
+
+header h1 a{
+	display: block;
+	width: 120px;
+	height: 85px;
+	position: relative;
+	top: 5px;
+	left: 12px;
+}
+
+header h2{
+	display: none;
+}
+
+
+section{
+	height: 650px;
+}
+
+
+/*
+ * Home
+*/
+section.home{
+	background: url("./assets/background-home.png") no-repeat bottom center;
+}
+
+
+/*
+ * Ubicacion Step 2
+*/
+section.ubicacion.step2{
+	background: url("./assets/background-step2.png") no-repeat bottom center;
+}
+
+
+
+/*
+ * Ubicacion step3
+*/
+section.ubicacion.step3{
+
+}
