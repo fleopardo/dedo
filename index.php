@@ -50,6 +50,12 @@
 		</div>
 	</section>
 
+	<section class="confirmacion">
+		<div class="container">
+			<h1>4. Complete sus datos</h1>
+		</div>
+	</section>
+
 
 
 
