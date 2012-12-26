@@ -144,6 +144,8 @@ body{
 	font-family: "din-regular", arial, helvetica, sans-serif;
 	color: #636363;
 	background: #fff;
+	margin-bottom: 50px;
+	padding-top: 125px;
 }
 
 .hide{ display: none;}
@@ -167,6 +169,10 @@ input.placeholder{ color: #373737; }
 header{
 	height: 125px;
 	background: url("./assets/header.png") no-repeat top center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 }
 
 header h1 a{
@@ -197,17 +203,25 @@ section.home{
 
 
 /*
- * Ubicacion Step 2
+ * Por Ubicacion -> Step 2
 */
 section.ubicacion.step2{
 	background: url("./assets/background-step2.png") no-repeat bottom center;
 }
 
 
-
 /*
- * Ubicacion step3
+ * Por Ubicacion -> step3
 */
 section.ubicacion.step3{
+	background: url("./assets/background-ubicacion-step3.png") no-repeat bottom center;
+}
 
+
+/*
+ * Confirmacion
+*/
+section.confirmacion{
+	background: url("./assets/background-step4.png") no-repeat top center;
+	height: 860px;
 }
