@@ -140,13 +140,13 @@
 					</select>
 				</div>
 
-				<div class="contentMap">
-					<div class="map" id="map">
-					</div>
-				</div>
-
 				<input type="submit" value=" " title="Solicite turno" />
 			</form>
+
+			<div class="contentMap">
+				<div class="map" id="map">
+				</div>
+			</div>
 
 			<a href="#" class="volver">Volver</a>
 		</div>
