@@ -17,7 +17,9 @@
 	<script type="text/javascript" src="./js/libs/jquery-ui-1.8.12.custom.min.js"></script>
 	<script type="text/javascript" src="./js/libs/jquery.ui.selectmenu.js"></script>
 	<script type="text/javascript" src="./js/libs/jquery.placeholder.js"></script>
-
+	<!--google map-->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=es"></script>
+	<!-- -->
 </head>
 <body>
 
@@ -32,8 +34,11 @@
 			<form id="form-modelos-step3" method="GET" action="confirmacion.php" data-load="content4">
 				<div>
 					<label for="lugar">Lugar</label>
-					<select name="lugar" id="lugar" class="lugar">
-						<option>Pinamar</option>
+					<select class="lugar" id="lugar-test">
+						<option data-long="-58.47" data-lat="-34.58">Pinamar</option>
+						<option data-long="-58.46" data-lat="-34.58">Cariló</option>
+						<option data-long="3" data-lat="3">Villa Gesell</option>
+						<option data-long="4" data-lat="4">Mar del Plata</option>
 					</select>
 				</div>
 
@@ -66,7 +71,10 @@
 				</div>
 			</div>
 
+			<div class="img-result p-408"></div>
+
 			<a href="modelos-step2.php" class="volver" data-scroll:anchor="#modelos-step2">Volver</a>
+
 		</div>
 
 		<script type="text/javascript" src="./js/modelos-step3.js" class="script"></script>

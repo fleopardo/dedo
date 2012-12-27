@@ -1,4 +1,4 @@
- /*
+/*
  * jQuery UI selectmenu
  *
  * Copyright (c) 2009 AUTHORS.txt (http://jqueryui.com/about)
@@ -167,7 +167,12 @@ $.widget("ui.selectmenu", {
 		this.newelement.width(o.width ? o.width : selectWidth);
 
 		// hide original selectmenu element
-		this.element.hide();
+		//this.element.hide();
+
+		this.element.css({
+			'position':'absolute',
+			'visibility':'hidden'
+		});
 
 		// create menu portion, append to body
 		this.list = $('<ul class="' + self.widgetBaseClass + '-menu ui-widget ui-widget-content" aria-hidden="true" role="listbox" aria-labelledby="' + this.ids[0] + '" id="' + this.ids[1] + '"></ul>').appendTo('body');
