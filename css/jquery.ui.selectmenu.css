@@ -24,10 +24,10 @@
 }
 
 .ui-selectmenu-icon {
-    background: url(../css/assets/arrow-select.png) no-repeat;
+    background: url(./assets/arrow-select.png) no-repeat;
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 6px;
+    top: 24px;
     width: 15px;
     height: 11px;
 }

@@ -665,6 +665,15 @@ section.confirmacion{
 	clear: both;
 }
 
+.confirmacion .row,
+.confirmacion .multi-select > div{
+	margin-bottom: 10px;
+}
+
+.confirmacion .multi-select{
+	margin-bottom: 0;
+}
+
 .confirmacion form input[type="text"]{
 	color: #858585;
 	font-size: 18px;
@@ -698,14 +707,19 @@ section.confirmacion{
 	display: inline-block;
 }
 
+.confirmacion .select-container{
+	float: right;
+	margin-right: 2px;
+}
+
 .confirmacion select{
 	width: 462px;
 }
 
 .confirmacion select.small{
-	width: 92px;
+	width: 82px;
 }
 
 .confirmacion select.middle{
-	width: 132px;
+	width: 126px;
 }

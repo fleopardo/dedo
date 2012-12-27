@@ -35,7 +35,7 @@
 							<input type="text" placeholder="Email" id="" tabindex="3" />
 						</div>
 						<div class="row">
-							<input type="text" placeholder="Nro de licencia de conducir" id="" tabindex="7" />
+							<input type="text" placeholder="Nro. de licencia de conducir" id="" tabindex="7" />
 						</div>
 						<div class="row">
 							<select tabindex="11">
@@ -63,39 +63,43 @@
 						<div class="row multi-select">
 							<div class="clearfix">
 								<label for="dia-nacimiento">Nacimiento</label>
-								<select id="dia-nacimiento" tabindex="4" class="small">
-									<option>Día</option>
-									<option>01</option>
-									<option>02</option>
-								</select>
-								<select id="mes-nacimiento" tabindex="5" class="middle">
-									<option>Mes</option>
-									<option>01</option>
-									<option>02</option>
-								</select>
-								<select id="ano-nacimiento" tabindex="6" class="middle">
-									<option>A&ntilde;o</option>
-									<option>1930</option>
-									<option>1931</option>
-								</select>
+								<div class="select-container clearfix">
+									<select id="dia-nacimiento" tabindex="4" class="small">
+										<option>Día</option>
+										<option>01</option>
+										<option>02</option>
+									</select>
+									<select id="mes-nacimiento" tabindex="5" class="middle">
+										<option>Mes</option>
+										<option>01</option>
+										<option>02</option>
+									</select>
+									<select id="ano-nacimiento" tabindex="6" class="middle">
+										<option>A&ntilde;o</option>
+										<option>1930</option>
+										<option>1931</option>
+									</select>
+								</div>
 							</div>
 							<div class="clearfix">
 								<label for="vencimiento">Vencimiento</label>
-								<select id="dia-vencimiento" tabindex="8" class="small">
-									<option>Día</option>
-									<option>01</option>
-									<option>02</option>
-								</select>
-								<select id="mes-vencimiento" tabindex="9" class="middle">
-									<option>Mes</option>
-									<option>01</option>
-									<option>02</option>
-								</select>
-								<select id="ano-vencimiento" tabindex="10" class="middle">
-									<option>A&ntilde;o</option>
-									<option>1930</option>
-									<option>1931</option>
-								</select>
+								<div class="select-container clearfix">
+									<select id="dia-vencimiento" tabindex="8" class="small">
+										<option>Día</option>
+										<option>01</option>
+										<option>02</option>
+									</select>
+									<select id="mes-vencimiento" tabindex="9" class="middle">
+										<option>Mes</option>
+										<option>01</option>
+										<option>02</option>
+									</select>
+									<select id="ano-vencimiento" tabindex="10" class="middle">
+										<option>A&ntilde;o</option>
+										<option>1930</option>
+										<option>1931</option>
+									</select>
+								</div>
 							</div>
 						</div>
 
@@ -108,13 +112,25 @@
 				<fieldset>
 					<div class="left-col">
 						<div class="row">
-							<input type="text" placeholder="Modelo a testear" id="" tabindex="14" />
+							<div class="row">
+								<select tabindex="2">
+									<option>Modelo a testear</option>
+									<option>207 gti</option>
+									<option>308</option>
+								</select>
+							</div>
 						</div>
 					</div>
 
 					<div class="right-col">
 						<div class="row">
-							<input type="text" placeholder="Centro Turístico" id="" tabindex="15" />
+							<div class="row">
+								<select tabindex="2">
+									<option>Centro turístico</option>
+									<option>Pinamar</option>
+									<option>Cariló</option>
+								</select>
+							</div>
 						</div>
 					</div><!--right-col-->
 
