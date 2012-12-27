@@ -4,6 +4,9 @@
  * Fernando Leopardo @fer_leopardo
 */
 
+
+//$("body,html").css("overflow","hidden");
+
 // For use within normal web clients
 var isiPad = navigator.userAgent.match(/iPad/i) != null;
 var isMobile = {
