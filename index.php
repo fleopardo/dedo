@@ -62,6 +62,18 @@
 		<div class="container">
 			<h1><span>2.</span> Elija el modelo</h1>
 			<a href="#" class="volver">Volver</a>
+			<form>
+				<fieldset>
+					<div class="row">
+						<select>
+							<option>308 allure</option>
+							<option>207 gti</option>
+							<option>408</option>
+						</select>
+						<input type="submit" value="" title="Confirmar">
+					</div>
+				</fieldset>
+			</form>
 		</div>
 	</section>
 
@@ -112,6 +124,103 @@
 		<div class="container">
 			<h1><span>4.</span> Complete sus datos</h1>
 			<a href="#" class="volver">Volver</a>
+			<form action="" method="">
+				<fieldset>
+					<div class="left-col">
+						<div class="row">
+							<input type="text" placeholder="Nombre y Apellido" id="" />
+						</div>
+						<div class="row">
+							<input type="text" placeholder="Email" id="" />
+						</div>
+						<div class="row">
+							<input type="text" placeholder="Nro de licencia de conducir" id="" />
+						</div>
+						<div class="row">
+							<select>
+								<option>Provincia</option>
+								<option>Buenos Aires</option>
+								<option>Mendoza</option>
+							</select>
+						</div>
+						<div class="row">
+							<input type="text" placeholder="Teléfono móvil" id="" />
+						</div>
+					</div>
+					<div class="right-col">
+
+						<div class="row">
+							<div class="row">
+								<select>
+									<option>Sexo</option>
+									<option>Femenino</option>
+									<option>Masculino</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="row select-comp">
+							<div class="clearfix">
+								<label for="dia-nacimiento">Nacimiento</label>
+								<select id="dia-nacimiento">
+									<option>Día</option>
+									<option>1</option>
+									<option>2</option>
+								</select>
+								<select id="mes-nacimiento">
+									<option>Mes</option>
+									<option>Enero</option>
+									<option>Febrero</option>
+								</select>
+								<select id="ano-nacimiento">
+									<option>A&ntilde;o</option>
+									<option>1930</option>
+									<option>1931</option>
+								</select>
+							</div>
+							<div class="clearfix">
+								<label for="vencimiento">Vencimiento</label>
+								<select id="dia-vencimiento">
+									<option>Día</option>
+									<option>1</option>
+									<option>2</option>
+								</select>
+								<select id="mes-vencimiento">
+									<option>Mes</option>
+									<option>Enero</option>
+									<option>Febrero</option>
+								</select>
+								<select id="ano-vencimiento">
+									<option>A&ntilde;o</option>
+									<option>1930</option>
+									<option>1931</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="row">
+							<input type="text" placeholder="Localidad" id="" />
+						</div>
+					</div><!--right-col-->
+				</fieldset>
+
+				<fieldset>
+					<div class="left-col">
+						<div class="row">
+							<input type="text" placeholder="Nombre y Apellido" id="" />
+						</div>
+					</div>
+
+					<div class="right-col">
+						<div class="row">
+							<input type="text" placeholder="Localidad" id="" />
+						</div>
+					</div><!--right-col-->
+
+					<input type="submit" value="" title="Enviar" />
+				</fieldset>
+			</form>
+			
 		</div>
 	</section>
 
