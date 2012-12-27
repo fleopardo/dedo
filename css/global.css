@@ -486,6 +486,22 @@ section.ubicacion.step2{
 	margin-left: -5px;
 }
 
+.ubicacion.step2 select.lugar{
+	width: 180px;
+}
+
+.ubicacion.step2 select.mes{
+	width: 170px;
+}
+
+.ubicacion.step2 select.dia{
+	width: 80px;
+}
+
+.ubicacion.step2 select.hora{
+	width: 150px;
+}
+
 /*
  * Por Modelos -> Step 2
 */
@@ -532,6 +548,11 @@ section.modelos.step2{
 	top: 130px;
 	left: -230px;
 }
+
+.modelos.step2 select{
+	width: 420px;
+}
+
 
 
 /*
@@ -581,6 +602,11 @@ section.ubicacion.step3{
 	cursor: pointer;
 	margin-left: 10px;
 }
+
+.ubicacion.step3 select{
+	width: 420px;
+}
+
 
 
 
@@ -652,6 +678,22 @@ section.modelos.step3{
 	padding: 3px;
 	background: #fff;
 	height: 200px;
+}
+
+.modelos.step3 select.lugar{
+	width: 180px;
+}
+
+.modelos.step3 select.mes{
+	width: 170px;
+}
+
+.modelos.step3 select.dia{
+	width: 80px;
+}
+
+.modelos.step3 select.hora{
+	width: 150px;
 }
 
 
