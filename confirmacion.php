@@ -12,9 +12,10 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<!--[if lt IE 9]><script src="js/libs/html5.js"></script><![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
-
+	<link rel="stylesheet" type="text/css" href="css/jquery.ui.selectmenu.css" />
 	<script src="js/libs/jquery.min.js"></script>
-
+	<script type="text/javascript" src="./js/libs/jquery-ui-1.8.12.custom.min.js"></script>
+	<script type="text/javascript" src="./js/libs/jquery.ui.selectmenu.js"></script>
 </head>
 <body>
 
@@ -25,7 +26,7 @@
 			<h1><span>4.</span> Complete sus datos</h1>
 			<a href="#" class="volver">Volver</a>
 			<form action="" method="">
-				<fieldset>
+				<fieldset class="clearfix">
 					<div class="left-col">
 						<div class="row">
 							<input type="text" placeholder="Nombre y Apellido" id="" tabindex="1" />
@@ -59,20 +60,20 @@
 							</div>
 						</div>
 
-						<div class="row select-comp">
+						<div class="row multi-select">
 							<div class="clearfix">
 								<label for="dia-nacimiento">Nacimiento</label>
-								<select id="dia-nacimiento" tabindex="4">
+								<select id="dia-nacimiento" tabindex="4" class="small">
 									<option>Día</option>
-									<option>1</option>
-									<option>2</option>
+									<option>01</option>
+									<option>02</option>
 								</select>
-								<select id="mes-nacimiento" tabindex="5">
+								<select id="mes-nacimiento" tabindex="5" class="middle">
 									<option>Mes</option>
-									<option>Enero</option>
-									<option>Febrero</option>
+									<option>01</option>
+									<option>02</option>
 								</select>
-								<select id="ano-nacimiento" tabindex="6">
+								<select id="ano-nacimiento" tabindex="6" class="middle">
 									<option>A&ntilde;o</option>
 									<option>1930</option>
 									<option>1931</option>
@@ -80,17 +81,17 @@
 							</div>
 							<div class="clearfix">
 								<label for="vencimiento">Vencimiento</label>
-								<select id="dia-vencimiento" tabindex="8">
+								<select id="dia-vencimiento" tabindex="8" class="small">
 									<option>Día</option>
-									<option>1</option>
-									<option>2</option>
+									<option>01</option>
+									<option>02</option>
 								</select>
-								<select id="mes-vencimiento" tabindex="9">
+								<select id="mes-vencimiento" tabindex="9" class="middle">
 									<option>Mes</option>
-									<option>Enero</option>
-									<option>Febrero</option>
+									<option>01</option>
+									<option>02</option>
 								</select>
-								<select id="ano-vencimiento" tabindex="10">
+								<select id="ano-vencimiento" tabindex="10" class="middle">
 									<option>A&ntilde;o</option>
 									<option>1930</option>
 									<option>1931</option>
@@ -124,6 +125,8 @@
 		</div>
 	</section>
 
+	<script type="text/javascript" src="./js/confirmacion.js"></script>
+	
 
 
 </body>

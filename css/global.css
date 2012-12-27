@@ -508,6 +508,8 @@ section.modelos.step3{
 	background: #fff;
 	height: 200px;
 }
+
+
 /*
  * Confirmacion
 */
@@ -535,11 +537,27 @@ section.confirmacion{
 	left: -70px;
 }
 
+.confirmacion .left-col{
+	float: left;
+	width: 464px;
+}
+
+.confirmacion .right-col{
+	float: right;
+	width: 464px;
+}
+
+.confirmacion form{
+	clear: both;
+}
+
 .confirmacion form input[type="text"]{
 	color: #858585;
-	font-size: 22px;
+	font-size: 18px;
 	border-radius: 5px;
-	padding: 18px 20px;
+	width: 420px;
+	height: 59px;
+	padding: 0 20px;
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ffffff 0%, #cacaca 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cacaca));
@@ -557,4 +575,23 @@ section.confirmacion{
 	width: 270px;
 	height: 99px;
 	cursor: pointer;
+}
+
+.confirmacion label{
+	color: #d1d1d1;
+	font-size: 18px;
+	line-height: 59px;
+	display: inline-block;
+}
+
+.confirmacion select{
+	width: 462px;
+}
+
+.confirmacion select.small{
+	width: 92px;
+}
+
+.confirmacion select.middle{
+	width: 132px;
 }
