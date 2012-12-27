@@ -215,10 +215,6 @@ header h2{
  * Secciones en General
 */
 
-section{
-	border: 1px solid red;
-}
-
 section, section .container{
 	min-height: 650px;
 }
