@@ -26,8 +26,8 @@
 .ui-selectmenu-icon {
     background: url(./assets/arrow-select.png) no-repeat;
     position: absolute;
-    right: 6px;
-    top: 24px;
+    right: 12px;
+    top: 25px;
     width: 15px;
     height: 11px;
 }

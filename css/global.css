@@ -643,6 +643,7 @@ section.confirmacion{
 	color: #fff;
 	float: right;
 	margin-top: 100px;
+	margin-bottom: 30px;
 }
 
 .confirmacion h1 span{
@@ -663,6 +664,20 @@ section.confirmacion{
 
 .confirmacion form{
 	clear: both;
+}
+
+.confirmacion fieldset{
+	border-bottom: 2px groove #7a7a7a;
+	margin-bottom: 10px;
+}
+
+.confirmacion fieldset.submit{
+	border-bottom: none;
+	margin-bottom: 0;
+}
+
+.confirmacion fieldset.submit .row{
+	margin-bottom: 24px;
 }
 
 .confirmacion .row,
@@ -698,6 +713,9 @@ section.confirmacion{
 	width: 270px;
 	height: 99px;
 	cursor: pointer;
+	margin: 0 auto;
+	clear: both;
+	display: block;
 }
 
 .confirmacion label{

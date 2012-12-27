@@ -4,6 +4,8 @@ $(function(){
 		transferClasses: true
 	});
 
+	//Placeholder fallback
+	$('input[placeholder]').placeholder();
 
 
 });
