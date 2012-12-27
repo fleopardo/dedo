@@ -142,6 +142,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  * End Clearfix
 */
 
+
+html, body{
+	overflow-x: hidden;
+}
+
 body{
 	font-family: "peugeot-normal", arial, helvetica, sans-serif;
 	color: #636363;
@@ -388,6 +393,7 @@ section.modelos.step2{
 	position: absolute;
 	right: 0;
 	bottom: 115px;
+	z-index: 6;
 }
 
 .modelos.step2 form input[type="submit"]{
@@ -399,7 +405,115 @@ section.modelos.step2{
 	margin-left: 10px;
 }
 
+.lista-autos{
+	width: 1500px;
+	height: 300px;
+	position: absolute;
+	top: 255px;
+	left: -230px;
+}
 
+.lista-autos ul{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+
+.lista-autos li{
+	position: absolute;
+}
+
+	.lista-autos li.p-rcz{
+		width: 440px;
+		height: 210px;
+		background: url("./assets/elegir-autos/rcz.png") no-repeat;
+		z-index: 4;
+		left: 0;
+		bottom: 0;
+	}
+
+	.lista-autos li.p-508{
+		width: 405px;
+		height: 210px;
+		background: url("./assets/elegir-autos/508.png") no-repeat;
+		z-index: 3;
+		left: 195px;
+		bottom: 50px;
+	}
+
+	.lista-autos li.p-308cc{
+		width: 335px;
+		height: 160px;
+		background: url("./assets/elegir-autos/308cc.png") no-repeat;
+		z-index: 2;
+		left: 456px;
+		bottom: 107px;
+	}
+
+	.lista-autos li.p-308gti{
+		width: 255px;
+		height: 134px;
+		background: url("./assets/elegir-autos/308gti.png") no-repeat;
+		z-index: 1;
+		left: 670px;
+		bottom: 135px;
+	}
+
+	.lista-autos li.p-308{
+		width: 240px;
+		height: 110px;
+		background: url("./assets/elegir-autos/308.png") no-repeat;
+		z-index: 1;
+		right: 300px;
+		bottom: 156px;
+	}
+
+	.lista-autos li.p-408{
+		width: 300px;
+		height: 160px;
+		background: url("./assets/elegir-autos/408.png") no-repeat;
+		z-index: 2;
+		right: 165px;
+		bottom: 100px;
+	}
+
+	.lista-autos li.p-3008{
+		width: 365px;
+		height: 200px;
+		background: url("./assets/elegir-autos/3008.png") no-repeat;
+		z-index: 3;
+		right: 0px;
+		bottom: 30px;
+	}
+
+
+	.lista-autos li.p-rcz.disabled{
+		background: url("./assets/elegir-autos/rcz-disabled.png") no-repeat;
+	}
+
+	.lista-autos li.p-508.disabled{
+		background: url("./assets/elegir-autos/508-disabled.png") no-repeat;
+	}
+
+	.lista-autos li.p-308cc.disabled{
+		background: url("./assets/elegir-autos/308cc-disabled.png") no-repeat;
+	}
+
+	.lista-autos li.p-308gti.disabled{
+		background: url("./assets/elegir-autos/308gti-disabled.png") no-repeat;
+	}
+
+	.lista-autos li.p-308.disabled{
+		background: url("./assets/elegir-autos/308-disabled.png") no-repeat;
+	}
+
+	.lista-autos li.p-408.disabled{
+		background: url("./assets/elegir-autos/408-disabled.png") no-repeat;
+	}
+
+	.lista-autos li.p-3008.disabled{
+		background: url("./assets/elegir-autos/3008-disabled.png") no-repeat;
+	}
 
 /*
  * Por Ubicacion -> step3
