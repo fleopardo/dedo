@@ -168,6 +168,19 @@ input.placeholder{ color: #373737; }
 	position: relative;
 }
 
+.volver{
+	position: absolute;
+	background: url("./assets/arrow-volver.png") no-repeat top right;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 40px;
+	color: #8F8F8F;
+	padding-right: 58px;
+	right: 0px;
+	bottom: 60px;
+}
+
 header{
 	height: 125px;
 	background: url("./assets/header.png") no-repeat top center;
@@ -196,8 +209,8 @@ header h2{
 /*
  * Secciones en General
 */
-section{
-	height: 650px;
+section,.container{
+	min-height: 650px;
 }
 
 section h1{
@@ -384,9 +397,13 @@ section.modelos.step3{
 */
 section.confirmacion{
 	background: url("./assets/background-step4.png") no-repeat top center;
-	height: 860px;
 	position: relative;
 	top: -15px;
+	height: 860px;
+}
+
+.confirmacion .container{
+	min-height: 800px;
 }
 
 .confirmacion h1{

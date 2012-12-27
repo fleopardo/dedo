@@ -43,12 +43,14 @@
 	<section class="ubicacion step2">
 		<div class="container">
 			<h1><span>2.</span> Selecciona la ubicación deseada</h1>
+			<a href="#" class="volver">Volver</a>
 		</div>
 	</section>
 
 	<section class="modelos step2">
 		<div class="container">
 			<h1><span>2.</span> Elija el modelo</h1>
+			<a href="#" class="volver">Volver</a>
 		</div>
 	</section>
 
@@ -56,6 +58,7 @@
 		<div class="container">
 			<h1><span>3.</span> Confirmar vehiculo</h1>
 			<p>En el stand de pinamar el lunes 07/01/13 de 9 a 12:30 y de 16:30 a 20:00 tenes disponibles los siguientes vehiculos...</p>
+			<a href="#" class="volver">Volver</a>
 		</div>
 	</section>
 
@@ -63,12 +66,14 @@
 		<div class="container">
 			<h1><span>3.</span> Confirmar turno</h1>
 			<p>Su próximo Peugeot 308 Allure 1.6 C/ Nav lo espera el...</p>
+			<a href="#" class="volver">Volver</a>
 		</div>
 	</section>
 
 	<section class="confirmacion">
 		<div class="container">
 			<h1><span>4.</span> Complete sus datos</h1>
+			<a href="#" class="volver">Volver</a>
 		</div>
 	</section>
 
