@@ -877,6 +877,13 @@ body.mobile {
 	position: static;
 }
 
+.mobile .home{
+	position: relative;
+	top:-125px;
+	padding-top: 125px;
+	background-position: center 290px;
+}
+
 .mobile section.modelos.step2,
 .mobile section.modelos.step2 .container{
 	max-height: 600px;
