@@ -896,3 +896,7 @@ body.mobile {
 .mobile section.confirmacion h1{
 	margin-top: 60px;
 }
+
+.mobile section.ubicacion.step3 h1{
+	margin-top: 50px;
+}
