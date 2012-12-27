@@ -877,4 +877,15 @@ body.mobile {
 	position: static;
 }
 
+.mobile section.modelos.step2,
+.mobile section.modelos.step2 .container{
+	max-height: 600px;
+}
 
+.mobile section.modelos.step3 h1{
+	margin-top: 50px;
+}
+
+.mobile section.confirmacion h1{
+	margin-top: 60px;
+}
