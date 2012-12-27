@@ -557,6 +557,7 @@ section.modelos.step2{
 */
 section.ubicacion.step3{
 	background: url("./assets/background-ubicacion-step3.png") no-repeat bottom center;
+	padding-top: 10px;
 }
 
 .ubicacion.step3 h1{
@@ -611,7 +612,7 @@ section.ubicacion.step3{
  * Por Modelo -> step3
 */
 section.modelos.step3{
-
+	padding-top: 10px;
 }
 
 .modelos.step3 h1{
