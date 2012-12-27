@@ -209,7 +209,7 @@ header h2{
 /*
  * Secciones en General
 */
-section,.container{
+section, section .container{
 	min-height: 650px;
 }
 
@@ -389,6 +389,33 @@ section.modelos.step3{
 	line-height: 24px;
 	color: #8f8f8f;
 	margin: 20px 0 0 85px;
+}
+
+.modelos.step3 form {
+	margin-top: 20px;
+}
+
+.modelos.step3 form > div{
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.modelos.step3 form label{
+	display: block;
+	font-size: 14px;
+	color: #9e9e9e;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+
+
+.modelos.step3 form input[type="submit"]{
+	border: none;
+	background: url("./assets/btn-solicitar-turno.png") no-repeat top left;
+	width: 270px;
+	height: 83px;
+	cursor: pointer;
+	margin-left: 10px;
 }
 
 

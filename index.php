@@ -24,7 +24,7 @@
 		</div>
 	</header>
 
-
+	<!--home-->
 	<section class="home">
 		<div class="container">
 
@@ -40,20 +40,15 @@
 		</div>
 	</section>
 
+	<!-- Ubicacion - Elegir ubicacion -->
 	<section class="ubicacion step2">
 		<div class="container">
 			<h1><span>2.</span> Selecciona la ubicación deseada</h1>
-			<a href="#" class="volver">Volver</a>
+			<a href="#" class="volver" title="lalala">Volver</a>
 		</div>
 	</section>
 
-	<section class="modelos step2">
-		<div class="container">
-			<h1><span>2.</span> Elija el modelo</h1>
-			<a href="#" class="volver">Volver</a>
-		</div>
-	</section>
-
+	<!-- Ubicacion - Elegir modelo -->
 	<section class="ubicacion step3">
 		<div class="container">
 			<h1><span>3.</span> Confirmar vehiculo</h1>
@@ -62,14 +57,57 @@
 		</div>
 	</section>
 
-	<section class="modelos step3">
+	<!-- Modelos - Elegir modelo -->
+	<section class="modelos step2">
 		<div class="container">
-			<h1><span>3.</span> Confirmar turno</h1>
-			<p>Su próximo Peugeot 308 Allure 1.6 C/ Nav lo espera el...</p>
+			<h1><span>2.</span> Elija el modelo</h1>
 			<a href="#" class="volver">Volver</a>
 		</div>
 	</section>
 
+	<!-- Modelos - Elegir ubicacion -->
+	<section class="modelos step3">
+		<div class="container">
+			<h1><span>3.</span> Confirmar turno</h1>
+			<p>Su próximo Peugeot 308 Allure 1.6 C/ Nav lo espera el...</p>
+
+			<form id="confirmar-turno">
+				<div>
+					<label for="lugar">Lugar</label>
+					<select>
+						<option>Pinamar</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="mes">Mes</label>
+					<select>
+						<option>Octubre</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="dia">Día</label>
+					<select>
+						<option>27</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="horario">Horario</label>
+					<select>
+						<option>9:00 - 9:20</option>
+					</select>
+				</div>
+
+				<input type="submit" value=" " title="Solicite turno" />
+			</form>
+
+			<a href="#" class="volver">Volver</a>
+		</div>
+	</section>
+
+	<!-- Confirmacion -->
 	<section class="confirmacion">
 		<div class="container">
 			<h1><span>4.</span> Complete sus datos</h1>
