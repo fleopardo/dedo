@@ -20,22 +20,52 @@
 
 	<?php include("./includes/header.php"); ?>
 
-	<!--home-->
-	<section class="home">
+	<!-- Ubicacion - Elegir ubicacion -->
+	<section class="ubicacion step2">
 		<div class="container">
+			<h1><span>2.</span> Selecciona la ubicación deseada</h1>
 
-			<div class="txt">
-				<h1><span>1.</span> Test drive de verano</h1>
-				<h2>Seleccione una ubicación</h2>
+			<div class="contentMap">
+				<div class="map" id="map">
 
-				<p class="intro">Este verano te invitamos a descubrir nuestros más modernos modelos en distintos puntos estrategicamente ubicados en las costas de Carilo y Pinamar. Para reservar tu turno empeza eligiendo el modelo o ubicación que más interese.</p>
+				</div>
 			</div>
 
-			<p><a href="modelos-step2.php" class="por-modelos">Por modelo</a></p>
-			<p><a href="ubicacion-step2.php" class="por-ubicacion">Por ubicación</a></p>
+			<form id="selecciona-ubicacion" method="GET" action="ubicacion-step3.php">
+				<div>
+					<label for="lugar">Lugar</label>
+					<select>
+						<option>Pinamar</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="mes">Mes</label>
+					<select>
+						<option>Octubre</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="dia">Día</label>
+					<select>
+						<option>27</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="horario">Horario</label>
+					<select>
+						<option>9:00 - 9:20</option>
+					</select>
+				</div>
+
+				<input type="submit" value=" " title="Solicite turno" />
+			</form>
+
+			<a href="index.php" class="volver" title="lalala">Volver</a>
 		</div>
 	</section>
-
 
 </body>
 </html>

@@ -20,19 +20,24 @@
 
 	<?php include("./includes/header.php"); ?>
 
-	<!--home-->
-	<section class="home">
+	<!-- Modelos - Elegir modelo -->
+	<section class="modelos step2">
 		<div class="container">
+			<h1><span>2.</span> Elija el modelo</h1>
+			<form method="GET" action="modelos-step3.php">
+				<fieldset>
+					<div class="row">
+						<select>
+							<option>308 allure</option>
+							<option>207 gti</option>
+							<option>408</option>
+						</select>
+						<input type="submit" value="" title="Confirmar">
+					</div>
+				</fieldset>
+			</form>
 
-			<div class="txt">
-				<h1><span>1.</span> Test drive de verano</h1>
-				<h2>Seleccione una ubicación</h2>
-
-				<p class="intro">Este verano te invitamos a descubrir nuestros más modernos modelos en distintos puntos estrategicamente ubicados en las costas de Carilo y Pinamar. Para reservar tu turno empeza eligiendo el modelo o ubicación que más interese.</p>
-			</div>
-
-			<p><a href="modelos-step2.php" class="por-modelos">Por modelo</a></p>
-			<p><a href="ubicacion-step2.php" class="por-ubicacion">Por ubicación</a></p>
+			<a href="index.php" class="volver">Volver</a>
 		</div>
 	</section>
 

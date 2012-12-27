@@ -20,19 +20,26 @@
 
 	<?php include("./includes/header.php"); ?>
 
-	<!--home-->
-	<section class="home">
+	<!-- Ubicacion - Elegir modelo -->
+	<section class="ubicacion step3">
 		<div class="container">
+			<h1><span>3.</span> Confirmar vehiculo</h1>
+			<p>En el stand de pinamar el lunes 07/01/13 de 9 a 12:30 y de 16:30 a 20:00 tenes disponibles los siguientes vehiculos...</p>
 
-			<div class="txt">
-				<h1><span>1.</span> Test drive de verano</h1>
-				<h2>Seleccione una ubicación</h2>
+			<form method="GET" action="confirmacion.php">
+				<fieldset>
+					<div class="row">
+						<select>
+							<option>308 allure</option>
+							<option>207 gti</option>
+							<option>408</option>
+						</select>
+						<input type="submit" value="" title="Reservar turno">
+					</div>
+				</fieldset>
+			</form>
 
-				<p class="intro">Este verano te invitamos a descubrir nuestros más modernos modelos en distintos puntos estrategicamente ubicados en las costas de Carilo y Pinamar. Para reservar tu turno empeza eligiendo el modelo o ubicación que más interese.</p>
-			</div>
-
-			<p><a href="modelos-step2.php" class="por-modelos">Por modelo</a></p>
-			<p><a href="ubicacion-step2.php" class="por-ubicacion">Por ubicación</a></p>
+			<a href="ubicacion-step2.php" class="volver">Volver</a>
 		</div>
 	</section>
 

@@ -106,6 +106,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	url("../fonts/peugeot_light_v2-webfont.svg#blaimim_-webfont") format("svg");
 }
 */
+
 @font-face {
 	font-family: "peugeot-normal";
 	src: url("../fonts/peugeot_normal_v2-webfont.eot");
@@ -226,6 +227,7 @@ section h1 span{
 section h2{
 	text-transform: uppercase;
 }
+
 
 /*
  * Home
@@ -382,6 +384,21 @@ section.modelos.step2{
 	top: -8px;
 }
 
+.modelos.step2 form{
+	position: absolute;
+	right: 0;
+	bottom: 115px;
+}
+
+.modelos.step2 form input[type="submit"]{
+	border: none;
+	background: url("./assets/btn-confirmar.png") no-repeat top left;
+	width: 215px;
+	height: 83px;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
 
 
 /*
@@ -409,6 +426,15 @@ section.ubicacion.step3{
 	line-height: 24px;
 	color: #8f8f8f;
 	margin: 20px 0 0 85px;
+}
+
+.ubicacion.step3 form input[type="submit"]{
+	border: none;
+	background: url("./assets/btn-reservar-turno.png") no-repeat top left;
+	width: 293px;
+	height: 90px;
+	cursor: pointer;
+	margin-left: 10px;
 }
 
 
@@ -457,7 +483,6 @@ section.modelos.step3{
 	margin-bottom: 8px;
 }
 
-
 .modelos.step3 form input[type="submit"]{
 	border: none;
 	background: url("./assets/btn-solicitar-turno.png") no-repeat top left;
@@ -466,7 +491,6 @@ section.modelos.step3{
 	cursor: pointer;
 	margin-left: 10px;
 }
-
 
 .modelos.step3 .contentMap{
 	width: 280px;
@@ -511,4 +535,26 @@ section.confirmacion{
 	left: -70px;
 }
 
+.confirmacion form input[type="text"]{
+	color: #858585;
+	font-size: 22px;
+	border-radius: 5px;
+	padding: 18px 20px;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #cacaca 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cacaca));
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#cacaca 100%);
+	background: -o-linear-gradient(top,  #ffffff 0%,#cacaca 100%);
+	background: -ms-linear-gradient(top,  #ffffff 0%,#cacaca 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#cacaca 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cacaca',GradientType=0 );
+	border: 1px solid #ccc;
+}
 
+.confirmacion form input[type="submit"]{
+	border: none;
+	background: url("./assets/btn-enviar.png") no-repeat top left;
+	width: 270px;
+	height: 99px;
+	cursor: pointer;
+}

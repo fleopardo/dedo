@@ -20,19 +20,50 @@
 
 	<?php include("./includes/header.php"); ?>
 
-	<!--home-->
-	<section class="home">
+	<!-- Modelos - Elegir ubicacion -->
+	<section class="modelos step3">
 		<div class="container">
+			<h1><span>3.</span> Confirmar turno</h1>
+			<p>Su próximo Peugeot 308 Allure 1.6 C/ Nav lo espera el...</p>
 
-			<div class="txt">
-				<h1><span>1.</span> Test drive de verano</h1>
-				<h2>Seleccione una ubicación</h2>
+			<form id="confirmar-turno" method="GET" action="confirmacion.php">
+				<div>
+					<label for="lugar">Lugar</label>
+					<select>
+						<option>Pinamar</option>
+					</select>
+				</div>
 
-				<p class="intro">Este verano te invitamos a descubrir nuestros más modernos modelos en distintos puntos estrategicamente ubicados en las costas de Carilo y Pinamar. Para reservar tu turno empeza eligiendo el modelo o ubicación que más interese.</p>
+				<div>
+					<label for="mes">Mes</label>
+					<select>
+						<option>Octubre</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="dia">Día</label>
+					<select>
+						<option>27</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="horario">Horario</label>
+					<select>
+						<option>9:00 - 9:20</option>
+					</select>
+				</div>
+
+				<input type="submit" value=" " title="Solicite turno" />
+			</form>
+
+			<div class="contentMap">
+				<div class="map" id="map">
+				</div>
 			</div>
 
-			<p><a href="modelos-step2.php" class="por-modelos">Por modelo</a></p>
-			<p><a href="ubicacion-step2.php" class="por-ubicacion">Por ubicación</a></p>
+			<a href="modelos-step2.php" class="volver">Volver</a>
 		</div>
 	</section>
 
