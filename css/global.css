@@ -215,9 +215,9 @@ header h2{
  * Secciones en General
 */
 
-/*section{
-	margin-bottom: 100px;
-}*/
+section{
+	border: 1px solid red;
+}
 
 section, section .container{
 	min-height: 650px;
@@ -425,11 +425,6 @@ section h2{
  * Por Ubicacion -> Step 2
 */
 
-section.ubicacion.step2,
-section.ubicacion.step2 .container{
-	min-height: 550px;
-}
-
 section.ubicacion.step2{
 	background: url("./assets/background-step2.png") no-repeat bottom center;
 }
@@ -439,7 +434,7 @@ section.ubicacion.step2{
 	line-height: 42px;
 	width: 450px;
 	float: right;
-	margin-top: 100px;
+	margin-top: 200px;
 }
 
 .ubicacion.step2 h1 span{
@@ -454,7 +449,7 @@ section.ubicacion.step2{
 	position: absolute;
 	background: url("./assets/sombra-mapa.png") no-repeat bottom center;
 	left: 0;
-	top: 100px;
+	top: 200px;
 }
 
 .ubicacion.step2 .map{
@@ -515,10 +510,6 @@ section.ubicacion.step2{
 /*
  * Por Modelos -> Step 2
 */
-section.modelos.step2,
-section.modelos.step2 .container{
-	min-height: 550px;
-}
 
 section.modelos.step2{
 	background: url("./assets/background-step2-b.png") no-repeat bottom center;
@@ -529,7 +520,7 @@ section.modelos.step2{
 	line-height: 42px;
 	width: 450px;
 	float: right;
-	margin-top: 65px;
+	margin-top: 165px;
 }
 
 .modelos.step2 h1 span{
@@ -555,7 +546,7 @@ section.modelos.step2{
 }
 
 .modelos.step2 .lista-autos{
-	top: 130px;
+	top: 230px;
 	left: -230px;
 }
 
@@ -574,7 +565,7 @@ section.ubicacion.step3{
 
 .ubicacion.step3 h1{
 	font-size: 31px;
-	margin: 20px 0 0 85px;
+	margin: 120px 0 0 85px;
 }
 
 .ubicacion.step3 h1 span{
@@ -584,7 +575,7 @@ section.ubicacion.step3{
 }
 
 .ubicacion.step3 .lista-autos{
-	top: 150px;
+	top: 140px;
 	left: -230px;
 }
 
@@ -599,7 +590,7 @@ section.ubicacion.step3{
 
 .ubicacion.step3 form{
 	position: absolute;
-	top: 355px;
+	top: 330px;
 	right: 0;
 	z-index: 6;
 }
@@ -629,7 +620,7 @@ section.modelos.step3{
 
 .modelos.step3 h1{
 	font-size: 31px;
-	margin: 30px 0 0 85px;
+	margin: 130px 0 0 85px;
 }
 
 .modelos.step3 h1 span{
@@ -867,10 +858,10 @@ section.confirmacion{
 #content3,
 #content4{
 	display: none;
-	margin-bottom: 150px;
-	padding-top: 125px;
+	/*margin-bottom: 150px;
+	padding-top: 125px;*/
 }
 
 #content2{
-	margin-top: 150px;
+	/*margin-top: 150px;*/
 }

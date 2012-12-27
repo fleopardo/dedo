@@ -20,6 +20,9 @@
 	<script type="text/javascript" src="./js/libs/jquery-ui-1.8.12.custom.min.js"></script>
 	<script type="text/javascript" src="./js/libs/jquery.ui.selectmenu.js"></script>
 	<script type="text/javascript" src="./js/libs/jquery.placeholder.js"></script>
+	<!--google map-->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=es"></script>
+	<!-- -->
 
 </head>
 <body>

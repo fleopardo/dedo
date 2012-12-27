@@ -17,9 +17,6 @@
 	<script type="text/javascript" src="./js/libs/jquery-ui-1.8.12.custom.min.js"></script>
 	<script type="text/javascript" src="./js/libs/jquery.ui.selectmenu.js"></script>
 	<script type="text/javascript" src="./js/libs/jquery.placeholder.js"></script>
-	<!--google map-->
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=es"></script>
-	<!-- -->
 </head>
 <body>
 
@@ -76,6 +73,7 @@
 			<a href="modelos-step2.php" class="volver" data-scroll:anchor="#modelos-step2">Volver</a>
 
 		</div>
+
 
 		<script type="text/javascript" src="./js/modelos-step3.js" class="script"></script>
 

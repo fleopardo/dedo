@@ -4,11 +4,8 @@ $(function(){
 		transferClasses: true
 	});
 
-	
-
-
 	// Inicializacion Google Maps
-	
+
 	var latitudInicial = $('select#lugar-test').find('option:selected').attr('data-lat');
 	var longitudInicial = $('select#lugar-test').find('option:selected').attr('data-long');
 
@@ -20,9 +17,9 @@ $(function(){
 		navigationControl: false,
 		streetViewControl: false
     };
-    
+
     map = new google.maps.Map(document.getElementById('map'), options);
-    
+
 
 
     //creando los markers
@@ -37,14 +34,14 @@ $(function(){
         position: new google.maps.LatLng(latitud, longitud),
         map: map
      });
-     
+
      markers.push(marker);
 
 	})
-	
-	
+
+
 	//moviendo el mapa..
-	
+
 	$('select#lugar-test').bind('change',function(){
 		//infowindow.close();
 		center = new google.maps.LatLng($(this).find('option:selected').attr('data-lat'),$(this).find('option:selected').attr('data-long'));
@@ -52,7 +49,7 @@ $(function(){
 
 		map.setCenter(center);
 	});
-	
+
 
 
 	// Bindeo click a los 2 botones principales
