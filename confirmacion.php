@@ -23,7 +23,7 @@
 
 	<?php include("./includes/header.php"); ?>
 
-	<section class="confirmacion">
+	<section class="section confirmacion">
 		<div class="container">
 			<h1><span>4.</span> Complete sus datos</h1>
 			<a href="#" class="volver">Volver</a>
@@ -144,7 +144,7 @@
 	</section>
 
 	<script type="text/javascript" src="./js/confirmacion.js"></script>
-	
+
 
 
 </body>

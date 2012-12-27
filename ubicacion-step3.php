@@ -24,7 +24,7 @@
 	<?php include("./includes/header.php"); ?>
 
 	<!-- Ubicacion - Elegir modelo -->
-	<section class="ubicacion step3">
+	<section class="section ubicacion step3">
 		<div class="container">
 			<h1><span>3.</span> Confirmar vehiculo</h1>
 			<p>En el stand de pinamar el lunes 07/01/13 de 9 a 12:30 y de 16:30 a 20:00 tenes disponibles los siguientes vehiculos...</p>

@@ -214,6 +214,11 @@ header h2{
 /*
  * Secciones en General
 */
+
+/*section{
+	margin-bottom: 100px;
+}*/
+
 section, section .container{
 	min-height: 650px;
 }
@@ -850,4 +855,17 @@ section.confirmacion{
 
 .confirmacion select.middle{
 	width: 126px;
+}
+
+
+#content2,
+#content3,
+#content4{
+	display: none;
+	margin-bottom: 150px;
+	padding-top: 125px;
+}
+
+#content2{
+	margin-top: 150px;
 }

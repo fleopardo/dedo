@@ -24,7 +24,7 @@
 	<?php include("./includes/header.php"); ?>
 
 	<!-- Ubicacion - Elegir ubicacion -->
-	<section class="ubicacion step2">
+	<section class="section ubicacion step2">
 		<div class="container">
 			<h1><span>2.</span> Selecciona la ubicación deseada</h1>
 

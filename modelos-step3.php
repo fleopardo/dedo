@@ -24,7 +24,7 @@
 	<?php include("./includes/header.php"); ?>
 
 	<!-- Modelos - Elegir ubicacion -->
-	<section class="modelos step3">
+	<section class="section modelos step3">
 		<div class="container">
 			<h1><span>3.</span> Confirmar turno</h1>
 			<p>Su próximo Peugeot 308 Allure 1.6 C/ Nav lo espera el...</p>
