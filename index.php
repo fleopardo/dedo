@@ -44,6 +44,45 @@
 	<section class="ubicacion step2">
 		<div class="container">
 			<h1><span>2.</span> Selecciona la ubicación deseada</h1>
+
+			<div class="contentMap">
+				<div class="map" id="map">
+
+				</div>
+			</div>
+
+			<form id="selecciona-ubicacion">
+				<div>
+					<label for="lugar">Lugar</label>
+					<select>
+						<option>Pinamar</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="mes">Mes</label>
+					<select>
+						<option>Octubre</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="dia">Día</label>
+					<select>
+						<option>27</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="horario">Horario</label>
+					<select>
+						<option>9:00 - 9:20</option>
+					</select>
+				</div>
+
+				<input type="submit" value=" " title="Solicite turno" />
+			</form>
+
 			<a href="#" class="volver" title="lalala">Volver</a>
 		</div>
 	</section>
@@ -53,6 +92,7 @@
 		<div class="container">
 			<h1><span>3.</span> Confirmar vehiculo</h1>
 			<p>En el stand de pinamar el lunes 07/01/13 de 9 a 12:30 y de 16:30 a 20:00 tenes disponibles los siguientes vehiculos...</p>
+
 			<a href="#" class="volver">Volver</a>
 		</div>
 	</section>
@@ -98,6 +138,11 @@
 					<select>
 						<option>9:00 - 9:20</option>
 					</select>
+				</div>
+
+				<div class="contentMap">
+					<div class="map" id="map">
+					</div>
 				</div>
 
 				<input type="submit" value=" " title="Solicite turno" />
