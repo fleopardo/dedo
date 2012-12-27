@@ -669,7 +669,7 @@ section.modelos.step3{
 	position: absolute;
 	background: url("./assets/sombra-mapa.png") no-repeat bottom center;
 	left: 0;
-	top: 208px;
+	top: 230px;
 }
 
 .modelos.step3 .map{
@@ -696,6 +696,43 @@ section.modelos.step3{
 	width: 150px;
 }
 
+.modelos .img-result{
+	width: 648px;
+	height: 309px;
+	position: absolute;
+	z-index: 0;
+	background: #000;
+	right: 0;
+	top: 230px;
+}
+
+.modelos .img-result.p-308{
+	background: url("./assets/confirmar-autos/308.jpg") no-repeat;
+}
+
+.modelos .img-result.p-308cc{
+	background: url(./assets/confirmar-autos/308cc.jpg) no-repeat;
+}
+
+.modelos .img-result.p-308gti{
+	background: url(./assets/confirmar-autos/308gti.jpg) no-repeat;
+}
+
+.modelos .img-result.p-408{
+	background: url(./assets/confirmar-autos/408.jpg) no-repeat;
+}
+
+.modelos .img-result.p-508{
+	background: url(./assets/confirmar-autos/508.jpg) no-repeat;
+}
+
+.modelos .img-result.p-3008{
+	background: url(./assets/confirmar-autos/3008.jpg) no-repeat;
+}
+
+.modelos .img-result.p-rcz{
+	background: url(./assets/confirmar-autos/rcz.jpg) no-repeat;
+}
 
 /*
  * Confirmacion

@@ -66,6 +66,8 @@
 				</div>
 			</div>
 
+			<div class="img-result p-408"></div>
+
 			<a href="modelos-step2.php" class="volver">Volver</a>
 		</div>
 	</section>
