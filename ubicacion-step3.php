@@ -26,6 +26,18 @@
 			<h1><span>3.</span> Confirmar vehiculo</h1>
 			<p>En el stand de pinamar el lunes 07/01/13 de 9 a 12:30 y de 16:30 a 20:00 tenes disponibles los siguientes vehiculos...</p>
 
+			<div class="lista-autos">
+				<ul>
+					<li class="p-rcz"><span class="hide">Peugeot RCZ</span></li>
+					<li class="p-508"><span class="hide">Peugeot 508</span></li>
+					<li class="p-308cc"><span class="hide">Peugeot 308 CC</span></li>
+					<li class="p-308gti"><span class="hide">Peugeot 308 GTI</span></li>
+					<li class="p-308"><span class="hide">Peugeot 308</span></li>
+					<li class="p-408"><span class="hide">Peugeot 408</span></li>
+					<li class="p-3008"><span class="hide">Peugeot 3008</span></li>
+				</ul>
+			</div>
+
 			<form method="GET" action="confirmacion.php">
 				<fieldset>
 					<div class="row">
