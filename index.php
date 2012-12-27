@@ -14,6 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
 
 	<script src="js/libs/jquery.min.js"></script>
+	<script src="js/libs/jquery.easing.1.3.js"></script>
+	<script src="js/libs/jquery.scrollTo.js"></script>
 
 </head>
 <body>
