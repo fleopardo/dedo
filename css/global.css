@@ -15,6 +15,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  * Fonts
 */
 
+/*
 @font-face {
 	font-family: "peugeot-bold-italic";
 	src: url("../fonts/peugeot_bold_italic_v2-webfont.eot");
@@ -104,7 +105,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	url("../fonts/peugeot_light_v2-webfont.ttf") format("truetype"),
 	url("../fonts/peugeot_light_v2-webfont.svg#blaimim_-webfont") format("svg");
 }
-
+*/
 @font-face {
 	font-family: "peugeot-normal";
 	src: url("../fonts/peugeot_normal_v2-webfont.eot");
@@ -141,11 +142,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 */
 
 body{
-	font-family: "din-regular", arial, helvetica, sans-serif;
+	font-family: "peugeot-normal", arial, helvetica, sans-serif;
 	color: #636363;
 	background: #fff;
 	margin-bottom: 50px;
-	padding-top: 125px;
+	padding-top: 115px;
 }
 
 .hide{ display: none;}
@@ -167,6 +168,19 @@ input.placeholder{ color: #373737; }
 	position: relative;
 }
 
+.volver{
+	position: absolute;
+	background: url("./assets/arrow-volver.png") no-repeat top right;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 40px;
+	color: #8F8F8F;
+	padding-right: 58px;
+	right: 0px;
+	bottom: 60px;
+}
+
 header{
 	height: 125px;
 	background: url("./assets/header.png") no-repeat top center;
@@ -174,6 +188,7 @@ header{
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 1000;
 }
 
 header h1 a{
@@ -190,21 +205,65 @@ header h2{
 }
 
 
-section{
-	height: 650px;
+
+/*
+ * Secciones en General
+*/
+section,.container{
+	min-height: 650px;
 }
 
+section h1{
+	position: relative;
+	color: #1e1e26;
+	text-transform: uppercase;
+}
+
+section h1 span{
+	position: absolute;
+}
+
+section h2{
+	text-transform: uppercase;
+}
 
 /*
  * Home
 */
-section.home{
-	background: url("./assets/background-home.png") no-repeat bottom center;
+.home{
+	background: url("./assets/background-home.png") no-repeat center 160px;
+}
+
+.home .txt{
+	width: 620px;
+	float: right;
+}
+
+.home h1{
+	font-size: 48px;
+}
+
+.home h1 span{
+	font-size: 116px;
+	left: -105px;
+	top: -14px;
+}
+
+.home h2{
+	color: #8f8f8f;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin: 12px 0;
+}
+
+.home .intro{
+	color: #636363;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 .home a{
 	font-size: 29px;
-	font-family: "peugeot";
 	color: #8f8f8f;
 	background: url("./assets/arrow-links.png") no-repeat;
 	text-decoration: none;
@@ -217,19 +276,19 @@ section.home{
 	color: #666;
 }
 
+.home a.por-modelos{
+	padding-left: 90px;
+	position: absolute;
+	top: 200px;
+	right: 0;
+}
+
 .home a.por-ubicacion{
 	padding-right: 90px;
 	background-position: right;
 	position: absolute;
-	top: 470px;
+	top: 500px;
 	left: 0;
-}
-
-.home a.por-modelos{
-	padding-left: 90px;
-	position: absolute;
-	top: 150px;
-	right: 0;
 }
 
 
@@ -240,6 +299,42 @@ section.ubicacion.step2{
 	background: url("./assets/background-step2.png") no-repeat bottom center;
 }
 
+.ubicacion.step2 h1{
+	font-size: 40px;
+	line-height: 42px;
+	width: 450px;
+	float: right;
+	margin-top: 200px;
+}
+
+.ubicacion.step2 h1 span{
+	font-size: 113px;
+	left: -105px;
+	top: 19px;
+}
+
+/*
+ * Por Modelos -> Step 2
+*/
+section.modelos.step2{
+	background: url("./assets/background-step2-b.png") no-repeat bottom center;
+}
+
+.modelos.step2 h1{
+	font-size: 40px;
+	line-height: 42px;
+	width: 450px;
+	float: right;
+	margin-top: 200px;
+}
+
+.modelos.step2 h1 span{
+	font-size: 113px;
+	left: -105px;
+	top: -8px;
+}
+
+
 
 /*
  * Por Ubicacion -> step3
@@ -248,13 +343,80 @@ section.ubicacion.step3{
 	background: url("./assets/background-ubicacion-step3.png") no-repeat bottom center;
 }
 
+.ubicacion.step3 h1{
+	font-size: 31px;
+	margin: 70px 0 0 85px;
+}
+
+.ubicacion.step3 h1 span{
+	font-size: 91px;
+	left: -85px;
+	top: -35px;
+}
+
+.ubicacion.step3 p{
+	width: 700px;
+	text-transform: uppercase;
+	font-size: 19px;
+	line-height: 24px;
+	color: #8f8f8f;
+	margin: 20px 0 0 85px;
+}
+
+
+/*
+ * Por Modelo -> step3
+*/
+section.modelos.step3{
+
+}
+
+.modelos.step3 h1{
+	font-size: 31px;
+	margin: 70px 0 0 85px;
+}
+
+.modelos.step3 h1 span{
+	font-size: 91px;
+	left: -85px;
+	top: -35px;
+}
+
+.modelos.step3 p{
+	width: 500px;
+	text-transform: uppercase;
+	font-size: 19px;
+	line-height: 24px;
+	color: #8f8f8f;
+	margin: 20px 0 0 85px;
+}
+
 
 /*
  * Confirmacion
 */
 section.confirmacion{
 	background: url("./assets/background-step4.png") no-repeat top center;
-	height: 860px;
 	position: relative;
 	top: -15px;
+	height: 860px;
 }
+
+.confirmacion .container{
+	min-height: 800px;
+}
+
+.confirmacion h1{
+	font-size: 32px;
+	color: #fff;
+	float: right;
+	margin-top: 100px;
+}
+
+.confirmacion h1 span{
+	font-size: 78px;
+	top: -28px;
+	left: -70px;
+}
+
+
