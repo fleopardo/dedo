@@ -15,6 +15,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
  * Fonts
 */
 
+/*
 @font-face {
 	font-family: "peugeot-bold-italic";
 	src: url("../fonts/peugeot_bold_italic_v2-webfont.eot");
@@ -104,7 +105,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	url("../fonts/peugeot_light_v2-webfont.ttf") format("truetype"),
 	url("../fonts/peugeot_light_v2-webfont.svg#blaimim_-webfont") format("svg");
 }
-
+*/
 @font-face {
 	font-family: "peugeot-normal";
 	src: url("../fonts/peugeot_normal_v2-webfont.eot");
