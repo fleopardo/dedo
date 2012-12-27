@@ -12,8 +12,11 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<!--[if lt IE 9]><script src="js/libs/html5.js"></script><![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
-
+	<link rel="stylesheet" type="text/css" href="css/jquery.ui.selectmenu.css" />
 	<script src="js/libs/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/libs/jquery-ui-1.8.12.custom.min.js"></script>
+	<script type="text/javascript" src="./js/libs/jquery.ui.selectmenu.js"></script>
+	<script type="text/javascript" src="./js/libs/jquery.placeholder.js"></script>
 
 </head>
 <body>
@@ -29,28 +32,28 @@
 			<form id="confirmar-turno" method="GET" action="confirmacion.php">
 				<div>
 					<label for="lugar">Lugar</label>
-					<select>
+					<select class="lugar">
 						<option>Pinamar</option>
 					</select>
 				</div>
 
 				<div>
 					<label for="mes">Mes</label>
-					<select>
+					<select class="mes">
 						<option>Octubre</option>
 					</select>
 				</div>
 
 				<div>
 					<label for="dia">Día</label>
-					<select>
+					<select class="dia">
 						<option>27</option>
 					</select>
 				</div>
 
 				<div>
 					<label for="horario">Horario</label>
-					<select>
+					<select class="hora">
 						<option>9:00 - 9:20</option>
 					</select>
 				</div>
@@ -67,6 +70,7 @@
 		</div>
 	</section>
 
+	<script type="text/javascript" src="./js/modelos-step3.js"></script>
 
 </body>
 </html>

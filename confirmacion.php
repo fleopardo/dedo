@@ -16,6 +16,8 @@
 	<script src="js/libs/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/libs/jquery-ui-1.8.12.custom.min.js"></script>
 	<script type="text/javascript" src="./js/libs/jquery.ui.selectmenu.js"></script>
+	<script type="text/javascript" src="./js/libs/jquery.placeholder.js"></script>
+	
 </head>
 <body>
 
@@ -109,7 +111,7 @@
 					</div><!--right-col-->
 				</fieldset>
 
-				<fieldset>
+				<fieldset class="submit">
 					<div class="left-col">
 						<div class="row">
 							<div class="row">
