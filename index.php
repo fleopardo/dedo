@@ -61,7 +61,7 @@
 
 	<section class="modelos step3">
 		<div class="container">
-			<h1><span>3.</span> Confirmar vehiculo</h1>
+			<h1><span>3.</span> Confirmar turno</h1>
 			<p>Su próximo Peugeot 308 Allure 1.6 C/ Nav lo espera el...</p>
 		</div>
 	</section>
