@@ -24,7 +24,7 @@
 	<?php include("./includes/header.php"); ?>
 
 	<!-- Ubicacion - Elegir modelo -->
-	<section class="section ubicacion step3">
+	<section class="section ubicacion step3" id="ubicacion-step3">
 		<div class="container">
 			<h1><span>3.</span> Confirmar vehiculo</h1>
 			<p>En el stand de pinamar el lunes 07/01/13 de 9 a 12:30 y de 16:30 a 20:00 tenes disponibles los siguientes vehiculos...</p>
@@ -41,10 +41,10 @@
 				</ul>
 			</div>
 
-			<form method="GET" action="confirmacion.php">
+			<form id="form-ubicacion-step3" method="GET" action="confirmacion.php" data-load="content4">
 				<fieldset>
 					<div class="row">
-						<select>
+						<select name="vehiculo">
 							<option>308 allure</option>
 							<option>207 gti</option>
 							<option>408</option>
@@ -54,12 +54,12 @@
 				</fieldset>
 			</form>
 
-			<a href="ubicacion-step2.php" class="volver">Volver</a>
+			<a href="ubicacion-step2.php" class="volver" data-scroll:anchor="#ubicacion-step2">Volver</a>
 		</div>
+
+		<script type="text/javascript" src="./js/ubicacion-step3.js" class="script"></script>
+
 	</section>
-
-	<script type="text/javascript" src="./js/modelos-step3.js"></script>
-
 
 </body>
 </html>

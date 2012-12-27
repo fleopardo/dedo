@@ -12,10 +12,14 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<!--[if lt IE 9]><script src="js/libs/html5.js"></script><![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/global.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.ui.selectmenu.css" />
 
 	<script src="js/libs/jquery.min.js"></script>
 	<script src="js/libs/jquery.easing.1.3.js"></script>
 	<script src="js/libs/jquery.scrollTo.js"></script>
+	<script type="text/javascript" src="./js/libs/jquery-ui-1.8.12.custom.min.js"></script>
+	<script type="text/javascript" src="./js/libs/jquery.ui.selectmenu.js"></script>
+	<script type="text/javascript" src="./js/libs/jquery.placeholder.js"></script>
 
 </head>
 <body>
@@ -23,7 +27,7 @@
 	<?php include("./includes/header.php"); ?>
 
 	<!--home-->
-	<section class="home">
+	<section class="home" id="home">
 		<div class="container">
 
 			<div class="txt">

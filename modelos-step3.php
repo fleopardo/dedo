@@ -24,36 +24,36 @@
 	<?php include("./includes/header.php"); ?>
 
 	<!-- Modelos - Elegir ubicacion -->
-	<section class="section modelos step3">
+	<section class="section modelos step3" id="modelos-step3">
 		<div class="container">
 			<h1><span>3.</span> Confirmar turno</h1>
-			<p>Su próximo Peugeot 308 Allure 1.6 C/ Nav lo espera el...</p>
+			<p>Su próximo Peugeot <?= $_GET["vehiculo"]; ?> lo espera el...</p>
 
-			<form id="confirmar-turno" method="GET" action="confirmacion.php">
+			<form id="form-modelos-step3" method="GET" action="confirmacion.php" data-load="content4">
 				<div>
 					<label for="lugar">Lugar</label>
-					<select class="lugar">
+					<select name="lugar" id="lugar" class="lugar">
 						<option>Pinamar</option>
 					</select>
 				</div>
 
 				<div>
 					<label for="mes">Mes</label>
-					<select class="mes">
+					<select name="mes" id="dia" class="mes">
 						<option>Octubre</option>
 					</select>
 				</div>
 
 				<div>
 					<label for="dia">Día</label>
-					<select class="dia">
+					<select name="dia" id="dia" class="dia">
 						<option>27</option>
 					</select>
 				</div>
 
 				<div>
 					<label for="horario">Horario</label>
-					<select class="hora">
+					<select name="hora" id="hora" class="hora">
 						<option>9:00 - 9:20</option>
 					</select>
 				</div>
@@ -66,11 +66,12 @@
 				</div>
 			</div>
 
-			<a href="modelos-step2.php" class="volver">Volver</a>
+			<a href="modelos-step2.php" class="volver" data-scroll:anchor="#modelos-step2">Volver</a>
 		</div>
-	</section>
 
-	<script type="text/javascript" src="./js/modelos-step3.js"></script>
+		<script type="text/javascript" src="./js/modelos-step3.js" class="script"></script>
+
+	</section>
 
 </body>
 </html>

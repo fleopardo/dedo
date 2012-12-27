@@ -358,6 +358,11 @@ section h2{
 	background: url("./assets/background-home.png") no-repeat center 160px;
 }
 
+.home.margin-for-scrollto{
+	padding-top: 115px;
+	background-position: center 260px;
+}
+
 .home .txt{
 	width: 620px;
 	float: right;

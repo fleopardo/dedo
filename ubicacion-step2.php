@@ -24,7 +24,7 @@
 	<?php include("./includes/header.php"); ?>
 
 	<!-- Ubicacion - Elegir ubicacion -->
-	<section class="section ubicacion step2">
+	<section class="section ubicacion step2" id="ubicacion-step2">
 		<div class="container">
 			<h1><span>2.</span> Selecciona la ubicación deseada</h1>
 
@@ -34,31 +34,31 @@
 				</div>
 			</div>
 
-			<form id="selecciona-ubicacion" method="GET" action="ubicacion-step3.php">
+			<form id="form-ubicacion-step2" method="GET" action="ubicacion-step3.php" data-load="content3">
 				<div>
 					<label for="lugar">Lugar</label>
-					<select class="lugar">
+					<select name="lugar" id="lugar" class="lugar">
 						<option>Pinamar</option>
 					</select>
 				</div>
 
 				<div>
 					<label for="mes">Mes</label>
-					<select class="mes">
+					<select name="mes" id="mes" class="mes">
 						<option>Octubre</option>
 					</select>
 				</div>
 
 				<div>
 					<label for="dia">Día</label>
-					<select class="dia">
+					<select name="dia" id="dia" class="dia">
 						<option>27</option>
 					</select>
 				</div>
 
 				<div>
 					<label for="horario">Horario</label>
-					<select class="hora">
+					<select name="hora" id="hora" class="hora">
 						<option>9:00 - 9:20</option>
 					</select>
 				</div>
@@ -66,11 +66,11 @@
 				<input type="submit" value=" " title="Solicite turno" />
 			</form>
 
-			<a href="index.php" class="volver" title="lalala">Volver</a>
+			<a href="index.php" class="volver" title="Volver" data-scroll:anchor="#home">Volver</a>
 		</div>
-	</section>
 
-	<script type="text/javascript" src="./js/ubicacion-step2.js"></script>
+		<script type="text/javascript" src="./js/ubicacion-step2.js" class="script"></script>
+	</section>
 
 </body>
 </html>

@@ -17,16 +17,16 @@
 	<script type="text/javascript" src="./js/libs/jquery-ui-1.8.12.custom.min.js"></script>
 	<script type="text/javascript" src="./js/libs/jquery.ui.selectmenu.js"></script>
 	<script type="text/javascript" src="./js/libs/jquery.placeholder.js"></script>
-	
+
 </head>
 <body>
 
 	<?php include("./includes/header.php"); ?>
 
-	<section class="section confirmacion">
+	<section class="section confirmacion" id="confirmacion">
 		<div class="container">
 			<h1><span>4.</span> Complete sus datos</h1>
-			<a href="#" class="volver">Volver</a>
+
 			<form action="" method="">
 				<fieldset class="clearfix">
 					<div class="left-col">
@@ -136,16 +136,16 @@
 						</div>
 					</div><!--right-col-->
 
-					<input type="submit" value="" title="Enviar" />
+					<input type="submit" value="" title="Enviar"/>
 				</fieldset>
 			</form>
-
 		</div>
+
+		<a href="#" class="volver" data-scroll:anchor="#content3">Volver</a>
+
+		<script type="text/javascript" src="./js/confirmacion.js" class="script"></script>
+
 	</section>
-
-	<script type="text/javascript" src="./js/confirmacion.js"></script>
-
-
 
 </body>
 </html>

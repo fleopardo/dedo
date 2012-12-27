@@ -24,7 +24,7 @@
 	<?php include("./includes/header.php"); ?>
 
 	<!-- Modelos - Elegir modelo -->
-	<section class="section modelos step2">
+	<section class="section modelos step2" id="modelos-step2">
 		<div class="container">
 			<h1><span>2.</span> Elija el modelo</h1>
 
@@ -40,10 +40,10 @@
 				</ul>
 			</div>
 
-			<form method="GET" action="modelos-step3.php">
+			<form id="form-modelos-step2" method="GET" action="modelos-step3.php" data-load="content3">
 				<fieldset>
 					<div class="row">
-						<select>
+						<select name="vehiculo">
 							<option>308 allure</option>
 							<option>207 gti</option>
 							<option>408</option>
@@ -53,11 +53,11 @@
 				</fieldset>
 			</form>
 
-			<a href="index.php" class="volver">Volver</a>
+			<a href="index.php" class="volver" data-scroll:anchor="#home">Volver</a>
 		</div>
-	</section>
 
-	<script type="text/javascript" src="./js/modelos-step2.js"></script>
+		<script type="text/javascript" src="./js/modelos-step2.js" class="script"></script>
+	</section>
 
 </body>
 </html>
