@@ -173,30 +173,30 @@
 				<fieldset>
 					<div class="left-col">
 						<div class="row">
-							<input type="text" placeholder="Nombre y Apellido" id="" />
+							<input type="text" placeholder="Nombre y Apellido" id="" tabindex="1" />
 						</div>
 						<div class="row">
-							<input type="text" placeholder="Email" id="" />
+							<input type="text" placeholder="Email" id="" tabindex="3" />
 						</div>
 						<div class="row">
-							<input type="text" placeholder="Nro de licencia de conducir" id="" />
+							<input type="text" placeholder="Nro de licencia de conducir" id="" tabindex="7" />
 						</div>
 						<div class="row">
-							<select>
+							<select tabindex="11">
 								<option>Provincia</option>
 								<option>Buenos Aires</option>
 								<option>Mendoza</option>
 							</select>
 						</div>
 						<div class="row">
-							<input type="text" placeholder="Teléfono móvil" id="" />
+							<input type="text" placeholder="Teléfono móvil" id="" tabindex="13" />
 						</div>
 					</div>
 					<div class="right-col">
 
 						<div class="row">
 							<div class="row">
-								<select>
+								<select tabindex="2">
 									<option>Sexo</option>
 									<option>Femenino</option>
 									<option>Masculino</option>
@@ -207,17 +207,17 @@
 						<div class="row select-comp">
 							<div class="clearfix">
 								<label for="dia-nacimiento">Nacimiento</label>
-								<select id="dia-nacimiento">
+								<select id="dia-nacimiento" tabindex="4">
 									<option>Día</option>
 									<option>1</option>
 									<option>2</option>
 								</select>
-								<select id="mes-nacimiento">
+								<select id="mes-nacimiento" tabindex="5">
 									<option>Mes</option>
 									<option>Enero</option>
 									<option>Febrero</option>
 								</select>
-								<select id="ano-nacimiento">
+								<select id="ano-nacimiento" tabindex="6">
 									<option>A&ntilde;o</option>
 									<option>1930</option>
 									<option>1931</option>
@@ -225,17 +225,17 @@
 							</div>
 							<div class="clearfix">
 								<label for="vencimiento">Vencimiento</label>
-								<select id="dia-vencimiento">
+								<select id="dia-vencimiento" tabindex="8">
 									<option>Día</option>
 									<option>1</option>
 									<option>2</option>
 								</select>
-								<select id="mes-vencimiento">
+								<select id="mes-vencimiento" tabindex="9">
 									<option>Mes</option>
 									<option>Enero</option>
 									<option>Febrero</option>
 								</select>
-								<select id="ano-vencimiento">
+								<select id="ano-vencimiento" tabindex="10">
 									<option>A&ntilde;o</option>
 									<option>1930</option>
 									<option>1931</option>
@@ -244,7 +244,7 @@
 						</div>
 
 						<div class="row">
-							<input type="text" placeholder="Localidad" id="" />
+							<input type="text" placeholder="Localidad" id="" tabindex="12" />
 						</div>
 					</div><!--right-col-->
 				</fieldset>
@@ -252,13 +252,13 @@
 				<fieldset>
 					<div class="left-col">
 						<div class="row">
-							<input type="text" placeholder="Nombre y Apellido" id="" />
+							<input type="text" placeholder="Modelo a testear" id="" tabindex="14" />
 						</div>
 					</div>
 
 					<div class="right-col">
 						<div class="row">
-							<input type="text" placeholder="Localidad" id="" />
+							<input type="text" placeholder="Centro Turístico" id="" tabindex="15" />
 						</div>
 					</div><!--right-col-->
 
