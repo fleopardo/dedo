@@ -72,6 +72,8 @@ $(function(){
 		//Me guardo el Auto elegido
 		var query = "?" + that.serialize();
 
+		var speed = speed = (isiPad || isMobile.any())? 0 : 1000;
+
 		//Llamo al ajax y cargo la seccion adentro del $(container)
 		$(container).load(section + query + " .section",function(response,status,xhr){
 
@@ -84,7 +86,7 @@ $(function(){
 
        		//Muevo la pantalla hasta la seccion cargada
 			$.scrollTo.window().queue([]).stop();
-			$.scrollTo(container, {speed: 1000, easing:'easeOutExpo'});
+			$.scrollTo(container, {speed: speed, easing:'easeOutExpo'});
 
 		});
 

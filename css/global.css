@@ -862,3 +862,19 @@ section.confirmacion{
 #content2{
 	/*margin-top: 150px;*/
 }
+
+
+
+/*
+ * For mobiles
+*/
+
+body.mobile {
+	padding-top: 0;
+}
+
+.mobile header{
+	position: static;
+}
+
+
