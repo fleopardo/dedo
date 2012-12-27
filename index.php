@@ -27,10 +27,13 @@
 
 	<section class="home">
 		<div class="container">
-			<h1>1. TEST DRIVE DE VERANO</h1>
-			<h2>SELECCIONE UBICACIÓN O MODELO</h2>
 
-			<p>Este verano te invitamos a descubrir nuestros más modernos modelos en distintos puntos estrategicamente ubicados en las costas de Carilo y Pinamar. Para reservar tu turno empeza eligiendo el modelo o ubicación que más interese.</p>
+			<div class="txt">
+				<h1><span>1.</span> Test drive de verano</h1>
+				<h2>Seleccione una ubicación</h2>
+
+				<p class="intro">Este verano te invitamos a descubrir nuestros más modernos modelos en distintos puntos estrategicamente ubicados en las costas de Carilo y Pinamar. Para reservar tu turno empeza eligiendo el modelo o ubicación que más interese.</p>
+			</div>
 
 			<p><a href="#" class="por-modelos">Por modelo</a></p>
 			<p><a href="#" class="por-ubicacion">Por ubicación</a></p>
@@ -39,20 +42,33 @@
 
 	<section class="ubicacion step2">
 		<div class="container">
-			<h1>2. SELECCIONA LA UBICACIÓN DESEADA</h1>
+			<h1><span>2.</span> Selecciona la ubicación deseada</h1>
+		</div>
+	</section>
+
+	<section class="modelos step2">
+		<div class="container">
+			<h1><span>2.</span> Elija el modelo</h1>
 		</div>
 	</section>
 
 	<section class="ubicacion step3">
 		<div class="container">
-			<h1>3. CONFIRMAR VEHICULO</h1>
-			<p>EN EL STAND PINAMAR EL LUNES 07/01/13 de 9 a 12:30 y de 16:30 a 20:00 Tenes DISPONIBLEs LOS SIGUIENTES VEHICULOS....</p>
+			<h1><span>3.</span> Confirmar vehiculo</h1>
+			<p>En el stand de pinamar el lunes 07/01/13 de 9 a 12:30 y de 16:30 a 20:00 tenes disponibles los siguientes vehiculos...</p>
+		</div>
+	</section>
+
+	<section class="modelos step3">
+		<div class="container">
+			<h1><span>3.</span> Confirmar vehiculo</h1>
+			<p>Su próximo Peugeot 308 Allure 1.6 C/ Nav lo espera el...</p>
 		</div>
 	</section>
 
 	<section class="confirmacion">
 		<div class="container">
-			<h1>4. Complete sus datos</h1>
+			<h1><span>4.</span> Complete sus datos</h1>
 		</div>
 	</section>
 
