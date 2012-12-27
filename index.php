@@ -33,11 +33,16 @@
 				<p class="intro">Este verano te invitamos a descubrir nuestros más modernos modelos en distintos puntos estrategicamente ubicados en las costas de Carilo y Pinamar. Para reservar tu turno empeza eligiendo el modelo o ubicación que más interese.</p>
 			</div>
 
-			<p><a href="modelos-step2.php" class="por-modelos">Por modelo</a></p>
-			<p><a href="ubicacion-step2.php" class="por-ubicacion">Por ubicación</a></p>
+			<p><a href="modelos-step2.php" class="link por-modelos" data-load="content2">Por modelo</a></p>
+			<p><a href="ubicacion-step2.php" class="link por-ubicacion" data-load="content2">Por ubicación</a></p>
 		</div>
 	</section>
 
+	<div id="content2"></div>
+	<div id="content3"></div>
+	<div id="content4"></div>
+
+	<script src="js/home.js"></script>
 
 </body>
 </html>

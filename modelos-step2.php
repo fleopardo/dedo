@@ -21,7 +21,7 @@
 	<?php include("./includes/header.php"); ?>
 
 	<!-- Modelos - Elegir modelo -->
-	<section class="modelos step2">
+	<section class="section modelos step2">
 		<div class="container">
 			<h1><span>2.</span> Elija el modelo</h1>
 
