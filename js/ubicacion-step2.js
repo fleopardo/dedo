@@ -24,7 +24,7 @@ $(function(){
 		//Me guardo el Auto elegido
 		var query = "?" + that.serialize();
 
-		var speed = speed = (isiPad)? 0 : 1000;
+		var speed = speed = (isiPad || isMobile.any())? 0 : 1000;
 
 		//Llamo al ajax y cargo la seccion adentro del $(container)
 		$(container).load(section + query + " .section",function(response,status,xhr){
