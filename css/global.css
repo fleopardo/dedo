@@ -351,7 +351,7 @@ section h2{
  * Home
 */
 .home{
-	background: url("./assets/background-home.png") no-repeat center 160px;
+	background: url("./assets/background-home-chico.png") no-repeat center 160px;
 }
 
 .home.margin-for-scrollto{
@@ -365,11 +365,11 @@ section h2{
 }
 
 .home h1{
-	font-size: 48px;
+	font-size: 44px;
 }
 
 .home h1 span{
-	font-size: 116px;
+	font-size: 112px;
 	left: -105px;
 	top: -14px;
 }
@@ -383,7 +383,7 @@ section h2{
 
 .home .intro{
 	color: #636363;
-	font-size: 16px;
+	font-size: 15px;
 	line-height: 20px;
 }
 
@@ -404,7 +404,7 @@ section h2{
 .home a.por-modelos{
 	padding-left: 90px;
 	position: absolute;
-	top: 200px;
+	top: 180px;
 	right: 0;
 }
 
@@ -412,7 +412,7 @@ section h2{
 	padding-right: 90px;
 	background-position: right;
 	position: absolute;
-	top: 500px;
+	top: 430px;
 	left: 0;
 }
 
@@ -528,7 +528,7 @@ section.modelos.step2{
 .modelos.step2 form{
 	position: absolute;
 	right: 0;
-	bottom: 115px;
+	bottom: 95px;
 	z-index: 6;
 }
 
@@ -539,6 +539,8 @@ section.modelos.step2{
 	height: 83px;
 	cursor: pointer;
 	margin-left: 10px;
+	position: relative;
+	top: -27px;
 }
 
 .modelos.step2 .lista-autos{
@@ -548,6 +550,7 @@ section.modelos.step2{
 
 .modelos.step2 select{
 	width: 420px;
+
 }
 
 
@@ -632,11 +635,11 @@ section.modelos.step3{
 	font-size: 19px;
 	line-height: 24px;
 	color: #8f8f8f;
-	margin: 20px 0 0 85px;
+	margin: 5px 0 0 85px;
 }
 
 .modelos.step3 form {
-	margin-top: 20px;
+	margin-top: 15px;
 }
 
 .modelos.step3 form > div{
@@ -659,6 +662,8 @@ section.modelos.step3{
 	height: 83px;
 	cursor: pointer;
 	margin-left: 10px;
+	position: relative;
+	top: 5px;
 }
 
 .modelos.step3 .contentMap{
@@ -667,7 +672,7 @@ section.modelos.step3{
 	position: absolute;
 	background: url("./assets/sombra-mapa.png") no-repeat bottom center;
 	left: 0;
-	top: 230px;
+	top: 205px;
 }
 
 .modelos.step3 .map{
@@ -701,35 +706,39 @@ section.modelos.step3{
 	z-index: 0;
 	background: #000;
 	right: 0;
-	top: 230px;
+	top: 195px;
 }
 
-.modelos .img-result.p-308{
+.modelos.step3 .img-result.p-308{
 	background: url("./assets/confirmar-autos/308.jpg") no-repeat;
 }
 
-.modelos .img-result.p-308cc{
+.modelos.step3 .img-result.p-308cc{
 	background: url(./assets/confirmar-autos/308cc.jpg) no-repeat;
 }
 
-.modelos .img-result.p-308gti{
+.modelos.step3 .img-result.p-308gti{
 	background: url(./assets/confirmar-autos/308gti.jpg) no-repeat;
 }
 
-.modelos .img-result.p-408{
+.modelos.step3 .img-result.p-408{
 	background: url(./assets/confirmar-autos/408.jpg) no-repeat;
 }
 
-.modelos .img-result.p-508{
+.modelos.step3 .img-result.p-508{
 	background: url(./assets/confirmar-autos/508.jpg) no-repeat;
 }
 
-.modelos .img-result.p-3008{
+.modelos.step3 .img-result.p-3008{
 	background: url(./assets/confirmar-autos/3008.jpg) no-repeat;
 }
 
-.modelos .img-result.p-rcz{
+.modelos.step3 .img-result.p-rcz{
 	background: url(./assets/confirmar-autos/rcz.jpg) no-repeat;
+}
+
+.modelos.step3 .volver{
+	bottom: 160px
 }
 
 /*
@@ -750,8 +759,8 @@ section.confirmacion{
 	font-size: 32px;
 	color: #fff;
 	float: right;
-	margin-top: 100px;
-	margin-bottom: 30px;
+	margin-top: 114px;
+	margin-bottom: 22px;
 }
 
 .confirmacion h1 span{
@@ -802,7 +811,7 @@ section.confirmacion{
 	font-size: 18px;
 	border-radius: 5px;
 	width: 420px;
-	height: 59px;
+	height: 50px;
 	padding: 0 20px;
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ffffff 0%, #cacaca 100%);
