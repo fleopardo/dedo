@@ -1,0 +1,15 @@
+{
+	"name": "General",
+	"description": "Plugin para general para peugeot",
+
+	"author": "Sebastian Regueira",
+	"authorEmail": "regueira@gmail.com",
+	"authorUrl": "http://sregueira.com.ar",
+
+	"dependencies": {
+		"plugins": [
+			"acl",
+			"extensions"
+		]
+	}
+}

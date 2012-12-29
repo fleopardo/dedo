@@ -1,0 +1,25 @@
+{
+    "Site": {
+        "acl_plugin": "Acl",
+        "email": "you@your-site.com",
+        "feed_url": "",
+        "locale": "eng",
+        "status": 1,
+        "tagline": "Peugeot",
+        "theme": "",
+        "timezone": 0,
+        "title": "Peugeot"
+    },
+    "Hook": {
+        "bootstraps": "Settings,Users,General,Emails,Meta"
+    },
+    "Meta": {
+        "description": "Peugeot",
+        "generator": "Croogo - Content Management System",
+        "keywords": "Peugeot",
+        "robots": "index, follow"
+    },
+    "Croogo": {
+        "version": "1.4.3\n"
+    }
+}

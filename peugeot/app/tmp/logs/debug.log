@@ -1,0 +1,435 @@
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: cookie in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 467]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 467
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 473]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 473
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 506]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 506
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: cookie in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 467]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 467
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 473]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 473
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 506]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 506
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: cookie in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 467]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 467
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 473]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 473
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 506]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 506
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: cookie in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 467]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 467
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 473]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 473
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:54:34 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 506]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 506
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::write() - CORE/Cake/Model/Datasource/CakeSession.php, line 397
+SessionComponent::setFlash() - CORE/Cake/Controller/Component/SessionComponent.php, line 127
+InstallController::_generateAssets() - APP/Plugin/Install/Controller/InstallController.php, line 95
+InstallController::beforeFilter() - APP/Plugin/Install/Controller/InstallController.php, line 81
+call_user_func - [internal], line ??
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 247
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 669
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 183
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:28 Notice: Notice (8): Undefined index: cookie in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 467]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 467
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:28 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 473]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 473
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:28 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 506]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 506
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: cookie in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 467]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 467
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 473]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 473
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 506]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 506
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: cookie in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 467]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 467
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 473]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 473
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 506]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 506
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: cookie in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 467]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 467
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 473]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 473
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 506]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 506
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: cookie in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 467]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 467
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 473]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 473
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+
+2012-12-09 19:57:36 Notice: Notice (8): Undefined index: timeout in [/home/sebastian/www/croogo/lib/Cake/Model/Datasource/CakeSession.php, line 506]
+Trace:
+CakeSession::_configureSession() - CORE/Cake/Model/Datasource/CakeSession.php, line 506
+CakeSession::start() - CORE/Cake/Model/Datasource/CakeSession.php, line 188
+CakeSession::read() - CORE/Cake/Model/Datasource/CakeSession.php, line 358
+SessionHelper::read() - CORE/Cake/View/Helper/SessionHelper.php, line 44
+LayoutHelper::sessionFlash() - APP/View/Helper/LayoutHelper.php, line 215
+include - APP/Plugin/Install/View/Layouts/install.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 945
+View::_render() - CORE/Cake/View/View.php, line 907
+View::renderLayout() - CORE/Cake/View/View.php, line 532
+View::render() - CORE/Cake/View/View.php, line 476
+Controller::render() - CORE/Cake/Controller/Controller.php, line 955
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
+[main] - APP/webroot/index.php, line 96
+

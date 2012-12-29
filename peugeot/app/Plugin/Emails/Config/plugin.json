@@ -1,0 +1,15 @@
+{
+	"name": "Emails",
+	"description": "Habilita el sistema de envío de emails.",
+
+	"author": "Sebastián Regueira",
+	"authorEmail": "regueira@gmail.com",
+	"authorUrl": "http://www.sregueira.com",
+
+	"dependencies": {
+		"plugins": [
+			"acl",
+			"extensions"
+			]
+		}
+}

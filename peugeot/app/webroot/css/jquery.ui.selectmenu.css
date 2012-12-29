@@ -1,0 +1,149 @@
+/* Selectmenu
+----------------------------------*/
+.ui-selectmenu {
+    
+    border-radius: 5px;
+    height: 59px;
+    background: #ffffff;
+ /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffffff 0%, #cacaca 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cacaca));
+    background: -webkit-linear-gradient(top,  #ffffff 0%,#cacaca 100%);
+    background: -o-linear-gradient(top,  #ffffff 0%,#cacaca 100%);
+    background: -ms-linear-gradient(top,  #ffffff 0%,#cacaca 100%);
+    background: linear-gradient(to bottom,  #ffffff 0%,#cacaca 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cacaca',GradientType=0 );
+    border: 1px solid #ccc;
+    display: block;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    text-decoration: none;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.ui-selectmenu-icon {
+    background: url(./assets/arrow-select.png) no-repeat;
+    position: absolute;
+    right: 12px;
+    top: 25px;
+    width: 15px;
+    height: 11px;
+}
+
+.ui-selectmenu-menu {
+    background: #f0f1ed;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+    display: none;
+    overflow: auto;
+    z-index: 1005;
+} /* z-index: 1005 to make selectmenu work with dialog */
+.ui-selectmenu-open {
+    display: block;
+}
+
+.ui-selectmenu-menu-popup {
+    margin-top: -1px;
+}
+
+.ui-selectmenu-menu-dropdown {;
+}
+
+.ui-selectmenu-menu li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-top: 1px dotted transparent;
+    border-bottom: 1px dotted transparent;
+    border-right-width: 0 !important;
+    border-left-width: 0 !important;
+    font-weight: normal !important;
+}
+
+.ui-selectmenu-menu li a,.ui-selectmenu-status {
+    color: #333;
+    line-height: 26px;
+    display: block;
+    padding: 0 10px;
+    outline: none;
+    text-decoration: none;
+}
+
+.ui-selectmenu-menu li.ui-state-disabled a {
+    cursor: default;
+}
+
+.ui-selectmenu-menu li.ui-selectmenu-hasIcon a,
+.ui-selectmenu-hasIcon .ui-selectmenu-status {
+    padding-left: 20px;
+    position: relative;
+    margin-left: 5px;
+}
+
+.ui-selectmenu-menu li .ui-icon, .ui-selectmenu-status .ui-icon {
+    position: absolute;
+    top: 1em;
+    margin-top: -8px;
+    left: 0;
+}
+
+.ui-selectmenu-status {
+    line-height: 59px;
+    padding: 0 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.ui-selectmenu-open li.ui-selectmenu-item-focus a {
+    background: #f7f7f5;
+}
+
+.ui-selectmenu-open li.ui-selectmenu-item-selected {;
+}
+
+.ui-selectmenu-menu li span,.ui-selectmenu-status span {
+    display: block;
+    margin-bottom: .2em;
+}
+
+.ui-selectmenu-menu li .ui-selectmenu-item-header {
+    font-weight: bold;
+}
+
+.ui-selectmenu-menu li .ui-selectmenu-item-content {;
+}
+
+.ui-selectmenu-menu li .ui-selectmenu-item-footer {
+    opacity: .8;
+}
+/* for optgroups */
+.ui-selectmenu-menu .ui-selectmenu-group {
+    font-size: 1em;
+}
+
+.ui-selectmenu-menu .ui-selectmenu-group .ui-selectmenu-group-label {
+    line-height: 1.4em;
+    display: block;
+    padding: .6em .5em 0;
+    font-weight: bold;
+}
+
+.ui-selectmenu-menu .ui-selectmenu-group ul {
+    margin: 0;
+    padding: 0;
+}
+/* IE6 workaround (dotted transparent borders) */
+* html .ui-selectmenu-menu li {
+    border-color: pink;
+    filter: chroma(color=pink);
+    width: 100%;
+}
+
+* html .ui-selectmenu-menu li a {
+    position: relative;
+}
