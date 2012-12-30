@@ -21,7 +21,7 @@
 						<?php
 						echo $this->Form->input('modelo_id', array(
 							'div' 		=> false,
-							'label' 	=> false
+							'label' 	=> false,
 							'id'		=> 'ModeloModeloId'
 						));
 						echo $this->Form->submit('', array('div' => false));
