@@ -11,6 +11,7 @@ $(function(){
 	//Validacion del formulario
 	$("#confirmacion form").on("submit",function(event){
 
+		/**
 		event.preventDefault();
 		event.stopPropagation();
 
@@ -19,74 +20,72 @@ $(function(){
 		var name = $('#TurnoNombre');
 		var email = $('#TurnoEmail');
 		var sexo = $("#TurnoSexo");
-		var nacimientoDia = $("#dia-nacimientoDay");
-		var nacimientoMes = $("#dia-nacimientoMonth");
-		var nacimientoAno = $("#dia-nacimientoYear");
 		var licencia = $('#TurnoLicencia');
-		var licenciaDia = $('#dia-vencimientoDay');
-		var licenciaMes = $('#dia-vencimientoMonth');
-		var licenciaAnio = $('#dia-vencimientoYear');
-
-		var email = $('#email');
-		var email = $('#email');
-		var email = $('#email');
-		var email = $('#email');
-		var email = $('#email');
-		var telefono = $('#telefono');
-		var message = $('#message');
-
-		/*
-		var nameIngresado = $('#name').val();
-		var emailIngresado = $('#email').val();
-		var telefonoIngresado = $('#telefono').val();
-		var messageIngresado = $('#message').val();*/
-
+		var provincia = $('#TurnoProvincia');
+		var localidad = $('#TurnoLocalidad');
+		var telefono = $('#TurnoTelefono');
 		var error = false;
 		var errorName = false;
 		var errorEmail = false;
+		var errorSexo = false;
+		var errorLicencia = false;
+		var errorProvincia = false;
+		var errorLocalidad = false;
 		var errorTelefono = false;
-		var errorMessage = false;
+
 
 		//valido nombre
 		if(!(isNaN(name.val())) || name.val() == null || name.val().length == 0 || /^\s+$/.test(name.val()) || name.val() == name.attr("placeholder")) {
 			error = true;
 			errorName = true;
-			name.addClass("error");
+			name.parents(".rows").addClass("error");
 		}else{
-			name.removeClass('error');
+			name.parents(".rows").removeClass('error');
 		}
 
 		//valido email
 		if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.val())) || email.val() == email.attr("placeholder")) {
 			error = true;
 			errorEmail = true;
-			email.addClass("error");
+			email.parents(".rows").addClass("error");
 		}else{
-			email.removeClass('error');
+			email.parents(".rows").removeClass('error');
 		}
 
-		if(telefono.val() == null || telefono.val() == 0 || telefono.val() == "" ){
-			//puede estar vacio
-			telefono.removeClass('error');
-		}else{
-			//Si tiene datos los valido
-			if( isNaN(telefono.val()) || /^\s+$/.test(telefono.val())) {
-				error = true;
-				errorTelefono = true;
-				telefono.addClass("error");
-			}else{
-				telefono.removeClass('error');
-			}
-		}
+		//Valido SEXO
 
-		//valido consulta
-		if(message.val().length <= 10) {
+		//Valido telefono
+		if( telefono.val() == null || telefono.val() == 0 || telefono.val() == "" || isNaN(telefono.val()) || /^\s+$/.test(telefono.val())) {
 			error = true;
-			errorMessage = true;
-			message.addClass("error");
+			errorTelefono = true;
+			telefono.parents(".rows").addClass("error");
 		}else{
-			message.removeClass('error');
+			telefono.parents(".rows").removeClass('error');
 		}
+
+
+		//Valido licencia
+		if( licencia.val() == null || licencia.val() == 0 || licencia.val() == "" || isNaN(licencia.val()) || /^\s+$/.test(licencia.val())) {
+			error = true;
+			errorLicencia = true;
+			licencia.parents(".rows").addClass("error");
+		}else{
+			licencia.parents(".rows").removeClass('error');
+		}
+
+
+		//Valido provincia
+
+		//Valido localidad
+		if(!(isNaN(localidad.val())) || localidad.val() == null || localidad.val().length == 0 || /^\s+$/.test(localidad.val()) || localidad.val() == localidad.attr("placeholder")) {
+			error = true;
+			errorName = true;
+			localidad.parents(".rows").addClass("error");
+		}else{
+			localidad.parents(".rows").removeClass('error');
+		}
+
+
 
 
 		//Si hubo errores
@@ -95,6 +94,7 @@ $(function(){
 
 		}else{
 
+			// mando el mail
 			$.ajax({
 				type: 'POST',
 				data: 'name='+nameIngresado+'&email='+emailIngresado+'&Telefono='+telefonoIngresado+'&message='+messageIngresado,
@@ -115,5 +115,6 @@ $(function(){
 		}
 
 	});
+	*/
 
 });
