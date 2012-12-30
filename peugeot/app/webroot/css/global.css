@@ -351,7 +351,7 @@ section h2{
  * Home
 */
 .home{
-	background: url("./assets/background-home-chico.png") no-repeat center 160px;
+	background: url("./assets/background-home-chico.png") no-repeat center 170px;
 }
 
 .home.margin-for-scrollto{
@@ -369,21 +369,21 @@ section h2{
 }
 
 .home h1 span{
-	font-size: 112px;
-	left: -105px;
-	top: -14px;
+	font-size: 90px;
+	left: -85px;
+	top: -10px;
 }
 
 .home h2{
 	color: #8f8f8f;
 	font-size: 24px;
 	text-transform: uppercase;
-	margin: 12px 0;
+	margin: 5px 0 10px 0;
 }
 
 .home .intro{
 	color: #636363;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 20px;
 }
 
@@ -412,7 +412,7 @@ section h2{
 	padding-right: 90px;
 	background-position: right;
 	position: absolute;
-	top: 430px;
+	top: 440px;
 	left: 0;
 }
 
@@ -590,7 +590,7 @@ section.ubicacion.step3{
 
 .ubicacion.step3 form{
 	position: absolute;
-	top: 330px;
+	top: 360px;
 	right: 0;
 	z-index: 6;
 }
@@ -602,10 +602,16 @@ section.ubicacion.step3{
 	height: 90px;
 	cursor: pointer;
 	margin-left: 10px;
+	position: relative;
+	top: -28px;
 }
 
 .ubicacion.step3 select{
 	width: 420px;
+}
+
+.ubicacion.step3 .volver{
+	bottom: 120px;
 }
 
 
@@ -663,7 +669,7 @@ section.modelos.step3{
 	cursor: pointer;
 	margin-left: 10px;
 	position: relative;
-	top: 5px;
+	top: -27px;
 }
 
 .modelos.step3 .contentMap{
@@ -699,14 +705,13 @@ section.modelos.step3{
 	width: 150px;
 }
 
-.modelos .img-result{
+.modelos.step3 .img-result{
 	width: 648px;
 	height: 309px;
 	position: absolute;
 	z-index: 0;
-	background: #000;
 	right: 0;
-	top: 195px;
+	top: 205px;
 }
 
 .modelos.step3 .img-result.p-308{
@@ -738,7 +743,7 @@ section.modelos.step3{
 }
 
 .modelos.step3 .volver{
-	bottom: 160px
+	bottom: 140px
 }
 
 /*
@@ -810,9 +815,9 @@ section.confirmacion{
 	color: #858585;
 	font-size: 18px;
 	border-radius: 5px;
-	width: 420px;
+	width: 430px;
 	height: 50px;
-	padding: 0 20px;
+	padding: 0 20px 0 10px;
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ffffff 0%, #cacaca 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cacaca));
@@ -838,7 +843,7 @@ section.confirmacion{
 .confirmacion label{
 	color: #d1d1d1;
 	font-size: 18px;
-	line-height: 59px;
+	line-height: 49px;
 	display: inline-block;
 }
 
@@ -857,6 +862,11 @@ section.confirmacion{
 
 .confirmacion select.middle{
 	width: 126px;
+}
+
+
+.confirmacion .volver{
+	bottom: 115px;
 }
 
 .confirmacion .mensaje-confirmacion{

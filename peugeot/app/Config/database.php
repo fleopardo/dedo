@@ -82,7 +82,7 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'root',
-		'password' => 'sr123456',
+		'password' => '',
 		'database' => 'peugeot',
 		'prefix' => '',
 		'encoding' => 'UTF8',

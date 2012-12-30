@@ -4,9 +4,6 @@
  * Fernando Leopardo @fer_leopardo
 */
 
-
-//$("body,html").css("overflow","hidden");
-
 // For use within normal web clients
 var isiPad = navigator.userAgent.match(/iPad/i) != null;
 var isMobile = {
@@ -30,6 +27,14 @@ var isMobile = {
     }
 };
 
+
+$("body,html").css("overflow","hidden");
+
+/*if( isiPad || isMobile.any()){
+}
+else{
+	$("body,html").css("overflow","hidden");
+}*/
 
 /* Funcion para volver una pantalla atras.. */
 ;(function(){
@@ -117,7 +122,7 @@ var isMobile = {
 function populateSelect(source, empty){
 	var options = '';
 	if (typeof(empty) != 'undefined'){
-		options = '<option value="">' + empty + '</option>';		
+		options = '<option value="">' + empty + '</option>';
 	}
     for (key in source) {
     	if (typeof(source[key]) == 'object'){
@@ -125,7 +130,7 @@ function populateSelect(source, empty){
     		options += populateSelect(source[key]);
     		options += '</optgroup>';
     	} else {
-    		options += '<option value="' + key + '">' + source[key]+ '</option>';    		
+    		options += '<option value="' + key + '">' + source[key]+ '</option>';
     	}
     }
     return options
