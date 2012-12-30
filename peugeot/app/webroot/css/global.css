@@ -859,6 +859,27 @@ section.confirmacion{
 	width: 126px;
 }
 
+.confirmacion .mensaje-confirmacion{
+	background:(./assets/elegir-autos/308cc.png) left top no-repeat;
+	padding-left: 340px;
+	min-height: 165px;
+}
+
+.confirmacion .mensaje-confirmacion h2{
+	padding-top: 40px;
+	font-size: 28px;
+	line-height: 30px;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.confirmacion .mensaje-confirmacion p{
+	font-size: 18px;
+	line-height: 20px;
+	color: #fff;
+	margin-bottom: 4px;
+}
+
 
 #content2,
 #content3,

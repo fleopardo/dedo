@@ -97,4 +97,10 @@
 			array('class' => 'volver', 'data-scroll:anchor'=> '#content3')
 		);?>
 		<?php echo $this->Html->script(array('confirmacion'), array('inline' => true, 'class' => 'script'));?>
+
+		<div class="container mensaje-confirmacion">
+			<h2>Gracias Juan por completar tus datos</h2>
+			<p>Te hemos enviado a tu mail el código de reserva.</p>
+			<p>Te esperamos para tu test drive.</p>
+		</div>
 	</section>
