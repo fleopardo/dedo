@@ -764,7 +764,7 @@ section.confirmacion{
 	font-size: 32px;
 	color: #fff;
 	float: right;
-	margin-top: 114px;
+	margin-top: 120px;
 	margin-bottom: 22px;
 }
 
@@ -827,6 +827,10 @@ section.confirmacion{
 	background: linear-gradient(to bottom,  #ffffff 0%,#cacaca 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cacaca',GradientType=0 );
 	border: 1px solid #ccc;
+}
+
+.confirmacion form .error input[type="text"]{
+	border: 2px solid #d20000;
 }
 
 .confirmacion form input[type="submit"]{
