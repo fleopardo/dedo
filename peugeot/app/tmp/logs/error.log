@@ -2422,3 +2422,8 @@ Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 161
 2012-12-29 19:47:01 Error: [MissingControllerException] Controller class ImgController could not be found.
 #0 /home/sebastian/www/peugeot/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2012-12-29 20:41:53 Error: [MissingActionException] Action UsersController::favicon.ico() could not be found.
+#0 /home/sebastian/www/peugeotIntegracion/peugeot/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /home/sebastian/www/peugeotIntegracion/peugeot/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /home/sebastian/www/peugeotIntegracion/peugeot/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
