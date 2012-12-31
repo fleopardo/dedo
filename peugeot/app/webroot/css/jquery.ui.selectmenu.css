@@ -66,7 +66,7 @@
 }
 
 .ui-selectmenu-menu li a,.ui-selectmenu-status {
-    color: #333;
+    color: #858585;
     line-height: 26px;
     display: block;
     padding: 0 10px;
@@ -95,7 +95,7 @@
 .ui-selectmenu-status {
     line-height: 50px;
     padding: 0 20px 0 10px;
-    color: #333;
+    color: #858585;
     font-size: 18px;
 }
 

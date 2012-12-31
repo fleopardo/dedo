@@ -28,18 +28,16 @@ var isMobile = {
 };
 
 
-$("body,html").css("overflow","hidden");
 
-/*if( isiPad || isMobile.any()){
-}
-else{
-	$("body,html").css("overflow","hidden");
-}*/
+
+/*if( isiPad || isMobile.any()){ } else{ $("body,html").css("overflow","hidden"); }*/
+
+$("body,html").css("overflow","hidden");
 
 /* Funcion para volver una pantalla atras.. */
 ;(function(){
 
-	$(".volver").live("click",function(event){
+	$(".volver:not('.a-home')").live("click",function(event){
 
 			//Si no le agrego un margin extra, cuando voy al ancla #home se me tapa con el header..
 			if( isiPad || isMobile.any()){

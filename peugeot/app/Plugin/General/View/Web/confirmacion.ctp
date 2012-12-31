@@ -4,7 +4,7 @@
 	?>
 
 	<section class="section confirmacion" id="confirmacion">
-		<div class="container">
+		<div class="container formulario-confirmacion">
 			<h1><span>4.</span> Complete sus datos</h1>
 
 			<?php echo $this->Form->create('Turno', array('url' => array('plugin' => 'general', 'controller' => 'web', 'action' => 'confirmacion')));?>
@@ -88,7 +88,7 @@
 						));
 						?>
 					</div><!--right-col-->
-					<?php echo $this->Form->submit('', array('div' => false, 'title' => 'Enviar'));?>
+					<?php echo $this->Form->submit('', array('div' => false, 'title' => 'Enviar','tabindex' => 16));?>
 				</fieldset>
 			<?php echo $this->Form->end();?>
 
@@ -100,9 +100,17 @@
 
 		<?php echo $this->Html->script(array('confirmacion'), array('inline' => true, 'class' => 'script'));?>
 
-		<div class="container mensaje-confirmacion">
-			<h2>Gracias Juan por completar tus datos</h2>
-			<p>Te hemos enviado a tu mail el código de reserva.</p>
-			<p>Te esperamos para tu test drive.</p>
+		<div class="background-leon">
+			<div class="container mensaje-confirmacion">
+				<div>
+					<h2>Gracias <span id="nombreIngresado"></span> por completar tus datos</h2>
+					<p>Te hemos enviado a tu mail el código de reserva.</p>
+					<p>Te esperamos para tu test drive.</p>
+				</div>
+				<?php echo $this->Html->link('Volver',
+				array('plugin' => 'general', 'controller' => 'Web', 'action' => 'index'),
+				array('class' => 'volver a-home', 'data-scroll:anchor'=> '#content1')
+				);?>
+			</div>
 		</div>
 	</section>
