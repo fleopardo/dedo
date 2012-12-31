@@ -26,16 +26,16 @@ if (Configure::read('Site.acl_plugin') == 'Acl') {
 		'weight' => 30,
 	));
 
-	CroogoNav::add('settings.children.acl', array(
-		'title' => __('Access Control'),
-		'url' => array(
-			'admin' => true,
-			'plugin' => 'settings',
-			'controller' => 'settings',
-			'action' => 'prefix',
-			'Access Control',
-		),
-	));
+// 	CroogoNav::add('settings.children.acl', array(
+// 		'title' => __('Access Control'),
+// 		'url' => array(
+// 			'admin' => true,
+// 			'plugin' => 'settings',
+// 			'controller' => 'settings',
+// 			'action' => 'prefix',
+// 			'Access Control',
+// 		),
+// 	));
 
 	$cacheConfig = Cache::config('_cake_core_');
 	Cache::config('permissions', array(

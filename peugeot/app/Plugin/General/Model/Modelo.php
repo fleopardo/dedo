@@ -65,4 +65,21 @@ class Modelo extends GeneralAppModel {
 		)
 	);
 
+	
+	protected $_displayFields = array(
+		'id',
+		'title',
+		'status' => array('type' => 'boolean'),
+	);
+	
+	/**
+	 * Edit fields for this model
+	 *
+	 * @var array
+	*/
+	protected $_editFields = array(
+		'title',
+		'class',
+		'status',
+	);
 }

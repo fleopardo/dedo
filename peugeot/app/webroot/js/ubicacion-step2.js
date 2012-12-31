@@ -95,13 +95,13 @@ $(function(){
 		e.preventDefault();
 		$.get(Croogo.basePath + Croogo.params.plugin + '/' + Croogo.params.controller + '/getConcesionaria.json',{'modelo' : '', 'concesionaria' : $(this).val() }, function(data){
 			if (data.success){
-				$("select.mes").html(populateSelect(data.months));
+				$("select.mes").html(populateSelect(data.months));					
 	            $("select.dia").html(populateSelect(data.dias));
 	            $("select.hora").html(populateSelect(data.turnos));
 			} else {
-				$("select.mes").html('<options value=""></options>');
-				$("select.dia").html('<options value=""></options>');
-				$("select.hora").html('<options value=""></options>');
+				$("select.mes").html('<options value="">No disp.</options>');
+				$("select.dia").html('<options value="">No disp.</options>');
+				$("select.hora").html('<options value="">No disp.</options>');
 			}
 			$("select.dia, select.hora, select.mes").selectmenu("destroy").selectmenu({ transferClasses: true });
 		});
@@ -114,8 +114,8 @@ $(function(){
 	            $("select.dia").html(populateSelect(data.dias));
 	            $("select.hora").html(populateSelect(data.turnos));
 			} else {
-				$("select.dia").html('<options value=""></options>');
-				$("select.hora").html('<options value=""></options>');
+				$("select.dia").html('<options value="">No disp.</options>');
+				$("select.hora").html('<options value="">No disp.</options>');
 			}
 			$("select.dia, select.hora").selectmenu("destroy").selectmenu({ transferClasses: true });
 		});
@@ -128,7 +128,7 @@ $(function(){
 			if (data.success){
 	            $("select.hora").html(populateSelect(data.turnos));
 			} else {
-				$("select.hora").html('<options value=""></options>');
+				$("select.hora").html('<options value="">No disp.</options>');
 			}
 			$("select.hora").selectmenu("destroy").selectmenu({ transferClasses: true });
 		});

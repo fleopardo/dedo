@@ -23,6 +23,7 @@ class WebController extends GeneralAppController {
 		if ($this->request->is('ajax') && $this->request->query['modelo_id']){
 			$this->Auto->Modelo->id = $this->request->query['modelo_id'];
 			$titulo_modelo = $this->Auto->Modelo->field('title');
+			$class_modelo = $this->Auto->Modelo->field('class');
 			$concesionarias = $this->Auto->Concesionaria->getListByModelo($this->request->query['modelo_id']);
 
 			$months = $this->Auto->Turno->getListMonths($this->request->query['modelo_id'], $concesionarias[0]['Concesionaria']['id']);
@@ -31,7 +32,7 @@ class WebController extends GeneralAppController {
 
 			$turnos = $this->Auto->Turno->getListHorario($this->request->query['modelo_id'], $concesionarias[0]['Concesionaria']['id'], array_shift(array_keys($months)), array_shift(array_keys($dias)));
 
-			$this->set(compact('concesionarias', 'dias', 'months', 'turnos', 'titulo_modelo'));
+			$this->set(compact('concesionarias', 'dias', 'months', 'turnos', 'titulo_modelo', 'class_modelo'));
 		}
 	}
 
@@ -116,10 +117,12 @@ class WebController extends GeneralAppController {
 	public function ubicacion_step3(){
 		$turno = $this->Auto->Turno->read(null, $this->request->query['turno']);
 		$turnos = $this->Auto->Turno->getListByUbicacion($this->request->query['turno'], $this->request->query['concesionaria'], $this->request->query['dia'], $this->request->query['month']);
-		$this->set(compact('turnos', 'turno'));
+		$autos = $this->Auto->Turno->getListByUbicacion($this->request->query['turno'], $this->request->query['concesionaria'], $this->request->query['dia'], $this->request->query['month'], array('Modelo.id', 'Modelo.id'));
+		$this->set(compact('turnos', 'turno', 'autos'));
 	}
 
 	public function confirmacion ($id = null){
+		
 		if (($this->request->is('post') || $this->request->is('put')) && $this->Auto->Turno->exists($id) ) {
 			$this->Auto->Turno->id = $id;
 			if (!$this->Auto->Turno->field('status')){

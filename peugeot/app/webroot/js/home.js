@@ -4,9 +4,6 @@
  * Fernando Leopardo @fer_leopardo
 */
 
-
-//$("body,html").css("overflow","hidden");
-
 // For use within normal web clients
 var isiPad = navigator.userAgent.match(/iPad/i) != null;
 var isMobile = {
@@ -31,10 +28,16 @@ var isMobile = {
 };
 
 
+
+
+/*if( isiPad || isMobile.any()){ } else{ $("body,html").css("overflow","hidden"); }*/
+
+$("body,html").css("overflow","hidden");
+
 /* Funcion para volver una pantalla atras.. */
 ;(function(){
 
-	$(".volver").live("click",function(event){
+	$(".volver:not('.a-home')").live("click",function(event){
 
 			//Si no le agrego un margin extra, cuando voy al ancla #home se me tapa con el header..
 			if( isiPad || isMobile.any()){
@@ -117,16 +120,21 @@ var isMobile = {
 function populateSelect(source, empty){
 	var options = '';
 	if (typeof(empty) != 'undefined'){
-		options = '<option value="">' + empty + '</option>';		
+		options = '<option value="">' + empty + '</option>';
 	}
+	var c = 0;
     for (key in source) {
     	if (typeof(source[key]) == 'object'){
     		options += '<optgroup label="' + key + '">';
     		options += populateSelect(source[key]);
     		options += '</optgroup>';
     	} else {
-    		options += '<option value="' + key + '">' + source[key]+ '</option>';    		
+    		options += '<option value="' + key + '">' + source[key]+ '</option>';
     	}
+    	c++;
+    }
+    if (c == 0){
+    	options = '<option value="">no disp.</option>';
     }
     return options
 }

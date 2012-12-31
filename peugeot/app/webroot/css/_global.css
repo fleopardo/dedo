@@ -157,10 +157,10 @@ body{
 .hide{ display: none;}
 .show{ display: block;}
 
-::-webkit-input-placeholder  { color:#858585; }
-input:-moz-placeholder { color:#858585; }
-:-ms-input-placeholder { color: #858585; }
-input.placeholder{ color: #858585; }
+::-webkit-input-placeholder  { color:#373737; }
+input:-moz-placeholder { color:#373737; }
+:-ms-input-placeholder { color: #373737; }
+input.placeholder{ color: #373737; }
 
 
 /*
@@ -351,7 +351,7 @@ section h2{
  * Home
 */
 .home{
-	background: url("./assets/background-home-chico.png") no-repeat center 170px;
+	background: url("./assets/background-home.png") no-repeat center 160px;
 }
 
 .home.margin-for-scrollto{
@@ -365,25 +365,25 @@ section h2{
 }
 
 .home h1{
-	font-size: 44px;
+	font-size: 48px;
 }
 
 .home h1 span{
-	font-size: 90px;
-	left: -85px;
-	top: -10px;
+	font-size: 116px;
+	left: -105px;
+	top: -14px;
 }
 
 .home h2{
 	color: #8f8f8f;
 	font-size: 24px;
 	text-transform: uppercase;
-	margin: 5px 0 10px 0;
+	margin: 12px 0;
 }
 
 .home .intro{
 	color: #636363;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 }
 
@@ -393,8 +393,7 @@ section h2{
 	background: url("./assets/arrow-links.png") no-repeat;
 	text-decoration: none;
 	text-transform: uppercase;
-	height: 70px;
-	line-height: 62px;
+	line-height: 70px;
 	display: inline-block;
 }
 
@@ -405,7 +404,7 @@ section h2{
 .home a.por-modelos{
 	padding-left: 90px;
 	position: absolute;
-	top: 180px;
+	top: 200px;
 	right: 0;
 }
 
@@ -413,7 +412,7 @@ section h2{
 	padding-right: 90px;
 	background-position: right;
 	position: absolute;
-	top: 440px;
+	top: 500px;
 	left: 0;
 }
 
@@ -460,8 +459,7 @@ section.ubicacion.step2{
 .ubicacion.step2 form {
 	margin-top: 35px;
 	clear: both;
-	float: left;
-	margin-left: 325px;
+	float: right;
 }
 
 .ubicacion.step2 form > div{
@@ -494,7 +492,7 @@ section.ubicacion.step2{
 }
 
 .ubicacion.step2 select.mes{
-	width: 80px;
+	width: 170px;
 }
 
 .ubicacion.step2 select.dia{
@@ -541,10 +539,6 @@ section.modelos.step2{
 	height: 83px;
 	cursor: pointer;
 	margin-left: 10px;
-	position: relative;
-	top: 5px;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 .modelos.step2 .lista-autos{
@@ -554,7 +548,6 @@ section.modelos.step2{
 
 .modelos.step2 select{
 	width: 420px;
-
 }
 
 
@@ -594,7 +587,7 @@ section.ubicacion.step3{
 
 .ubicacion.step3 form{
 	position: absolute;
-	top: 345px;
+	top: 330px;
 	right: 0;
 	z-index: 6;
 }
@@ -606,18 +599,10 @@ section.ubicacion.step3{
 	height: 90px;
 	cursor: pointer;
 	margin-left: 10px;
-	position: relative;
-	top: 5px;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 .ubicacion.step3 select{
 	width: 420px;
-}
-
-.ubicacion.step3 .volver{
-	bottom: 160px;
 }
 
 
@@ -632,7 +617,7 @@ section.modelos.step3{
 
 .modelos.step3 h1{
 	font-size: 31px;
-	margin: 120px 0 0 85px;
+	margin: 130px 0 0 85px;
 }
 
 .modelos.step3 h1 span{
@@ -647,11 +632,11 @@ section.modelos.step3{
 	font-size: 19px;
 	line-height: 24px;
 	color: #8f8f8f;
-	margin: 5px 0 0 85px;
+	margin: 20px 0 0 85px;
 }
 
 .modelos.step3 form {
-	margin-top: 15px;
+	margin-top: 20px;
 }
 
 .modelos.step3 form > div{
@@ -674,10 +659,6 @@ section.modelos.step3{
 	height: 83px;
 	cursor: pointer;
 	margin-left: 10px;
-	position: relative;
-	top: 5px;
-	display: inline-block;
-	vertical-align: middle;
 }
 
 .modelos.step3 .contentMap{
@@ -686,7 +667,7 @@ section.modelos.step3{
 	position: absolute;
 	background: url("./assets/sombra-mapa.png") no-repeat bottom center;
 	left: 0;
-	top: 205px;
+	top: 230px;
 }
 
 .modelos.step3 .map{
@@ -713,45 +694,42 @@ section.modelos.step3{
 	width: 150px;
 }
 
-.modelos.step3 .img-result{
+.modelos .img-result{
 	width: 648px;
 	height: 309px;
 	position: absolute;
 	z-index: 0;
+	background: #000;
 	right: 0;
-	top: 205px;
+	top: 230px;
 }
 
-.modelos.step3 .img-result.p-308{
+.modelos .img-result.p-308{
 	background: url("./assets/confirmar-autos/308.jpg") no-repeat;
 }
 
-.modelos.step3 .img-result.p-308cc{
+.modelos .img-result.p-308cc{
 	background: url(./assets/confirmar-autos/308cc.jpg) no-repeat;
 }
 
-.modelos.step3 .img-result.p-308gti{
+.modelos .img-result.p-308gti{
 	background: url(./assets/confirmar-autos/308gti.jpg) no-repeat;
 }
 
-.modelos.step3 .img-result.p-408{
+.modelos .img-result.p-408{
 	background: url(./assets/confirmar-autos/408.jpg) no-repeat;
 }
 
-.modelos.step3 .img-result.p-508{
+.modelos .img-result.p-508{
 	background: url(./assets/confirmar-autos/508.jpg) no-repeat;
 }
 
-.modelos.step3 .img-result.p-3008{
+.modelos .img-result.p-3008{
 	background: url(./assets/confirmar-autos/3008.jpg) no-repeat;
 }
 
-.modelos.step3 .img-result.p-rcz{
+.modelos .img-result.p-rcz{
 	background: url(./assets/confirmar-autos/rcz.jpg) no-repeat;
-}
-
-.modelos.step3 .volver{
-	bottom: 140px
 }
 
 /*
@@ -761,7 +739,7 @@ section.confirmacion{
 	background: url("./assets/background-step4.png") no-repeat top center;
 	position: relative;
 	top: -15px;
-	min-height: 860px;
+	height: 860px;
 }
 
 .confirmacion .container{
@@ -772,8 +750,8 @@ section.confirmacion{
 	font-size: 32px;
 	color: #fff;
 	float: right;
-	margin-top: 120px;
-	margin-bottom: 22px;
+	margin-top: 100px;
+	margin-bottom: 30px;
 }
 
 .confirmacion h1 span{
@@ -823,9 +801,9 @@ section.confirmacion{
 	color: #858585;
 	font-size: 18px;
 	border-radius: 5px;
-	width: 430px;
-	height: 50px;
-	padding: 0 20px 0 10px;
+	width: 420px;
+	height: 59px;
+	padding: 0 20px;
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ffffff 0%, #cacaca 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cacaca));
@@ -835,11 +813,6 @@ section.confirmacion{
 	background: linear-gradient(to bottom,  #ffffff 0%,#cacaca 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cacaca',GradientType=0 );
 	border: 1px solid #ccc;
-}
-
-.confirmacion form .error input[type="text"],
-.ui-selectmenu.error{
-	border: 2px solid #d20000;
 }
 
 .confirmacion form input[type="submit"]{
@@ -856,7 +829,7 @@ section.confirmacion{
 .confirmacion label{
 	color: #d1d1d1;
 	font-size: 18px;
-	line-height: 49px;
+	line-height: 59px;
 	display: inline-block;
 }
 
@@ -865,62 +838,18 @@ section.confirmacion{
 	margin-right: 2px;
 }
 
-.confirmacion select,
-.confirmacion .ui-selectmenu{
-	width: 462px !important;
+.confirmacion select{
+	width: 462px;
 }
 
-.confirmacion select.small,
-.confirmacion .ui-selectmenu.small{
-	width: 82px !important;
+.confirmacion select.small{
+	width: 82px;
 }
 
-.confirmacion select.middle,
-.confirmacion .ui-selectmenu.middle{
-	width: 126px !important;
+.confirmacion select.middle{
+	width: 126px;
 }
 
-
-.confirmacion .volver{
-	bottom: 160px;
-}
-
-
-.confirmacion .background-leon{
-	background: url("./assets/background-enviado.png") no-repeat -30px 40px;
-	min-height: 700px;
-	display: none;
-}
-
-.confirmacion .mensaje-confirmacion{
-	padding-top: 300px;
-	min-height: 165px;
-}
-
-.confirmacion .mensaje-confirmacion > div{
-	background: url("./assets/elegir-autos/308cc.png") left top no-repeat;
-	min-height: 165px;
-}
-
-.confirmacion .mensaje-confirmacion h2{
-	padding-top: 20px;
-	font-size: 28px;
-	line-height: 30px;
-	color: #fff;
-	margin-bottom: 20px;
-	padding-left: 340px;
-}
-
-.confirmacion .mensaje-confirmacion p{
-	font-size: 18px;
-	line-height: 20px;
-	color: #fff;
-	margin-bottom: 4px;padding-left: 340px;
-}
-
-.confirmacion .mensaje-confirmacion .volver{
-	bottom: -35px;
-}
 
 #content2,
 #content3,

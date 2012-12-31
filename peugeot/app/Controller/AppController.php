@@ -44,7 +44,7 @@ class AppController extends Controller {
 		'Form',
 		'Session',
 		'Text',
-		'Js',
+		'Js' => array("Jquery"),
 		'Time',
 		'Layout',
 		'Custom',

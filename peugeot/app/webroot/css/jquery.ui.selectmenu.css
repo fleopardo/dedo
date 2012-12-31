@@ -1,9 +1,9 @@
 /* Selectmenu
 ----------------------------------*/
 .ui-selectmenu {
-    
+
     border-radius: 5px;
-    height: 59px;
+    height: 50px;
     background: #ffffff;
  /* Old browsers */
     background: -moz-linear-gradient(top,  #ffffff 0%, #cacaca 100%);
@@ -26,8 +26,8 @@
 .ui-selectmenu-icon {
     background: url(./assets/arrow-select.png) no-repeat;
     position: absolute;
-    right: 12px;
-    top: 25px;
+    right: 9px;
+    top: 21px;
     width: 15px;
     height: 11px;
 }
@@ -66,7 +66,7 @@
 }
 
 .ui-selectmenu-menu li a,.ui-selectmenu-status {
-    color: #333;
+    color: #858585;
     line-height: 26px;
     display: block;
     padding: 0 10px;
@@ -93,9 +93,9 @@
 }
 
 .ui-selectmenu-status {
-    line-height: 59px;
-    padding: 0 20px;
-    color: #333;
+    line-height: 50px;
+    padding: 0 20px 0 10px;
+    color: #858585;
     font-size: 18px;
 }
 

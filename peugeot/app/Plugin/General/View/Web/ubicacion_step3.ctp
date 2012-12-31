@@ -5,16 +5,15 @@
 
 			<div class="lista-autos">
 				<ul>
-					<li class="p-rcz"><span class="hide">Peugeot RCZ</span></li>
-					<li class="p-508"><span class="hide">Peugeot 508</span></li>
-					<li class="p-308cc"><span class="hide">Peugeot 308 CC</span></li>
-					<li class="p-308gti"><span class="hide">Peugeot 308 GTI</span></li>
-					<li class="p-308"><span class="hide">Peugeot 308</span></li>
-					<li class="p-408"><span class="hide">Peugeot 408</span></li>
-					<li class="p-3008"><span class="hide">Peugeot 3008</span></li>
+					<li class="p-rcz <?php echo count(array_intersect(array(1), $autos)) == 0 ? 'disabled' : '';?>"><span class="hide">Peugeot RCZ</span></li>
+					<li class="p-508 <?php echo count(array_intersect(array(2, 3), $autos)) == 0  ? 'disabled' : '';?>"><span class="hide">Peugeot 508</span></li>
+					<li class="p-308cc <?php echo count(array_intersect($autos, array(7))) == 0  ? 'disabled' : '';?>"><span class="hide">Peugeot 308 CC</span></li>
+					<li class="p-308gti <?php echo count(array_intersect($autos, array(8))) == 0 ? 'disabled' : '';?>"><span class="hide">Peugeot 308 GTI</span></li>
+					<li class="p-308 <?php echo count(array_intersect($autos, array(11, 12, 13))) == 0 ? 'disabled' : '';?>"><span class="hide">Peugeot 308</span></li>
+					<li class="p-408 <?php echo count(array_intersect($autos, array(9, 10))) == 0 ? 'disabled' : '';?>"><span class="hide">Peugeot 408</span></li>
+					<li class="p-3008 <?php echo count(array_intersect($autos, array(5))) == 0 ? 'disabled' : '';?>"><span class="hide">Peugeot 3008</span></li>
 				</ul>
 			</div>
-
 			<?php echo $this->Form->create('Turno', array('url' => array('plugin' => 'general', 'controller' => 'Web', 'action' => 'confirmacion'), 'type' => 'get', 'data-load' => 'content4', 'id' => 'form-ubicacion-step3', ));?>
 				<fieldset>
 					<?php 

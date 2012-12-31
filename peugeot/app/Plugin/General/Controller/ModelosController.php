@@ -7,6 +7,9 @@ App::uses('GeneralAppController', 'General.Controller');
  */
 class ModelosController extends GeneralAppController {
 
+	public $components = array(
+			'Search.Prg',
+	);
 /**
  * admin_index method
  *
@@ -15,6 +18,7 @@ class ModelosController extends GeneralAppController {
 	public function admin_index() {
 		$this->Modelo->recursive = 0;
 		$this->set('modelos', $this->paginate());
+		$this->set('displayFields', $this->Modelo->displayFields());
 	}
 
 /**

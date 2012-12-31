@@ -1,16 +1,16 @@
-	<?php 
+	<?php
 	$provincias = array("Buenos Aires"=>"Buenos Aires","Capital Federal" =>"Capital Federal","Catamarca"=>"Catamarca","Chaco"=>"Chaco","Chubut"=>"Chubut","Corrientes"=>"Corrientes","Córdoba"=>"Córdoba","Entre Ríos"=>"Entre Ríos","Formosa"=>"Formosa","Jujuy"=>"Jujuy","La Pampa"=>"La Pampa","La Rioja"=>"La Rioja","Mendoza"=>"Mendoza","Misiones"=>"Misiones","Neuquén"=>"Neuquén","Río Negro"=>"Río Negro","Salta"=>"Salta","San Juan"=>"San Juan","San Luis"=>"San Luis","Santa Cruz"=>"Santa Cruz","Santa Fe"=>"Santa Fe","Santiago del Estero"=>"Santiago del Estero","Tierra del Fuego "=>"Tierra del Fuego ","Tucumán"=>"Tucumán",
 	);
 	?>
 
 	<section class="section confirmacion" id="confirmacion">
-		<div class="container">
+		<div class="container formulario-confirmacion">
 			<h1><span>4.</span> Complete sus datos</h1>
 
-			<?php echo $this->Form->create('Turno', array('url' => array('plugin' => 'general', 'controller' => 'web', 'action' => 'confirmacion')));?>
+			<?php echo $this->Form->create('Turno', array('id' => 'TurnoPedido', 'url' => array('plugin' => 'general', 'controller' => 'web', 'action' => 'confirmacion')));?>
 				<fieldset class="clearfix">
 					<div class="left-col">
-						<?php 
+						<?php
 						$this->Form->inputDefaults(array(
 							'div' => 'row',
 							'label' => false,
@@ -25,19 +25,34 @@
 					<div class="right-col">
 						<?php
 						echo $this->Form->input('sexo', array('empty' => 'Sexo', 'tabindex' => 2, 'options' => array('F' => 'Femenino', 'M' => 'Masculino')));
+						
+						$mdata = array();
+						$mdata['01'] = 'Enero';
+						$mdata['02'] = 'Febrero';
+						$mdata['03'] = 'Marzo';
+						$mdata['04'] = 'Abril';
+						$mdata['05'] = 'Mayo';
+						$mdata['06'] = 'Junio';
+						$mdata['07'] = 'Julio';
+						$mdata['08'] = 'Agosto';
+						$mdata['09'] = 'Septiembre';
+						$mdata['10'] = 'Octubre';
+						$mdata['11'] = 'Noviembre';
+						$mdata['12'] = 'Diciembre';
 						?>
 						<div class="row multi-select">
 							<div class="clearfix">
 								<label for="dia-nacimiento">Nacimiento</label>
 								<div class="select-container clearfix">
-									<?php 
+									<?php
 									echo $this->Form->input('nacimiento', array(
 										'div'		=> false,
-										'type' 		=> 'date', 
+										'type' 		=> 'date',
 										'tabindex' 	=> 4,
 										'class' 	=> 'middle',
 										'id' 		=> 'dia-nacimiento',
 										'dateFormat'=> 'DMY',
+										'monthNames' => $mdata,
 									    'minYear' 	=> date('Y') - 80,
 									    'maxYear' 	=> date('Y') - 18,
 									));
@@ -47,14 +62,15 @@
 							<div class="clearfix">
 								<label for="vencimiento">Vencimiento</label>
 								<div class="select-container clearfix">
-									<?php 
+									<?php
 									echo $this->Form->input('vencimiento', array(
 										'div'		=> false,
-										'type' 		=> 'date', 
+										'type' 		=> 'date',
 										'tabindex' 	=> 8,
 										'class' 	=> 'middle',
 										'id' 		=> 'dia-vencimiento',
 										'dateFormat'=> 'DMY',
+										'monthNames' => $mdata,
 									    'minYear' 	=> date('Y'),
 									    'maxYear' 	=> date('Y') + 10,
 									));
@@ -62,7 +78,7 @@
 								</div>
 							</div>
 						</div>
-						<?php 
+						<?php
 						echo $this->Form->input('localidad', array('placeholder' => 'Localidad', 'tabindex' => 12));
 						?>
 					</div><!--right-col-->
@@ -70,7 +86,7 @@
 				<?php echo $this->Form->input('id');?>
 				<fieldset class="submit">
 					<div class="left-col">
-						<?php 
+						<?php
 						$_listAuto = array($this->data['Auto']['id'] => $this->data['Auto']['producto']);
 						echo $this->Form->input('auto_id', array(
 							'tabindex'	=> 14,
@@ -80,7 +96,7 @@
 					</div>
 
 					<div class="right-col">
-						<?php 
+						<?php
 						$_listConcesionaria = array($this->data['Concesionaria']['id'] => $this->data['Concesionaria']['title']);
 						echo $this->Form->input('concesionaria_id', array(
 							'tabindex' 	=> 15,
@@ -88,13 +104,29 @@
 						));
 						?>
 					</div><!--right-col-->
-					<?php echo $this->Form->submit('', array('div' => false, 'title' => 'Enviar'));?>
+					<?php echo $this->Form->submit('', array('div' => false, 'title' => 'Enviar','tabindex' => 16));?>
 				</fieldset>
 			<?php echo $this->Form->end();?>
+
+			<?php echo $this->Html->link('Volver',
+				array('plugin' => 'general', 'controller' => 'Web', 'action' => 'index'),
+				array('class' => 'volver', 'data-scroll:anchor'=> '#content3')
+			);?>
 		</div>
-		<?php echo $this->Html->link('Volver', 
-			array('plugin' => 'general', 'controller' => 'Web', 'action' => 'index'),
-			array('class' => 'volver', 'data-scroll:anchor'=> '#content3')
-		);?>
+
 		<?php echo $this->Html->script(array('confirmacion'), array('inline' => true, 'class' => 'script'));?>
+		<?php echo $this->Js->writeBuffer();?>
+		<div class="background-leon">
+			<div class="container mensaje-confirmacion">
+				<div>
+					<h2>Gracias <span id="nombreIngresado"></span> por completar tus datos</h2>
+					<p>Te hemos enviado a tu mail el código de reserva.</p>
+					<p>Te esperamos para tu test drive.</p>
+				</div>
+				<?php echo $this->Html->link('Volver',
+				array('plugin' => 'general', 'controller' => 'Web', 'action' => 'index'),
+				array('class' => 'volver a-home', 'data-scroll:anchor'=> '#content1')
+				);?>
+			</div>
+		</div>
 	</section>

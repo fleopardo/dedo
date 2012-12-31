@@ -18,11 +18,10 @@
 			<?php echo $this->Form->create('Modelo', array('url' => array('plugin' => 'general', 'controller' => 'Web', 'action' => 'modelo_step3'), 'type' => 'get', 'data-load' => 'content3', 'id' => 'form-modelos-step2', ));?>
 				<fieldset>
 					<div class="row">
-						<?php 
+						<?php
 						echo $this->Form->input('modelo_id', array(
 							'div' 		=> false,
 							'label' 	=> false,
-							'empty' 	=> '',
 							'id'		=> 'ModeloModeloId'
 						));
 						echo $this->Form->submit('', array('div' => false));
@@ -31,7 +30,7 @@
 					</div>
 				</fieldset>
 			<?php echo $this->Form->end();?>
-			<?php echo $this->Html->link('Volver', 
+			<?php echo $this->Html->link('Volver',
 				array('plugin' => 'general', 'controller' => 'Web', 'action' => 'index'),
 				array('class' => 'volver', 'data-scroll:anchor'=> '#home')
 			);?>
