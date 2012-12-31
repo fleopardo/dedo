@@ -6,9 +6,10 @@ CroogoNav::add('general', array(
 	'url' => array(
 		'admin' => true,
 		'plugin' => 'general',
-		'controller' => 'concesionarias',
+		'controller' => 'turnos',
 		'action' => 'index',
 	),
+	'access' => array('promotora'),
 	'weight' => 50,
 	'children' => array(
 		'concesionarias' => array(
@@ -51,6 +52,7 @@ CroogoNav::add('general', array(
 				'controller' => 'turnos',
 				'action' => 'index',
 			),
+			'access' => array('promotora'),
 			'weight' => 30,
 		),
 	),

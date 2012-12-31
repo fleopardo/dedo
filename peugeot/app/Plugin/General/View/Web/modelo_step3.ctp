@@ -46,7 +46,7 @@
 				</div>
 			</div>
 
-			<div class="img-result p-408"></div>
+			<div class="img-result <?php echo !empty($class_modelo) ? $class_modelo : 'p-408'; ?>"></div>
 			<?php echo $this->Html->link('Volver', 
 				array('plugin' => 'general', 'controller' => 'Web', 'action' => 'index'),
 				array('class' => 'volver', 'data-scroll:anchor'=> '#modelos-step2')

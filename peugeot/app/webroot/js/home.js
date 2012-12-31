@@ -122,6 +122,7 @@ function populateSelect(source, empty){
 	if (typeof(empty) != 'undefined'){
 		options = '<option value="">' + empty + '</option>';
 	}
+	var c = 0;
     for (key in source) {
     	if (typeof(source[key]) == 'object'){
     		options += '<optgroup label="' + key + '">';
@@ -130,6 +131,10 @@ function populateSelect(source, empty){
     	} else {
     		options += '<option value="' + key + '">' + source[key]+ '</option>';
     	}
+    	c++;
+    }
+    if (c == 0){
+    	options = '<option value="">no disp.</option>';
     }
     return options
 }

@@ -16,7 +16,8 @@ class Turno extends GeneralAppModel {
 	public $displayField = 'nombre';
 
 	public $virtualFields = array(
-	    'month' => 'MONTH(Turno.fecha)',
+		'month' => 'MONTH(Turno.fecha)',
+		'monthDesc' => 'elt(MONTH(Turno.fecha), "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre")',
 	    'day'	=> 'DAY(Turno.fecha)',
 	    'horario' => 'CONCAT(DATE_FORMAT(Turno.hora_inicio, "%H:%i"), " - ", DATE_FORMAT(Turno.hora_fin,"%H:%i"))'
 	);
@@ -281,7 +282,7 @@ class Turno extends GeneralAppModel {
 			$_conditions['Turno.concesionaria_id'] = $concesionaria_id;
 		}
 		return $this->find('list', array(
-			'fields' 	=> array('Turno.month', 'Turno.month'),
+			'fields' 	=> array('Turno.month', 'Turno.monthDesc'),
 			'joins'		=> array(
 				array(
 					'table' 		=> 'autos',
@@ -380,13 +381,13 @@ class Turno extends GeneralAppModel {
 		));
 	}
 
-	public function getListByUbicacion($turno_id, $concesionaria_id, $day, $month){
+	public function getListByUbicacion($turno_id, $concesionaria_id, $day, $month, $fields = array('Turno.id', 'Modelo.title')){
 		$this->id = $turno_id;
 		$inicio = $this->field('hora_inicio');
 		$fin = $this->field('hora_fin');
 		
 		return $this->find('list', array(
-			'fields'	=> array('Turno.id', 'Modelo.title'),
+			'fields'	=> $fields,
 			'joins'		=> array(
 				array(
 					'table' 		=> 'autos',

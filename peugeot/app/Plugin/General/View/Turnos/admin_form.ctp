@@ -91,7 +91,9 @@ if ($this->request->params['action'] == 'admin_add') {
 				));
 				echo $this->Form->input('nacimiento', array(
 					'label' => __('Nacimiento'),
-					'type' => 'date'
+					'type' => 'date',
+					'minYear' => date('Y') - 80,
+					'maxYear' => date ('Y') - 18
 				));
 			?>
 			</div>

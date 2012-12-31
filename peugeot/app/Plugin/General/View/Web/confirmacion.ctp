@@ -7,7 +7,7 @@
 		<div class="container formulario-confirmacion">
 			<h1><span>4.</span> Complete sus datos</h1>
 
-			<?php echo $this->Form->create('Turno', array('url' => array('plugin' => 'general', 'controller' => 'web', 'action' => 'confirmacion')));?>
+			<?php echo $this->Form->create('Turno', array('id' => 'TurnoPedido', 'url' => array('plugin' => 'general', 'controller' => 'web', 'action' => 'confirmacion')));?>
 				<fieldset class="clearfix">
 					<div class="left-col">
 						<?php
@@ -25,6 +25,20 @@
 					<div class="right-col">
 						<?php
 						echo $this->Form->input('sexo', array('empty' => 'Sexo', 'tabindex' => 2, 'options' => array('F' => 'Femenino', 'M' => 'Masculino')));
+						
+						$mdata = array();
+						$mdata['01'] = 'Enero';
+						$mdata['02'] = 'Febrero';
+						$mdata['03'] = 'Marzo';
+						$mdata['04'] = 'Abril';
+						$mdata['05'] = 'Mayo';
+						$mdata['06'] = 'Junio';
+						$mdata['07'] = 'Julio';
+						$mdata['08'] = 'Agosto';
+						$mdata['09'] = 'Septiembre';
+						$mdata['10'] = 'Octubre';
+						$mdata['11'] = 'Noviembre';
+						$mdata['12'] = 'Diciembre';
 						?>
 						<div class="row multi-select">
 							<div class="clearfix">
@@ -38,6 +52,7 @@
 										'class' 	=> 'middle',
 										'id' 		=> 'dia-nacimiento',
 										'dateFormat'=> 'DMY',
+										'monthNames' => $mdata,
 									    'minYear' 	=> date('Y') - 80,
 									    'maxYear' 	=> date('Y') - 18,
 									));
@@ -55,6 +70,7 @@
 										'class' 	=> 'middle',
 										'id' 		=> 'dia-vencimiento',
 										'dateFormat'=> 'DMY',
+										'monthNames' => $mdata,
 									    'minYear' 	=> date('Y'),
 									    'maxYear' 	=> date('Y') + 10,
 									));
@@ -99,7 +115,7 @@
 		</div>
 
 		<?php echo $this->Html->script(array('confirmacion'), array('inline' => true, 'class' => 'script'));?>
-
+		<?php echo $this->Js->writeBuffer();?>
 		<div class="background-leon">
 			<div class="container mensaje-confirmacion">
 				<div>

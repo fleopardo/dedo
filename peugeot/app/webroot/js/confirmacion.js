@@ -113,13 +113,13 @@ $(function(){
 
 
 		}else{
-
+			var data = $("#TurnoPedido").serialize();
+			console.log(data);
 			// mando el mail
-			/*$.ajax({
+			$.ajax({
 				type: 'POST',
-				data: 'name='+nameIngresado+'&email='+emailIngresado+'&Telefono='+telefonoIngresado+'&message='+messageIngresado,
-				dataType: 'json',
-				url: 'contacto.php',
+				data:data,
+				url: $('#TurnoPedido').attr("action"),
 				error: function (xhr, ajaxOptions, thrownError) {
 					$('#form-response').text('Ocurrio un error, intente nuevamente!').removeClass('loading').addClass("error");
 				},
@@ -130,7 +130,7 @@ $(function(){
 						$('#form-response').text('Gracias por su consulta!').removeClass('loading').removeClass("error");
 					}
 				}
-			});*/
+			});
 
 			// Muestro pantalla de mensaje enviado
 			$(".container.formulario-confirmacion").fadeOut();
