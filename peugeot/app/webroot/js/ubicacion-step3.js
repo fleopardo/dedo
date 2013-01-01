@@ -8,6 +8,8 @@ $(function(){
 	// Mando el form y cargo proxima seccion
 	$("#form-ubicacion-step3").bind("submit",function(event){
 
+		$("body").append("<div class='loading'></div>");
+
 		event.stopPropagation();
 		event.preventDefault();
 
@@ -31,6 +33,7 @@ $(function(){
 		//Llamo al ajax y cargo la seccion adentro del $(container)
 		$(container).load(section + query + " .section",function(response,status,xhr){
 
+			$(".loading").remove();
 			//Filtro los scripts con class "script" y los appendeo al $(container) para que se ejecuten
 			var reponse = $(xhr.responseText);
        		var reponseScript = reponse.filter(".script");

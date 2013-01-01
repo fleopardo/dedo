@@ -7,6 +7,8 @@ $(function(){
 	//Bindeo submit form
 	$("#form-ubicacion-step2").bind("submit",function(event){
 
+		$("body").append("<div class='loading'></div>");
+
 		event.stopPropagation();
 		event.preventDefault();
 
@@ -28,6 +30,8 @@ $(function(){
 
 		//Llamo al ajax y cargo la seccion adentro del $(container)
 		$(container).load(section + query + " .section",function(response,status,xhr){
+
+			$(".loading").remove();
 
 			//Filtro los scripts con class "script" y los appendeo al $(container) para que se ejecuten
 			var reponse = $(xhr.responseText);
@@ -95,7 +99,7 @@ $(function(){
 		e.preventDefault();
 		$.get(Croogo.basePath + Croogo.params.plugin + '/' + Croogo.params.controller + '/getConcesionaria.json',{'modelo' : '', 'concesionaria' : $(this).val() }, function(data){
 			if (data.success){
-				$("select.mes").html(populateSelect(data.months));					
+				$("select.mes").html(populateSelect(data.months));
 	            $("select.dia").html(populateSelect(data.dias));
 	            $("select.hora").html(populateSelect(data.turnos));
 			} else {

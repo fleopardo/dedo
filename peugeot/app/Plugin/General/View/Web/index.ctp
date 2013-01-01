@@ -10,17 +10,17 @@
 			</div>
 
 			<p>
-				<?php 
-				echo $this->Html->link('Por modelo', 
-					array('plugin' => 'general', 'controller' => 'Web', 'action' => 'modelo_step2'), 
+				<?php
+				echo $this->Html->link('Por modelo',
+					array('plugin' => 'general', 'controller' => 'Web', 'action' => 'modelo_step2'),
 					array('class' => 'link por-modelos', 'data-load' => 'content2')
 				);
 				?>
 			</p>
 			<p>
-				<?php 
-				echo $this->Html->link('Por ubicación', 
-					array('plugin' => 'general', 'controller' => 'Web', 'action' => 'ubicacion_step2'), 
+				<?php
+				echo $this->Html->link('Por ubicación',
+					array('plugin' => 'general', 'controller' => 'Web', 'action' => 'ubicacion_step2'),
 					array('class' => 'link por-ubicacion', 'data-load' => 'content2')
 				);
 				?>

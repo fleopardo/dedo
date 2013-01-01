@@ -487,6 +487,7 @@ section.ubicacion.step2{
 	display: block;
 	margin-top: 20px;
 	margin-left: -5px;
+
 }
 
 .ubicacion.step2 select.lugar{
@@ -494,7 +495,7 @@ section.ubicacion.step2{
 }
 
 .ubicacion.step2 select.mes{
-	width: 80px;
+	width: 140px;
 }
 
 .ubicacion.step2 select.dia{
@@ -934,6 +935,17 @@ section.confirmacion{
 	/*margin-top: 150px;*/
 }
 
+
+
+.loading{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: url("./assets/ajax-loader.gif") no-repeat 50% 50%;
+}
 
 
 /*
