@@ -947,6 +947,9 @@ section.confirmacion{
 	background: url("./assets/ajax-loader.gif") no-repeat 50% 50%;
 }
 
+.mensaje-error{
+	color: #d20000;
+}
 
 /*
  * For mobiles

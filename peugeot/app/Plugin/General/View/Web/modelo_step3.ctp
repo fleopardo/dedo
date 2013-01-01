@@ -14,7 +14,7 @@
 						<?php endforeach;?>
 					</select>
 				</div>
-				<?php 
+				<?php
 				echo $this->Form->input('month', array(
 					'type' => 'select',
 					'options' => $months,
@@ -37,8 +37,11 @@
 					'name'	=> 'turno'
 				));
 
+				?>
+
+				<?php
 				echo $this->Form->submit('', array('title' => 'Solicite turno'));
-			echo $this->Form->end();	
+			echo $this->Form->end();
 			?>
 
 			<div class="contentMap">
@@ -47,7 +50,7 @@
 			</div>
 
 			<div class="img-result <?php echo !empty($class_modelo) ? $class_modelo : 'p-408'; ?>"></div>
-			<?php echo $this->Html->link('Volver', 
+			<?php echo $this->Html->link('Volver',
 				array('plugin' => 'general', 'controller' => 'Web', 'action' => 'index'),
 				array('class' => 'volver', 'data-scroll:anchor'=> '#modelos-step2')
 			);?>

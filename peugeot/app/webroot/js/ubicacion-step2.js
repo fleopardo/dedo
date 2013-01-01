@@ -7,44 +7,53 @@ $(function(){
 	//Bindeo submit form
 	$("#form-ubicacion-step2").bind("submit",function(event){
 
-		$("body").append("<div class='loading'></div>");
-
 		event.stopPropagation();
 		event.preventDefault();
 
-		var that = $(this);
+		if( $("#TurnoMonth").val() == "" || $("#TurnoDia").val() == "" || $("#TurnoMonth").val() == "" || $("#TurnoTurnoId").val() == ""){
 
-		//Almaceno la pagina que tengo que cargar
-		var section = that.attr("action");
+			$("#form-ubicacion-step2").append('<span class="mensaje-error">No se encuentran turnos disponibles.</span>');
 
-		//Almaceno el contenedor a donde lo tengo que cargar
-		var container = "#" + that.attr("data-load");
+		}else{
 
-		//Prendo el div que contendra la seccion
-		$(container).css("display","block");
+			$(".mensaje-error").remove();
+			$("body").append("<div class='loading'></div>");
 
-		//Me guardo el Auto elegido
-		var query = "?" + that.serialize();
+			var that = $(this);
 
-		var speed = speed = (isiPad)? 0 : 1000;
+			//Almaceno la pagina que tengo que cargar
+			var section = that.attr("action");
 
-		//Llamo al ajax y cargo la seccion adentro del $(container)
-		$(container).load(section + query + " .section",function(response,status,xhr){
+			//Almaceno el contenedor a donde lo tengo que cargar
+			var container = "#" + that.attr("data-load");
 
-			$(".loading").remove();
+			//Prendo el div que contendra la seccion
+			$(container).css("display","block");
 
-			//Filtro los scripts con class "script" y los appendeo al $(container) para que se ejecuten
-			var reponse = $(xhr.responseText);
-       		var reponseScript = reponse.filter(".script");
-       		$.each(reponseScript, function(idx, val){
-       			$.getScript($(val).attr("src"));
-       		});
+			//Me guardo el Auto elegido
+			var query = "?" + that.serialize();
 
-       		//Muevo la pantalla hasta la seccion cargada
-			$.scrollTo.window().queue([]).stop();
-			$.scrollTo(container, {speed: speed, easing:'easeOutExpo'});
+			var speed = speed = (isiPad)? 0 : 1000;
 
-		});
+			//Llamo al ajax y cargo la seccion adentro del $(container)
+			$(container).load(section + query + " .section",function(response,status,xhr){
+
+				$(".loading").remove();
+
+				//Filtro los scripts con class "script" y los appendeo al $(container) para que se ejecuten
+				var reponse = $(xhr.responseText);
+	       		var reponseScript = reponse.filter(".script");
+	       		$.each(reponseScript, function(idx, val){
+	       			$.getScript($(val).attr("src"));
+	       		});
+
+	       		//Muevo la pantalla hasta la seccion cargada
+				$.scrollTo.window().queue([]).stop();
+				$.scrollTo(container, {speed: speed, easing:'easeOutExpo'});
+
+			});
+
+		}
 
 	});
 
@@ -97,6 +106,9 @@ $(function(){
 	$('select.lugar').change( function (e){
 		e.stopPropagation();
 		e.preventDefault();
+
+		$(".mensaje-error").remove();
+
 		$.get(Croogo.basePath + Croogo.params.plugin + '/' + Croogo.params.controller + '/getConcesionaria.json',{'modelo' : '', 'concesionaria' : $(this).val() }, function(data){
 			if (data.success){
 				$("select.mes").html(populateSelect(data.months));
