@@ -19,11 +19,20 @@
 				<fieldset>
 					<div class="row">
 						<?php
-						echo $this->Form->input('modelo_id', array(
-							'div' 		=> false,
-							'label' 	=> false,
-							'id'		=> 'ModeloModeloId'
-						));
+						if ($modelos):
+							echo $this->Form->input('modelo_id', array(
+								'div' 		=> false,
+								'label' 	=> false,
+								'id'		=> 'ModeloModeloId'
+							));
+						else:
+							echo $this->Form->input('modelo_id', array(
+								'div' 		=> false,
+								'label' 	=> false,
+								'id'		=> 'ModeloModeloId',
+								'empty'		=> 'No disp.'
+							));	
+						endif;
 						echo $this->Form->submit('', array('div' => false));
 						?>
 

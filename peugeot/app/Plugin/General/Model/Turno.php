@@ -281,7 +281,7 @@ class Turno extends GeneralAppModel {
 		if ($concesionaria_id){
 			$_conditions['Turno.concesionaria_id'] = $concesionaria_id;
 		}
-		$rta = $this->find('list', array(
+		return $this->find('list', array(
 			'fields' 	=> array('Turno.month', 'Turno.monthDesc'),
 			'joins'		=> array(
 				array(
@@ -304,7 +304,6 @@ class Turno extends GeneralAppModel {
 			'conditions'=> $_conditions,
 			'group'		=> array('MONTH(fecha)')
 		));
-		return !empty($rta) ? $rta : array('no disp.');
 	}
 
 
@@ -319,7 +318,7 @@ class Turno extends GeneralAppModel {
 		if ($concesionaria_id){
 			$_conditions['Turno.concesionaria_id'] = $concesionaria_id;
 		}
-		$rta = $this->find('list', array(
+		return $this->find('list', array(
 			'fields' 	=> array('Turno.day', 'Turno.day'),
 			'joins'		=> array(
 				array(
@@ -342,7 +341,6 @@ class Turno extends GeneralAppModel {
 			'conditions'=> $_conditions,
 			'group'	=> array('DAY(fecha)')
 		));
-		return !empty($rta) ? $rta : array('no disp.');
 	}
 
 	public function getListHorario($modelo_id, $concesionaria_id, $month, $day, $status = false){
@@ -357,7 +355,7 @@ class Turno extends GeneralAppModel {
 		if ($concesionaria_id){
 			$_conditions['Turno.concesionaria_id'] = $concesionaria_id;
 		}
-		$rta = $this->find('list', array(
+		return $this->find('list', array(
 			'fields' 	=> array('Turno.id', 'Turno.horario'),
 			'joins'		=> array(
 				array(
@@ -381,7 +379,6 @@ class Turno extends GeneralAppModel {
 			'order' => array('Turno.hora_inicio' => 'asc'),
 			'group'	=> array('Turno.hora_inicio', 'Turno.hora_fin')
 		));
-		return !empty($rta) ? $rta : array('no disp.');
 	}
 
 	public function getListByUbicacion($turno_id, $concesionaria_id, $day, $month, $fields = array('Turno.id', 'Modelo.title')){
@@ -389,7 +386,7 @@ class Turno extends GeneralAppModel {
 		$inicio = $this->field('hora_inicio');
 		$fin = $this->field('hora_fin');
 		
-		$rta = $this->find('list', array(
+		return $this->find('list', array(
 			'fields'	=> $fields,
 			'joins'		=> array(
 				array(
@@ -420,6 +417,5 @@ class Turno extends GeneralAppModel {
 			'order' => array('Modelo.title' => 'asc'),
 			'group' => array('Modelo.id')
 		));
-		return !empty($rta) ? $rta : array('no disp.');
 	}
 }

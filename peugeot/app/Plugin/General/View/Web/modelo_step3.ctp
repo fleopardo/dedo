@@ -15,28 +15,56 @@
 					</select>
 				</div>
 				<?php 
-				echo $this->Form->input('month', array(
-					'type' => 'select',
-					'options' => $months,
-					'class' => 'mes',
-					'label' => 'Mes',
-					'name'	=> 'month'
-				));
-
-				echo $this->Form->input('dia', array(
-					'type' => 'select',
-					'options' => $dias,
-					'class' => 'dia',
-					'label' => 'Día',
-					'name'	=> 'dia'
-				));
-
-				echo $this->Form->input('turno_id', array(
-					'class' => 'hora',
-					'label' => 'Horario',
-					'name'	=> 'turno'
-				));
-
+				if ($months):
+					echo $this->Form->input('month', array(
+						'type' => 'select',
+						'options' => $months,
+						'class' => 'mes',
+						'label' => 'Mes',
+						'name'	=> 'month'
+					));
+				else:
+					echo $this->Form->input('month', array(
+						'type' => 'select',
+						'options' => $months,
+						'class' => 'mes',
+						'label' => 'Mes',
+						'name'	=> 'month',
+						'empty' => 'No disp.'
+					));
+				endif;
+				if ($dias):
+					echo $this->Form->input('dia', array(
+						'type' => 'select',
+						'options' => $dias,
+						'class' => 'dia',
+						'label' => 'Día',
+						'name'	=> 'dia'
+					));
+				else:
+					echo $this->Form->input('dia', array(
+						'type' => 'select',
+						'options' => $dias,
+						'class' => 'dia',
+						'label' => 'Día',
+						'name'	=> 'dia',
+						'empty' => 'No disp.'
+					));
+				endif;
+				if ($turnos):
+					echo $this->Form->input('turno_id', array(
+						'class' => 'hora',
+						'label' => 'Horario',
+						'name'	=> 'turno'
+					));
+				else:
+					echo $this->Form->input('turno_id', array(
+						'class' => 'hora',
+						'label' => 'Horario',
+						'name'	=> 'turno',
+						'empty'	=> 'No disp.'
+					));
+				endif;
 				echo $this->Form->submit('', array('title' => 'Solicite turno'));
 			echo $this->Form->end();	
 			?>

@@ -17,12 +17,22 @@
 			<?php echo $this->Form->create('Turno', array('url' => array('plugin' => 'general', 'controller' => 'Web', 'action' => 'confirmacion'), 'type' => 'get', 'data-load' => 'content4', 'id' => 'form-ubicacion-step3', ));?>
 				<fieldset>
 					<?php 
-					echo $this->Form->input('turno', array(
-						'div'		=> 'row',
-						'label' 	=> false,
-						'options' 	=> $turnos,
-						'after'		=> $this->Form->submit('', array('div' => false, 'title' => 'Reservar turno'))
-					));
+					if ($turnos):
+						echo $this->Form->input('turno', array(
+							'div'		=> 'row',
+							'label' 	=> false,
+							'options' 	=> $turnos,
+							'after'		=> $this->Form->submit('', array('div' => false, 'title' => 'Reservar turno'))
+						));
+					else:
+						echo $this->Form->input('turno', array(
+							'div'		=> 'row',
+							'label' 	=> false,
+							'options' 	=> $turnos,
+							'after'		=> $this->Form->submit('', array('div' => false, 'title' => 'Reservar turno')),
+							'empty'		=> 'No disp.'
+						));
+					endif;
 					?>
 				</fieldset>
 			<?php echo $this->Form->end(); ?>
