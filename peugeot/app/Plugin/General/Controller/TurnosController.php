@@ -144,9 +144,12 @@ class TurnosController extends GeneralAppController {
 			$_concesionaria_id = $this->Turno->Auto->field('concesionaria_id');
 
 			while ($fecha_desde <= $fecha_hasta){
-				$_h_inicio = strtotime($hora_inicio);
-				$_h_fin = strtotime($hora_fin);
+				$_h_inicio = strtotime($fecha_desde . ' ' . $hora_inicio);
+				$_h_fin = strtotime($fecha_desde . ' ' . $hora_fin);
 
+				if ($_h_inicio > $_h_fin){
+					$_h_fin = strtotime('+1 day', $_h_fin);
+				}
 				while ($_h_inicio < $_h_fin){
 					$_h_fin_turno = strtotime('+'. $this->data['Turno']['duracion'] .'minutes', $_h_inicio);
 					$turnos[] = array(
