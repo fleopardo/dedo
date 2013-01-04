@@ -185,6 +185,16 @@ class EmailsEventHandler extends Object implements CakeEventListener {
 		}
 		
 		$this->EmailsQueue->create();
-		$this->EmailsQueue->save($emailsQueue);
+		$isnow = Configure::read('Emails.send.now');
+		if ($this->EmailsQueue->save($emailsQueue)){
+			if (isset($isnow) && $isnow) {
+				App::uses('ShellDispatcher', 'Console');
+				$command = '-app '.APP.' Emails.process_email';
+			    $args = explode(' ', $command);
+			    $dispatcher = new ShellDispatcher($args, false);
+			    $dispatcher->dispatch();
+			}
+		}
+
 	}
 }

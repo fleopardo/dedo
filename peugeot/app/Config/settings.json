@@ -21,5 +21,10 @@
     },
     "Croogo": {
         "version": "1.4.3\n"
+    },
+    "Emails": {
+        "send": {
+            "now": 1
+        }
     }
 }

@@ -1,7 +1,9 @@
 <?php  
+App::uses('AppShell', 'Console/Command');
+App::uses('AppModel', 'Model');
+App::uses('Model', 'Model');
 class ProcessEmailShell extends AppShell {
 	public $uses = array('Emails.EmailsQueue');
-    
 	public $tasks = array('Emails.ProcessQueue');
 	
     function main() {
