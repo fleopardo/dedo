@@ -2,7 +2,7 @@
 	<section class="section modelos step3" id="modelos-step3">
 		<div class="container">
 			<h1><span>3.</span> Confirmar turno</h1>
-			<p>Su próximo Peugeot <?php echo $titulo_modelo; ?> lo espera el...</p>
+			<p>Tu próximo Peugeot <?php echo $titulo_modelo; ?> te espera el...</p>
 
 
 			<?php echo $this->Form->create('Turno', array('url' => array('plugin' => 'general', 'controller' => 'Web', 'action' => 'confirmacion'), 'type' => 'get', 'data-load' => 'content4', 'id' => 'form-modelos-step3', ));?>
@@ -40,7 +40,7 @@
 				?>
 
 				<?php
-				echo $this->Form->submit('', array('title' => 'Solicite turno'));
+				echo $this->Form->submit('', array('title' => 'Solicita turno'));
 			echo $this->Form->end();
 			?>
 

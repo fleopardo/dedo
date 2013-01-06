@@ -1,7 +1,7 @@
 	<!-- Modelos - Elegir modelo -->
 	<section class="section modelos step2" id="modelos-step2">
 		<div class="container">
-			<h1><span>2.</span> Elija el modelo</h1>
+			<h1><span>2.</span> Elegí el modelo</h1>
 
 			<div class="lista-autos">
 				<ul>

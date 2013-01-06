@@ -4,9 +4,9 @@
 
 			<div class="txt">
 				<h1><span>1.</span> Test drive de verano</h1>
-				<h2>Seleccione una ubicación</h2>
+				<h2>Selecciona una ubicación</h2>
 
-				<p class="intro">Este verano te invitamos a descubrir nuestros más modernos modelos en distintos puntos estrategicamente ubicados en las costas de Carilo y Pinamar. Para reservar tu turno empeza eligiendo el modelo o ubicación que más interese.</p>
+				<p class="intro">Este verano te invitamos a descubrir nuestros más modernos modelos en distintos puntos estratégicamente ubicados en las costas de Carilo y Pinamar. Para reservar tu turno empeza eligiendo el modelo o ubicación que más te interese.</p>
 			</div>
 
 			<p>

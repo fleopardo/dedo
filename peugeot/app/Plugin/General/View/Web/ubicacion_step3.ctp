@@ -1,7 +1,7 @@
 	<section class="section ubicacion step3" id="ubicacion-step3">
 		<div class="container">
 			<h1><span>3.</span> Confirmar vehiculo</h1>
-			<p>En el <?php echo $turno['Concesionaria']['title'];?> el <?php echo date('d/m/Y',strtotime($turno['Turno']['fecha']));?> de <?php echo date ('H:i', strtotime($turno['Turno']['hora_inicio']))?> a <?php echo date ('H:i', strtotime($turno['Turno']['hora_fin']))?> tenes disponibles los siguientes vehiculos...</p>
+			<p>En el <?php echo $turno['Concesionaria']['title'];?> el <?php echo date('d/m/Y',strtotime($turno['Turno']['fecha']));?> de <?php echo date ('H:i', strtotime($turno['Turno']['hora_inicio']))?> a <?php echo date ('H:i', strtotime($turno['Turno']['hora_fin']))?> tenés disponibles los siguientes vehículos...</p>
 
 			<div class="lista-autos">
 				<ul>

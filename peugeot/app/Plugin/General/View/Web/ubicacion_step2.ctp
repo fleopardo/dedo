@@ -40,7 +40,7 @@
 					'name'	=> 'turno'
 				));
 
-				echo $this->Form->submit('', array('div' => false, 'title' => 'Solicite turno'));
+				echo $this->Form->submit('', array('div' => false, 'title' => 'Solicita turno'));
 				?>
 			<?php $this->Form->end();?>
 			<?php echo $this->Html->link('Volver', 
