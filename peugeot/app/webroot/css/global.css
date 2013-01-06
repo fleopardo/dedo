@@ -233,7 +233,15 @@ section h2{
 	text-transform: uppercase;
 }
 
-
+.logo-verano{
+	position: absolute;
+	width: 171px;
+	height: 117px;
+	background: url("./assets/logo-peugeot-verano.png") no-repeat;
+	z-index: 10;
+	right: 0;
+	bottom: 40px;
+}
 
 
 /*

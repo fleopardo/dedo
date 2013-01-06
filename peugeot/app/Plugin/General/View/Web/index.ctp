@@ -25,5 +25,6 @@
 				);
 				?>
 			</p>
+			<div class="logo-verano"></div>
 		</div>
 	</section>
