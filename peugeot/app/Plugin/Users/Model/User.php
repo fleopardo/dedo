@@ -141,7 +141,7 @@ class User extends UsersAppModel {
 		'username',
 		'name',
 		'status' => array('type' => 'boolean'),
-		'email',
+		//'email',
 	);
 
 /**
@@ -153,8 +153,7 @@ class User extends UsersAppModel {
 		'role_id',
 		'username',
 		'name',
-		'email',
-		'website',
+		'password',
 		'status',
 	);
 

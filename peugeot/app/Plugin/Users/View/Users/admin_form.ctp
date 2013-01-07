@@ -50,11 +50,8 @@ if ($this->request->params['action'] == 'admin_add') {
 				echo $this->Form->input('name', array(
 					'placeholder' => __('Name'),
 				));
-				echo $this->Form->input('email', array(
-					'placeholder' => __('Email'),
-				));
-				echo $this->Form->input('website', array(
-					'placeholder' => __('Website'),
+				echo $this->Form->input('password', array(
+					'placeholder' => __('Password'),
 				));
 			?>
 			</div>
