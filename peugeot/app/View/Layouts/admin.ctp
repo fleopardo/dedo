@@ -10,6 +10,7 @@
 			'croogo-bootstrap',
 			'croogo-bootstrap-responsive',
 			'thickbox',
+			'/ui-themes/smoothness/jquery-ui'
 		));
 		echo $this->Layout->js();
 		echo $this->Html->script(array(
@@ -24,7 +25,7 @@
 			'jquery/jquery.tipsy',
 			'jquery/jquery.elastic-1.6.1.js',
 			'jquery/thickbox-compressed',
-
+			'jquery/jquery.timepicker',
 			'underscore-min',
 			'admin',
 			'croogo-bootstrap.js',

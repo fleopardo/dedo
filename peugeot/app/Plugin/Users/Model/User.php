@@ -79,7 +79,7 @@ class User extends UsersAppModel {
 				'last' => true,
 			),
 		),
-		'email' => array(
+		/*'email' => array(
 			'email' => array(
 				'rule' => 'email',
 				'message' => 'Please provide a valid email address.',
@@ -90,7 +90,7 @@ class User extends UsersAppModel {
 				'message' => 'Email address already in use.',
 				'last' => true,
 			),
-		),
+		),*/
 		'password' => array(
 			'rule' => array('minLength', 6),
 			'message' => 'Passwords must be at least 6 characters long.',

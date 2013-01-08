@@ -44,6 +44,10 @@ Admin.navigation = function() {
 			$(selector(Croogo)).addClass('current');
 		}
 	}
+
+	$( ".datepicker" ).datepicker({'dateFormat' : 'yy-mm-dd'});
+	$('.timepicker').timepicker();
+
 	// traverse parent elements and mark as current
 	$($current.selector).parentsUntil('.sidebar', 'ul').each(function() {
 		$(this).siblings('a.sidebar-item').addClass('current')

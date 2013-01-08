@@ -228,6 +228,11 @@ class Turno extends GeneralAppModel {
 		'concesionaria_id' => array('type' => 'value'),
 		'auto_id'	=> array('type' => 'value'),
 		'title' => array('type' => 'like', 'field' => array('Turno.nombre', 'Turno.id', 'Turno.email')),
+		'fecha' => array('type' => 'value'),
+		'status' => array('type' => 'value'),
+		'finalizado' => array('type' => 'value')
+//		'hora_inicio' => array('type' => 'value'),
+//		'hora_fin' => array('type' => 'value')	
 	);
 
 /**

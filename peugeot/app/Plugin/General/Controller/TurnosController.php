@@ -16,7 +16,12 @@ class TurnosController extends GeneralAppController {
 	public $presetVars = array(
 		'title' => array('type' => 'value'),
 		'auto_id' => array('type' => 'lookup', 'formField' => 'auto_input', 'modelField' => 'producto', 'model' => 'Auto'),
-		'concesionaria_id' => array('type' => 'lookup', 'formField' => 'concesionaria_input', 'modelField' => 'title', 'model' => 'Concesionaria')
+		'concesionaria_id' => array('type' => 'lookup', 'formField' => 'concesionaria_input', 'modelField' => 'title', 'model' => 'Concesionaria'),
+		'fecha' => array('type' => 'value'),
+		'hora_inicio' => array('type' => 'value'),
+		'hora_fin' => array('type' => 'value'),
+		'status' => array('type' => 'value'),
+		'finalizado' => array('type' => 'value')
 	);
 
 /**
@@ -27,14 +32,27 @@ class TurnosController extends GeneralAppController {
 	public function admin_index() {
 		$this->set('title_for_layout', __('Turnos'));
 		$this->Prg->commonProcess();
-		$searchFields = array('concesionaria_id', 'auto_id', 'title');
+		$searchFields = array('concesionaria_id', 'auto_id', 
+			'title' => array('label' => 'texto'), 
+			'fecha' => array( 'type' => 'text', 'class' => 'datepicker'), 
+			'hora_inicio' => array('label' => 'Inicio desde', 'type' => 'text', 'class' => 'timepicker'), 
+			'hora_fin' => array('label' => 'Inicio hasta', 'type' => 'text', 'class' => 'timepicker'),
+			'status' => array('options' => array('1' => 'Reservado', '0' => 'Disponible'), 'empty' => ''),
+			'finalizado' => array('options' => array('1' => 'Finalizado', '0' => 'No finalizado'), 'empty' => '')
+		);
 
 		$this->Turno->recursive = 0;
 		$this->paginate['conditions'] = $this->Turno->parseCriteria($this->passedArgs);
 
+		if (isset($this->params['named']['hora_inicio']) && !empty($this->params['named']['hora_inicio'])){
+			$this->paginate['conditions']['Turno.hora_inicio >='] = $this->params['named']['hora_inicio'];
+		}
+		if (isset($this->params['named']['hora_fin']) && !empty($this->params['named']['hora_fin'])){
+			$this->paginate['conditions']['Turno.hora_inicio <='] = $this->params['named']['hora_fin'];
+		}	
 		$this->set('turnos', $this->paginate());
 		$this->set('concesionarias', $this->Turno->Concesionaria->find('list'));
-		$this->set('autos', $this->Turno->Auto->find('list'));
+		$this->set('autos', $this->Turno->Auto->find('list', array('fields' => array('Auto.id', 'Auto.producto'))));
 		$this->set('displayFields', $this->Turno->displayFields());
 		$this->set('searchFields', $searchFields);
 	}
