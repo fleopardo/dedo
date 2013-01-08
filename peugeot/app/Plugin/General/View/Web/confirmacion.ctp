@@ -5,7 +5,7 @@
 
 	<section class="section confirmacion" id="confirmacion">
 		<div class="container formulario-confirmacion">
-			<h1><span>4.</span> Complete sus datos</h1>
+			<h1><span>4.</span> Completa tus datos</h1>
 
 			<?php echo $this->Form->create('Turno', array('id' => 'TurnoPedido', 'url' => array('plugin' => 'general', 'controller' => 'web', 'action' => 'confirmacion')));?>
 				<fieldset class="clearfix">

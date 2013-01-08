@@ -83,6 +83,8 @@ $("body,html").css("overflow","hidden");
 	// Bindeo click a los 2 botones principales
 	$(".home .link").bind("click",function(event){
 
+		$("body").append("<div class='loading'></div>");
+
 		event.stopPropagation();
 		event.preventDefault();
 
@@ -98,6 +100,8 @@ $("body,html").css("overflow","hidden");
 
 		//Llamo al ajax y cargo la seccion adentro del $(container)
 		$(container).load(section + " .section", function(response,status,xhr){
+
+			$(".loading").remove();
 
 			//Filtro los scripts con class "script" y los appendeo al $(container) para que se ejecuten
 			var reponse = $(xhr.responseText);

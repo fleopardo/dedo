@@ -157,10 +157,10 @@ body{
 .hide{ display: none;}
 .show{ display: block;}
 
-::-webkit-input-placeholder  { color:#373737; }
-input:-moz-placeholder { color:#373737; }
-:-ms-input-placeholder { color: #373737; }
-input.placeholder{ color: #373737; }
+::-webkit-input-placeholder  { color:#858585; }
+input:-moz-placeholder { color:#858585; }
+:-ms-input-placeholder { color: #858585; }
+input.placeholder{ color: #858585; }
 
 
 /*
@@ -233,7 +233,15 @@ section h2{
 	text-transform: uppercase;
 }
 
-
+.logo-verano{
+	position: absolute;
+	width: 171px;
+	height: 117px;
+	background: url("./assets/logo-peugeot-verano.png") no-repeat;
+	z-index: 10;
+	right: 0;
+	bottom: 90px;
+}
 
 
 /*
@@ -351,7 +359,7 @@ section h2{
  * Home
 */
 .home{
-	background: url("./assets/background-home-chico.png") no-repeat center 160px;
+	background: url("./assets/background-home-chico.png") no-repeat center 170px;
 }
 
 .home.margin-for-scrollto{
@@ -369,21 +377,21 @@ section h2{
 }
 
 .home h1 span{
-	font-size: 112px;
-	left: -105px;
-	top: -14px;
+	font-size: 90px;
+	left: -85px;
+	top: -10px;
 }
 
 .home h2{
 	color: #8f8f8f;
 	font-size: 24px;
 	text-transform: uppercase;
-	margin: 12px 0;
+	margin: 5px 0 10px 0;
 }
 
 .home .intro{
 	color: #636363;
-	font-size: 15px;
+	font-size: 14px;
 	line-height: 20px;
 }
 
@@ -393,7 +401,8 @@ section h2{
 	background: url("./assets/arrow-links.png") no-repeat;
 	text-decoration: none;
 	text-transform: uppercase;
-	line-height: 70px;
+	height: 70px;
+	line-height: 62px;
 	display: inline-block;
 }
 
@@ -412,7 +421,7 @@ section h2{
 	padding-right: 90px;
 	background-position: right;
 	position: absolute;
-	top: 430px;
+	top: 440px;
 	left: 0;
 }
 
@@ -459,7 +468,8 @@ section.ubicacion.step2{
 .ubicacion.step2 form {
 	margin-top: 35px;
 	clear: both;
-	float: right;
+	float: left;
+	margin-left: 325px;
 }
 
 .ubicacion.step2 form > div{
@@ -485,6 +495,7 @@ section.ubicacion.step2{
 	display: block;
 	margin-top: 20px;
 	margin-left: -5px;
+
 }
 
 .ubicacion.step2 select.lugar{
@@ -492,7 +503,7 @@ section.ubicacion.step2{
 }
 
 .ubicacion.step2 select.mes{
-	width: 170px;
+	width: 140px;
 }
 
 .ubicacion.step2 select.dia{
@@ -528,7 +539,7 @@ section.modelos.step2{
 .modelos.step2 form{
 	position: absolute;
 	right: 0;
-	bottom: 95px;
+	bottom: 115px;
 	z-index: 6;
 }
 
@@ -540,7 +551,9 @@ section.modelos.step2{
 	cursor: pointer;
 	margin-left: 10px;
 	position: relative;
-	top: -27px;
+	top: 5px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .modelos.step2 .lista-autos{
@@ -590,7 +603,7 @@ section.ubicacion.step3{
 
 .ubicacion.step3 form{
 	position: absolute;
-	top: 330px;
+	top: 345px;
 	right: 0;
 	z-index: 6;
 }
@@ -602,10 +615,18 @@ section.ubicacion.step3{
 	height: 90px;
 	cursor: pointer;
 	margin-left: 10px;
+	position: relative;
+	top: 5px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .ubicacion.step3 select{
 	width: 420px;
+}
+
+.ubicacion.step3 .volver{
+	bottom: 160px;
 }
 
 
@@ -620,7 +641,7 @@ section.modelos.step3{
 
 .modelos.step3 h1{
 	font-size: 31px;
-	margin: 130px 0 0 85px;
+	margin: 120px 0 0 85px;
 }
 
 .modelos.step3 h1 span{
@@ -664,6 +685,8 @@ section.modelos.step3{
 	margin-left: 10px;
 	position: relative;
 	top: 5px;
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .modelos.step3 .contentMap{
@@ -699,14 +722,13 @@ section.modelos.step3{
 	width: 150px;
 }
 
-.modelos .img-result{
+.modelos.step3 .img-result{
 	width: 648px;
 	height: 309px;
 	position: absolute;
 	z-index: 0;
-	background: #000;
 	right: 0;
-	top: 195px;
+	top: 205px;
 }
 
 .modelos.step3 .img-result.p-308{
@@ -738,7 +760,7 @@ section.modelos.step3{
 }
 
 .modelos.step3 .volver{
-	bottom: 160px
+	bottom: 140px
 }
 
 /*
@@ -748,7 +770,7 @@ section.confirmacion{
 	background: url("./assets/background-step4.png") no-repeat top center;
 	position: relative;
 	top: -15px;
-	height: 860px;
+	min-height: 860px;
 }
 
 .confirmacion .container{
@@ -759,7 +781,7 @@ section.confirmacion{
 	font-size: 32px;
 	color: #fff;
 	float: right;
-	margin-top: 114px;
+	margin-top: 120px;
 	margin-bottom: 22px;
 }
 
@@ -810,9 +832,9 @@ section.confirmacion{
 	color: #858585;
 	font-size: 18px;
 	border-radius: 5px;
-	width: 420px;
+	width: 430px;
 	height: 50px;
-	padding: 0 20px;
+	padding: 0 20px 0 10px;
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ffffff 0%, #cacaca 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cacaca));
@@ -822,6 +844,11 @@ section.confirmacion{
 	background: linear-gradient(to bottom,  #ffffff 0%,#cacaca 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cacaca',GradientType=0 );
 	border: 1px solid #ccc;
+}
+
+.confirmacion form .error input[type="text"],
+.ui-selectmenu.error{
+	border: 2px solid #d20000;
 }
 
 .confirmacion form input[type="submit"]{
@@ -838,7 +865,7 @@ section.confirmacion{
 .confirmacion label{
 	color: #d1d1d1;
 	font-size: 18px;
-	line-height: 59px;
+	line-height: 49px;
 	display: inline-block;
 }
 
@@ -847,18 +874,62 @@ section.confirmacion{
 	margin-right: 2px;
 }
 
-.confirmacion select{
-	width: 462px;
+.confirmacion select,
+.confirmacion .ui-selectmenu{
+	width: 462px !important;
 }
 
-.confirmacion select.small{
-	width: 82px;
+.confirmacion select.small,
+.confirmacion .ui-selectmenu.small{
+	width: 82px !important;
 }
 
-.confirmacion select.middle{
-	width: 126px;
+.confirmacion select.middle,
+.confirmacion .ui-selectmenu.middle{
+	width: 126px !important;
 }
 
+
+.confirmacion .volver{
+	bottom: 160px;
+}
+
+
+.confirmacion .background-leon{
+	background: url("./assets/background-enviado.png") no-repeat -30px 40px;
+	min-height: 700px;
+	display: none;
+}
+
+.confirmacion .mensaje-confirmacion{
+	padding-top: 300px;
+	min-height: 165px;
+}
+
+.confirmacion .mensaje-confirmacion > div{
+	background: url("./assets/elegir-autos/308cc.png") left top no-repeat;
+	min-height: 165px;
+}
+
+.confirmacion .mensaje-confirmacion h2{
+	padding-top: 20px;
+	font-size: 28px;
+	line-height: 30px;
+	color: #fff;
+	margin-bottom: 20px;
+	padding-left: 340px;
+}
+
+.confirmacion .mensaje-confirmacion p{
+	font-size: 18px;
+	line-height: 20px;
+	color: #fff;
+	margin-bottom: 4px;padding-left: 340px;
+}
+
+.confirmacion .mensaje-confirmacion .volver{
+	bottom: -35px;
+}
 
 #content2,
 #content3,
@@ -873,6 +944,20 @@ section.confirmacion{
 }
 
 
+
+.loading{
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: url("./assets/ajax-loader.gif") no-repeat 50% 50%;
+}
+
+.mensaje-error{
+	color: #d20000;
+}
 
 /*
  * For mobiles

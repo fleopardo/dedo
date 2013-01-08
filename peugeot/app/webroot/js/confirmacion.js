@@ -114,7 +114,7 @@ $(function(){
 
 		}else{
 			var data = $("#TurnoPedido").serialize();
-			console.log(data);
+
 			// mando el mail
 			$.ajax({
 				type: 'POST',

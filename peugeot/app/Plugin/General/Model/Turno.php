@@ -278,7 +278,8 @@ class Turno extends GeneralAppModel {
 
 	public function getListMonths($modelo_id, $concesionaria_id ,$status = false){
 		$_conditions = array(
-			'Turno.status'	=> $status
+			'Turno.status'		=> $status,
+			'Turno.fecha >='	=> date()
 		);
 		if ($modelo_id){
 			$_conditions['Modelo.id'] = $modelo_id;
@@ -315,7 +316,8 @@ class Turno extends GeneralAppModel {
 	public function getListDaysMonth($modelo_id, $concesionaria_id, $month, $status = false){
 		$_conditions = array(
 			'Turno.status' 			=> $status,
-			'MONTH(Turno.fecha)'	=> $month
+			'MONTH(Turno.fecha)'	=> $month,
+			'Turno.fecha >='		=> date()
 		);
 		if ($modelo_id){
 			$_conditions['Modelo.id'] = $modelo_id;
@@ -352,7 +354,8 @@ class Turno extends GeneralAppModel {
 		$_conditions = array(
 			'Turno.status' 			=> $status,
 			'DAY(Turno.fecha)'		=> $day,
-			'MONTH(Turno.fecha)'	=> $month
+			'MONTH(Turno.fecha)'	=> $month,
+			'Turno.fecha >='		=> date()
 		);
 		if ($modelo_id){
 			$_conditions['Modelo.id'] = $modelo_id;

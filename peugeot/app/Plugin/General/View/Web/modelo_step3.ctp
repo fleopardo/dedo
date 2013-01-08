@@ -2,7 +2,7 @@
 	<section class="section modelos step3" id="modelos-step3">
 		<div class="container">
 			<h1><span>3.</span> Confirmar turno</h1>
-			<p>Su próximo Peugeot <?php echo $titulo_modelo; ?> lo espera el...</p>
+			<p>Tu próximo Peugeot <?php echo $titulo_modelo; ?> te espera el...</p>
 
 
 			<?php echo $this->Form->create('Turno', array('url' => array('plugin' => 'general', 'controller' => 'Web', 'action' => 'confirmacion'), 'type' => 'get', 'data-load' => 'content4', 'id' => 'form-modelos-step3', ));?>
@@ -65,7 +65,7 @@
 						'empty'	=> 'No disp.'
 					));
 				endif;
-				echo $this->Form->submit('', array('title' => 'Solicite turno'));
+				echo $this->Form->submit('', array('title' => 'Solicita turno'));
 			echo $this->Form->end();	
 			?>
 
@@ -75,7 +75,7 @@
 			</div>
 
 			<div class="img-result <?php echo !empty($class_modelo) ? $class_modelo : 'p-408'; ?>"></div>
-			<?php echo $this->Html->link('Volver', 
+			<?php echo $this->Html->link('Volver',
 				array('plugin' => 'general', 'controller' => 'Web', 'action' => 'index'),
 				array('class' => 'volver', 'data-scroll:anchor'=> '#modelos-step2')
 			);?>
