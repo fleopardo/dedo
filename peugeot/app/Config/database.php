@@ -77,29 +77,29 @@
  */
 class DATABASE_CONFIG {
 
-	public $default = array(
-		'datasource' => 'Database/Mysql',
-		'persistent' => false,
-		'host' => '200.32.3.185',
-		'login' => 'testdrive',
-		'password' => 't3St.Dr1v3.ar6',
-		'database' => 'peugeotargentinatestdrive',
-		'prefix' => '',
-		'encoding' => 'UTF8',
-		'port' => '',
-	);
-
 //	public $default = array(
 //		'datasource' => 'Database/Mysql',
 //		'persistent' => false,
-//		'host' => 'localhost',
-//		'login' => 'root',
-//		'password' => 'sr123456',
-//		'database' => 'peugeot',
+//		'host' => '200.32.3.185',
+//		'login' => 'testdrive',
+//		'password' => 't3St.Dr1v3.ar6',
+//		'database' => 'peugeotargentinatestdrive',
 //		'prefix' => '',
 //		'encoding' => 'UTF8',
 //		'port' => '',
 //	);
+
+	public $default = array(
+		'datasource' => 'Database/Mysql',
+		'persistent' => false,
+		'host' => 'localhost',
+		'login' => 'root',
+		'password' => 'sr123456',
+		'database' => 'peugeot',
+		'prefix' => '',
+		'encoding' => 'UTF8',
+		'port' => '',
+	);
 
 	public $test = array(
 		'datasource' => 'Database/Mysql',

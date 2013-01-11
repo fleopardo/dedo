@@ -49,7 +49,13 @@ class TurnosController extends GeneralAppController {
 		}
 		if (isset($this->params['named']['hora_fin']) && !empty($this->params['named']['hora_fin'])){
 			$this->paginate['conditions']['Turno.hora_inicio <='] = $this->params['named']['hora_fin'];
-		}	
+		}
+
+		$_concesionariaId = $this->Session->read('Auth.User.concesionaria_id');
+		if (isset ($_concesionariaId) && !empty ($_concesionariaId)){
+			$this->paginate['conditions']['Turno.concesionaria_id'] = $_concesionariaId;
+		}
+
 		$this->set('turnos', $this->paginate());
 		$this->set('concesionarias', $this->Turno->Concesionaria->find('list'));
 		$this->set('autos', $this->Turno->Auto->find('list', array('fields' => array('Auto.id', 'Auto.producto'))));

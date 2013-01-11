@@ -137,7 +137,8 @@ class UsersController extends UsersAppController {
 			$this->request->data['User']['role_id'] = 2; // default Role: Registered
 		}
 		$roles = $this->User->Role->find('list');
-		$this->set(compact('roles'));
+		$concesionarias = $this->User->Concesionaria->find('list');
+		$this->set(compact('roles', 'concesionarias'));
 	}
 
 /**
@@ -149,6 +150,10 @@ class UsersController extends UsersAppController {
  */
 	public function admin_edit($id = null) {
 		if (!empty($this->request->data)) {
+			$this->User->id = $id;
+			if ($this->request->data['User']['password'] == $this->User->field('password')){
+				unset($this->request->data['User']['password']);
+			}
 			if ($this->User->save($this->request->data)) {
 				$this->Session->setFlash(__('The User has been saved'), 'default', array('class' => 'success'));
 				$this->redirect(array('action' => 'index'));
@@ -156,10 +161,12 @@ class UsersController extends UsersAppController {
 				$this->Session->setFlash(__('The User could not be saved. Please, try again.'), 'default', array('class' => 'error'));
 			}
 		} else {
+
 			$this->request->data = $this->User->read(null, $id);
 		}
 		$roles = $this->User->Role->find('list');
-		$this->set(compact('roles'));
+		$concesionarias = $this->User->Concesionaria->find('list');
+		$this->set(compact('roles', 'concesionarias'));
 		$this->set('editFields', $this->User->editFields());
 	}
 

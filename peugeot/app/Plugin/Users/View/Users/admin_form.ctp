@@ -53,6 +53,10 @@ if ($this->request->params['action'] == 'admin_add') {
 				echo $this->Form->input('password', array(
 					'placeholder' => __('Password'),
 				));
+				echo $this->Form->input('concesionaria_id', array(
+					'label' => __('Concesionaria'),
+					'empty' => ''
+				));
 			?>
 			</div>
 

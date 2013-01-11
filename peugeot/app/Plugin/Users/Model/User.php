@@ -53,7 +53,7 @@ class User extends UsersAppModel {
  * @var array
  * @access public
  */
-	public $belongsTo = array('Users.Role');
+	public $belongsTo = array('Users.Role', 'General.Concesionaria');
 
 /**
  * Validation
