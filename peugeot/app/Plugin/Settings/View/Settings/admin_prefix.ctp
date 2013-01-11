@@ -2,7 +2,7 @@
 <?php
 $this->Html->addCrumb('', '/admin', array('icon' => 'home'))
 	->addCrumb(__('Settings'), array('plugin' => 'settings', 'controller' => 'settings', 'action' => 'index'))
-	->addCrumb($prefix, $this->here);
+	->addCrumb($prefix, 'javascript:void(0);');
 ?>
 <?php
 

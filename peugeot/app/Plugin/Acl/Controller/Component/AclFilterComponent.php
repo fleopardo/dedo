@@ -73,9 +73,9 @@ class AclFilterComponent extends Component {
 			'action' => 'login',
 		);
 		$this->_controller->Auth->loginRedirect = array(
-			'plugin' => 'users',
-			'controller' => 'users',
-			'action' => 'index',
+			'plugin' => 'settings',
+			'controller' => 'settings',
+			'action' => 'dashboard',
 		);
 
 		$config = Configure::read('Acl');

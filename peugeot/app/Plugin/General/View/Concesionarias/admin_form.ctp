@@ -45,6 +45,9 @@ if ($this->request->params['action'] == 'admin_add') {
 				echo $this->Form->input('longitud', array(
 					'placeholder' => __('Longitud para Google Maps'),
 				));
+				echo $this->Form->input('carboy', array(
+					'placeholder' => __('Car boys'),
+				));
 			?>
 			</div>
 

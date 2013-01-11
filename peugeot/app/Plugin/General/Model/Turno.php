@@ -279,7 +279,7 @@ class Turno extends GeneralAppModel {
 	public function getListMonths($modelo_id, $concesionaria_id ,$status = false){
 		$_conditions = array(
 			'Turno.status'		=> $status,
-			'Turno.fecha >='	=> date()
+			'Turno.fecha >='	=> date('Y-m-d')
 		);
 		if ($modelo_id){
 			$_conditions['Modelo.id'] = $modelo_id;
@@ -317,7 +317,7 @@ class Turno extends GeneralAppModel {
 		$_conditions = array(
 			'Turno.status' 			=> $status,
 			'MONTH(Turno.fecha)'	=> $month,
-			'Turno.fecha >='		=> date()
+			'Turno.fecha >='		=> date('Y-m-d')
 		);
 		if ($modelo_id){
 			$_conditions['Modelo.id'] = $modelo_id;
@@ -350,12 +350,41 @@ class Turno extends GeneralAppModel {
 		));
 	}
 
-	public function getListHorario($modelo_id, $concesionaria_id, $month, $day, $status = false){
+
+	public function getListHorario ($modelo_id, $concesionaria_id, $month, $day, $status = false){
+		$this->Concesionaria->id = $concesionaria_id;
+		$carboys = $this->Concesionaria->field('carboy');
+		if ($carboys){
+			$listado = $this->__getListHorario($modelo_id, $concesionaria_id, $month, $day, $status);
+			foreach ($listado as $k=>$v){
+				$horarios = explode('-',$v);
+				$tomados = $this->find('count', array(
+					'contain' 		=> array(),
+					'conditions'	=> array (
+						'Turno.status' 		=> true,
+						'DAY(Turno.fecha)'	=> $day,
+						'MONTH(Turno.fecha)'=> $month,
+						'Turno.hora_inicio' => trim($horarios[0]),
+						'Turno.hora_fin'	=> trim($horarios[1]),
+						'Turno.concesionaria_id' => $concesionaria_id
+					)
+				));
+				if ($tomados >= $carboys){
+					unset($listado[$k]);
+				}
+			}
+			return $listado;
+		} 
+		return array();
+	}
+
+	private function __getListHorario($modelo_id, $concesionaria_id, $month, $day, $status = false){
 		$_conditions = array(
 			'Turno.status' 			=> $status,
 			'DAY(Turno.fecha)'		=> $day,
 			'MONTH(Turno.fecha)'	=> $month,
-			'Turno.fecha >='		=> date()
+			'Turno.fecha >='		=> date('Y-m-d'),
+			'Turno.hora_inicio >='	=> date('H:i')
 		);
 		if ($modelo_id){
 			$_conditions['Modelo.id'] = $modelo_id;

@@ -88,6 +88,7 @@ class Concesionaria extends GeneralAppModel {
 	protected $_displayFields = array(
 		'id',
 		'title',
+		'carboy',
 		'status' => array('type' => 'boolean'),
 	);
 
@@ -98,7 +99,9 @@ class Concesionaria extends GeneralAppModel {
  */
 	protected $_editFields = array(
 		'title',
-		'ubicacion',
+		'latitud',
+		'longitud',
+		'carboy',
 		'status',
 	);
 

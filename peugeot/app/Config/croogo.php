@@ -32,7 +32,7 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-Configure::write('debug', 0);
+Configure::write('debug', 2);
 
 /**
  * Configure the Error handler used to handle errors for your application.  By default
@@ -232,7 +232,7 @@ Configure::write('Acl.database', 'default');
  * If you are on PHP 5.3 uncomment this line and correct your server timezone
  * to fix the date & time related errors.
  */
-date_default_timezone_set('UTC');
+date_default_timezone_set('America/Argentina/Buenos_Aires');
 
 /**
  *

@@ -89,6 +89,18 @@ class DATABASE_CONFIG {
 		'port' => '',
 	);
 
+//	public $default = array(
+//		'datasource' => 'Database/Mysql',
+//		'persistent' => false,
+//		'host' => 'localhost',
+//		'login' => 'root',
+//		'password' => 'sr123456',
+//		'database' => 'peugeot',
+//		'prefix' => '',
+//		'encoding' => 'UTF8',
+//		'port' => '',
+//	);
+
 	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
