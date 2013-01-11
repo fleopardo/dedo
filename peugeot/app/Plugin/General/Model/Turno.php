@@ -383,8 +383,14 @@ class Turno extends GeneralAppModel {
 			'Turno.status' 			=> $status,
 			'DAY(Turno.fecha)'		=> $day,
 			'MONTH(Turno.fecha)'	=> $month,
-			'Turno.fecha >='		=> date('Y-m-d'),
-			'Turno.hora_inicio >='	=> date('H:i')
+			'OR' => array(
+				'Turno.fecha >'		=> date('Y-m-d'),
+				'AND' => array(
+					'Turno.fecha'		=> date('Y-m-d'),
+					'Turno.hora_inicio >='	=> date('H:i')
+				)
+			)
+			
 		);
 		if ($modelo_id){
 			$_conditions['Modelo.id'] = $modelo_id;
