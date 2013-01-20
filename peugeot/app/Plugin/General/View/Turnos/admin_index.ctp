@@ -21,4 +21,12 @@ $this->Html
 		); 
 		?>
 	</li>
+	<li>
+		<?php 
+		echo $this->Html->link(__('Exportar'), 
+			array('action' => 'export'), 
+			array('class' => 'btn')
+		); 
+		?>
+	</li>
 <?php $this->end(); ?>

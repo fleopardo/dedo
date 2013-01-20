@@ -201,4 +201,43 @@ class TurnosController extends GeneralAppController {
 		$autos = $this->Turno->Auto->listByConcesionarias();
 		$this->set(compact('autos'));
 	}
+
+
+	public function admin_export (){
+		$this->autoRender = false;
+		ini_set('max_execution_time', 600); 
+
+		$tmpFilename = TMP . DS . "export_".date('Ymd-Hms') . '.csv';
+		$filename = "export_".date("Y.m.d").".csv";
+		$csv_file = fopen($tmpFilename, 'w');
+
+		$results = $this->Turno->find('all', array(
+			'conditions' => array(
+				'Turno.status' => true
+			)
+		));
+
+		// The column headings of your .csv file
+		$header_row = array("Nombre y Apellido", "Telefono", "Email", "vehiculo", "direccion", "Fecha");
+		fputcsv($csv_file,$header_row,',','"');
+
+		// Each iteration of this while loop will be a row in your .csv file where each field corresponds to the heading of the column
+		foreach($results as $result){
+			// Array indexes correspond to the field names in your db table(s)
+			$row = array(
+				$result['Turno']['nombre'],
+				$result['Turno']['telefono'],
+				$result['Turno']['email'],
+				$result['Auto']['producto'],
+				$result['Turno']['provincia'] . ' - ' . $result['Turno']['localidad'],
+				$result['Turno']['fecha']
+			);
+			fputcsv($csv_file,$row,',','"');
+		}
+		fclose($csv_file);
+
+		$this->response->type('Content-Type: text/csv');
+	    $this->response->download(date('Ymd-Hms') . '.csv' );
+	    $this->response->body( file_get_contents( $tmpFilename ));
+	}
 }
